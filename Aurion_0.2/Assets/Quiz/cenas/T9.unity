@@ -1,0 +1,1197 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
+    m_ExportTrainingData: 0
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &519420028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519420032}
+  - component: {fileID: 519420031}
+  - component: {fileID: 519420029}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &519420029
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+--- !u!20 &519420031
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &519420032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &991163397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 991163399}
+  - component: {fileID: 991163398}
+  m_Layer: 0
+  m_Name: _GC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &991163398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991163397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ae26751a0ca3340a667d0eaf72af8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idTema: 9
+  pergunta: {fileID: 1266090914}
+  respostaA: {fileID: 1266090913}
+  respostaB: {fileID: 1266090912}
+  respostaC: {fileID: 1266090911}
+  respostaD: {fileID: 1266090910}
+  respostaE: {fileID: 1266090908}
+  infoResp: {fileID: 1266090909}
+  perguntas:
+  - "Assinale a alternativa que ordena corretamente tr\xEAs novidades evolutivas,
+    de acordo com o seu surgimento no processo de evolu\xE7\xE3o das plantas terrestres.
+    \ "
+  - "Na auIa de biologia, a professora comentou que as bri\xF3fitas poderiam ser consideradas
+    \"os anf\xEDbios do reino vegetal\". Esta afirma\xE7\xE3o \xE9 v\xE1lida se considerarmos
+    que as bri\xF3fitas, assim como alguns anf\xEDbios,  "
+  - 'As angiospermas se distinguem de todas as outras plantas pelo fato de apresentarem  '
+  - "No ciclo de vida dos vegetais, h\xE1 duas fases de vida, a gametof\xEDtica que
+    produz gametas e a esporof\xEDtica que produz esporos. A esse respeito, \xE9 correto
+    afirmar que  "
+  - "Em plantas, qual das seguintes unidades reprodutivas \xE9 produzida por meiose?
+    \ "
+  - "O professor chamou a aten\xE7\xE3o dos alunos para o fato de que todos os ip\xEAs-roxos
+    existentes nas imedia\xE7\xF5es da escola floresceram quase que ao mesmo tempo,
+    no in\xEDcio do inverno. Por outro lado, os ip\xEAs-amarelos, existentes na mesma
+    \xE1rea, tamb\xE9m floresceram quase que ao mesmo tempo, por\xE9m j\xE1 pr\xF3ximo
+    ao final do inverno. Uma poss\xEDvel explica\xE7\xE3o para esse fato \xE9 que
+    ip\xEAs-roxos e ip\xEAs-amarelos apresentam  "
+  - "Todas as plantas apresentam altern\xE2ncia de gera\xE7\xF5es, isto \xE9, uma
+    fase assexuada, seguida de uma sexuada. Nas Bri\xF3fitas, a fase Gametof\xEDtica
+    predomina sobre a fase Esporof\xEDtica. Nas demais plantas (Pterid\xF3fitas, Gimnospermas
+    e Angiospermas), a fase Esporof\xEDtica \xE9 a predominante sobre a Gametof\xEDtica.
+    C\xE9lulas hapl\xF3ides de uma Angiosperma podem ser observadas  "
+  - "Ao longo da evolu\xE7\xE3o dos organismos, a meiose e a fecunda\xE7\xE3o ocorreram
+    em diferentes fases do ciclo de vida dos organismos. Quanto ao ciclo de vida de
+    alguns grupos de plantas, \xE9 correto afirmar:  "
+  - "No morango, os frutos verdadeiros s\xE3o as estruturas escuras e r\xEDgidas que
+    se encontram sobre a parte vermelha e suculenta. Cada uma dessas estruturas resulta,
+    diretamente,  "
+  - "A poliniza\xE7\xE3o, que viabiliza o transporte do gr\xE3o de p\xF3len de uma
+    planta at\xE9 o estigma de outra, pode ser realizada bi\xF3tica ou abioticamente.
+    Nos processos abi\xF3ticos, as plantas dependem de fatores como o vento e a \xE1gua.
+    A estrat\xE9gia evolutiva que resulta em poliniza\xE7\xE3o mais eficiente quando
+    esta depende do vento \xE9 o(a)  "
+  - "O cruzamento de duas esp\xE9cies da fam\xEDlia das Anon\xE1ceas, a cherimoia
+    (Annona cherimola) com a fruta-pinha (Annona squamosa), resultou em uma planta
+    h\xEDbrida denominada de atemoia. Recomenda-se que o seu plantio seja por meio
+    de enxertia. Um dos benef\xEDcios dessa forma de plantio \xE9 a  "
+  - "As plantas xer\xF3fitas apresentam adapta\xE7\xF5es que possibilitam sua sobreviv\xEAncia
+    em ambientes secos. Selecione abaixo quais s\xE3o essas adapta\xE7\xF5es.  "
+  - "As plantas vasculares colonizaram a paisagem terrestre durante o per\xEDodo Devoniano
+    Inferior, h\xE1 cerca de 410 a 387 milh\xF5es de anos. A ocupa\xE7\xE3o do grande
+    n\xFAmero de h\xE1bitats demandou uma grande variedade de formas e adapta\xE7\xF5es
+    nas plantas. Com base na morfologia dos diferentes tipos de caules, assinale a
+    alternativa que cont\xE9m caules adaptados a reprodu\xE7\xE3o assexuada e a fotoss\xEDntese,
+    respectivamente.  "
+  - "Caules e folhas podem sofrer modifica\xE7\xF5es para a realiza\xE7\xE3o de diferentes
+    fun\xE7\xF5es na planta. Considerando a videira (Vitis sp.), as estruturas utilizadas
+    como suporte s\xE3o _________ modificadas(os) em _________.  "
+  - "Assinale a alternativa que apresenta, correta e respectivamente, o \xF3rg\xE3o
+    da planta utilizado como especiarias: pimenta, canela, cravo-da-\xEDndia, noz-moscada
+    e gengibre.  "
+  - 'Muitas plantas adaptadas a ambientes terrestres secos e com alta intensidade
+    luminosa apresentam folhas  '
+  - "Nos vegetais, est\xF4matos, xilema, floema e lenticelas t\xEAm suas fun\xE7\xF5es
+    relacionadas, respectivamente, a:  "
+  - "Leia o texto a seguir e assinale a alternativa correta. O crescimento em espessura
+    da raiz e do caule de vegetais dicotiled\xF4neos e gimnospermas, denominado crescimento
+    secund\xE1rio, se deve fundamentalmente:  "
+  - "Considerando a histologia vegetal \u2013 ci\xEAncia que estuda os tecidos biol\xF3gicos
+    vegetais \u2013 \xE9 errado afirmar que:  "
+  - "As plantas, assim como os animais, apresentam \xF3rg\xE3os compostos de diferentes
+    tecidos, e esses tecidos apresentam diferentes fun\xE7\xF5es: revestimento; assimila\xE7\xE3o
+    e reserva; sustenta\xE7\xE3o; condu\xE7\xE3o. Os tecidos que desempenham essas
+    fun\xE7\xF5es s\xE3o, respectivamente:  "
+  - "Quando uma pl\xE2ntula \xE9 iluminada unilateralmente, ela cresce em dire\xE7\xE3o
+    \xE0 luz. Esse crescimento deve-se  "
+  - "A dorm\xEAncia \xE9 um per\xEDodo do ciclo da vida no qual o desenvolvimento
+    de um organismo e temporariamente suspenso. Em geral, ela est\xE1 associada \xE0s
+    condi\xE7\xF5es ambientais, quando o organismo necessita contornar situa\xE7\xF5es
+    adversas como, por exemplo, a altera\xE7\xE3o das condi\xE7\xF5es de temperatura,
+    umidade e luz. Um exemplo de estrutura que se apresenta em estado de dorm\xEAncia
+    \xE9:  "
+  - "Observando plantas de milho, com folhas amareladas, um estudante de agronomia
+    considerou que essa apar\xEAncia poderia ser devida \xE0 defici\xEAncia mineral
+    do solo. Sabendo que a clorofila cont\xE9m magn\xE9sio, ele formulou a seguinte
+    hip\xF3tese: \"As folhas amareladas aparecem quando h\xE1 defici\xEAncia de sais
+    de magn\xE9sio no solo\". Qual das alternativas descreve um experimento correto
+    para testar tal hip\xF3tese?  "
+  - "Plantas inset\xEDvoras s\xE3o plantas que, embora fotossintetizantes, alimentam-se
+    de insetos e outros pequenos animais devido \xE0s estruturas foliares especialmente
+    adaptadas \xE0 captura. Nessas estruturas h\xE1 produ\xE7\xE3o de enzimas hidrol\xEDticas
+    que digerem a presa fornecendo mat\xE9ria org\xE2nica \xE0 planta. Os compostos
+    que mais podem interessar a uma planta inset\xEDvora s\xE3o:  "
+  - "Os refor\xE7os apresentados pelas paredes dos vasos lenhosos (anelados, espiralados,
+    etc.) t\xEAm por fun\xE7\xE3o:  "
+  alternativaA:
+  - 'Sistema vascular, semente, flor.  '
+  - "apresentam um sistema de distribui\xE7\xE3o de \xE1gua pelo corpo que se d\xE1
+    de c\xE9lula para c\xE9lula, por osmose.  "
+  - "altern\xE2ncia de gera\xE7\xE3o hapl\xF3ide e dipl\xF3ide.  "
+  - "os gametas s\xE3o formados por meiose e os esporos s\xE3o formados por mitose.
+    \ "
+  - "Espor\xF3fitos haploides.  "
+  - "pontos de compensa\xE7\xE3o f\xF3tica diferentes e, provavelmente, s\xE3o de
+    esp\xE9cies diferentes.  "
+  - "na parede do ov\xE1rio e no gr\xE3o-de-p\xF3len.  "
+  - "Nas bri\xF3fitas, o espor\xF3fito \xE9 dominante, e o gamet\xF3fito \xE9 dependente
+    nutricionalmente do espor\xF3fito.  "
+  - "da fecunda\xE7\xE3o do \xF3vulo pelo n\xFAcleo esperm\xE1tico do gr\xE3o de p\xF3len.
+    \ "
+  - "diminui\xE7\xE3o do c\xE1lice.  "
+  - "amplia\xE7\xE3o da variabilidade gen\xE9tica.  "
+  - "Cut\xEDcula espessa, pneumat\xF3foros.  "
+  - 'Rizoma e Bulbo.  '
+  - 'folhas/gavinhas  '
+  - "Fruto, semente, bot\xE3o floral, rizoma, tronco.  "
+  - "pequenas com est\xF4matos concentrados na parte inferior, muitos tricomas claros,
+    cut\xEDcula imperme\xE1vel e par\xEAnquima aqu\xEDfero.  "
+  - "trocas gasosas, transporte de \xE1gua e sais minerais, transporte de subst\xE2ncias
+    org\xE2nicas e trocas gasosas.  "
+  - "\xC0 hipertrofia das c\xE9lulas do par\xEAnquima cortical.  "
+  - "os tecidos de revestimento dos vegetais s\xE3o hipoderme e endoderme.  "
+  - "epiderme, par\xEAnquima, floema, escler\xEAnquima.  "
+  - "ao deslocamento do fitorm\xF4nio auxina, no lado oposto ao da luz, determinando
+    o alongamento das c\xE9lulas desse lado.  "
+  - 'o feto.  '
+  - "Fornecimento de sais de magn\xE9sio ao solo em que as plantas est\xE3o crescendo
+    e observa\xE7\xE3o dos resultados alguns dias depois.  "
+  - 'sais minerais.  '
+  - "Impedir o colapso dos vasos, quando a transpira\xE7\xE3o \xE9 intensa.  "
+  alternativaB:
+  - 'Sistema vascular, flor, semente.  '
+  - "reproduzem-se por altern\xE2ncia de gera\xE7\xF5es (metag\xEAnese).  "
+  - "est\xF4matos nas folhas.  "
+  - "os gametas s\xE3o formados por mitose e os esporos s\xE3o formados por meiose.
+    \ "
+  - 'Gametas haploides.  '
+  - "pontos de compensa\xE7\xE3o f\xF3tica diferentes, e isso n\xE3o tem qualquer
+    rela\xE7\xE3o quanto a serem da mesma esp\xE9cie ou de esp\xE9cies diferentes.
+    \ "
+  - "no interior do \xF3vulo e no gr\xE3o-de-p\xF3len.  "
+  - "Nas pterid\xF3fitas, o gamet\xF3fito \xE9 dominante, e o espor\xF3fito \xE9 dependente
+    nutricionalmente do gamet\xF3fito.  "
+  - "do desenvolvimento do ov\xE1rio, que cont\xE9m a semente com o embri\xE3o.  "
+  - "alongamento do ov\xE1rio.  "
+  - "produ\xE7\xE3o de frutos das duas esp\xE9cies.  "
+  - "Sucul\xEAncia, cut\xEDcula espessa.  "
+  - 'Colmo e Bulbo.  '
+  - 'caules/gavinhas  '
+  - "Fruto, tronco, bot\xE3o floral, semente, rizoma.  "
+  - "grandes com est\xF4matos concentrados na parte inferior, poucos tricomas claros,
+    cut\xEDcula imperme\xE1vel e par\xEAnquima aer\xEDfero.  "
+  - "trocas gasosas, transporte de subst\xE2ncias org\xE2nicas, transporte de \xE1gua
+    e sais minerais e trocas gasosas.  "
+  - "\xC0 hipertrofia das c\xE9lulas do par\xEAnquima medular.  "
+  - "os tecidos de condu\xE7\xE3o dos vegetais s\xE3o xilema e floema.  "
+  - "col\xEAnquima, epiderme, xilema, par\xEAnquima.  "
+  - "ao deslocamento do fitorm\xF4nio giberelina, no lado oposto ao da luz, determinando
+    o alongamento das c\xE9lulas desse lado. "
+  - 'o broto.  '
+  - "Fornecimento de uma mistura de diversos sais minerais, inclusive sais de magn\xE9sio,
+    ao solo em que as plantas est\xE3o crescendo e observa\xE7\xE3o dos resultados
+    dias depois.  "
+  - 'glicose.  '
+  - 'Agir como mola, controlando o crescimento dos vasos.  '
+  alternativaC:
+  - 'Semente, sistema vascular, flor.  '
+  - "t\xEAm uma fase do desenvolvimento (gamet\xF3fito) que ocorre exclusivamente
+    na \xE1gua.  "
+  - 'flores.  '
+  - "tanto os gametas quanto os esporos s\xE3o formados por meiose.  "
+  - 'Esporos haploides.  '
+  - "fotoperiodismos diferentes e, provavelmente, s\xE3o de esp\xE9cies diferentes.
+    \ "
+  - "no endosperma da semente e no tubo pol\xEDnico.  "
+  - "Em angiospermas, o gamet\xF3fito \xE9 extremamente reduzido e dependente nutricionalmente
+    do espor\xF3fito e desenvolve-se no interior da flor no rudimento seminal (\xF3vulo).
+    \ "
+  - "da fecunda\xE7\xE3o de v\xE1rias flores de uma mesma infloresc\xEAncia.  "
+  - "disponibiliza\xE7\xE3o do n\xE9ctar.  "
+  - "manuten\xE7\xE3o do gen\xF3tipo da planta h\xEDbrida.  "
+  - "Raiz epivotante longa, pneumat\xF3foros.  "
+  - "Estol\xE3o e Rizoma.  "
+  - "folhas/clad\xF3filos  "
+  - "Rizoma, semente, tronco, bot\xE3o floral, fruto.  "
+  - "pequenas com est\xF4matos concentrados na parte superior, aus\xEAncia de tricomas,
+    cera sobre a epiderme foliar e par\xEAnquima aqu\xEDfero.  "
+  - "trocas gasosas, transporte de subst\xE2ncias org\xE2nicas, transporte de \xE1gua
+    e sais minerais e transporte de sais.  "
+  - "\xC0 divis\xE3o celular verificada no c\xE2mbio e no felog\xEAnio.  "
+  - "os tecidos de sustenta\xE7\xE3o dos vegetais s\xE3o col\xEAnquima e escler\xEAnquima.
+    \ "
+  - "epiderme, escler\xEAnquima, xilema, par\xEAnquima.  "
+  - "\xE0 inibi\xE7\xE3o do fitorm\xF4nio auxina sobre a divis\xE3o das c\xE9lulas
+    meristem\xE1ticas apicais.  "
+  - "o ov\xE1rio.  "
+  - "Cultivo de um novo lote de plantas, em solo suplementado com uma mistura completa
+    de sais minerais, incluindo sais de magn\xE9sio.  "
+  - 'amido.  '
+  - "Aumentar a superf\xEDcie respirat\xF3ria dos vasos.  "
+  alternativaD:
+  - 'Semente, flor, sistema vascular.  '
+  - "sofrem um processo de metamorfose, durante o qual se alteram os mecanismos de
+    capta\xE7\xE3o de oxig\xEAnio.  "
+  - 'sementes.  '
+  - "tanto os gametas quanto os esporos s\xE3o formados por mitose.  "
+  - 'Gametas diploides.  '
+  - "fotoperiodismos diferentes, e isso n\xE3o tem qualquer rela\xE7\xE3o quanto a
+    serem da mesma esp\xE9cie ou de esp\xE9cies diferentes.  "
+  - "no saco embrion\xE1rio e na parede da antera.  "
+  - "Em gimnospermas, o espor\xF3fito \xE9 extremamente reduzido e dependente nutricionalmente
+    do gamet\xF3fito e desenvolve-se geralmente nos estr\xF3bilos.  "
+  - "da dupla fecunda\xE7\xE3o, que \xE9 exclusiva das angiospermas.  "
+  - "intensifica\xE7\xE3o da cor das p\xE9talas.  "
+  - "reprodu\xE7\xE3o de clones das plantas parentais.  "
+  - "Cut\xEDcula espessa, raiz epivotante pouco desenvolvida.  "
+  - "Clad\xF3dio e Estol\xE3o.  "
+  - "caules/clad\xF3filos  "
+  - "Semente, rizoma, fruto, bot\xE3o floral, tronco.  "
+  - "grandes com est\xF4matos igualmente distribu\xEDdos em ambas as partes, aus\xEAncia
+    de tricomas, aus\xEAncia de cera sobre a epiderme foliar e par\xEAnquima aer\xEDfero.
+    \ "
+  - "absor\xE7\xE3o de luz, transporte de \xE1gua, transporte de sais minerais e trocas
+    gasosas.  "
+  - "\xC0 divis\xE3o celular verificada no periblema e no pleroma.  "
+  - "os meristemas s\xE3o respons\xE1veis por formar os tecidos das plantas.  "
+  - "epiderme, par\xEAnquima, escler\xEAnquima, floema.  "
+  - "\xE0 estimula\xE7\xE3o das c\xE9lulas do meristema apical, que passam a se dividir
+    com maior velocidade.  "
+  - "a pl\xE2ntula.  "
+  - "Cultivo de novos lotes de plantas, fornecendo \xE0 metade deles, mistura completa
+    de sais minerais, inclusive sais de magn\xE9sio, e \xE0 outra metade, apenas sais
+    de magn\xE9sio.  "
+  - 'celulose.  '
+  - "Impedir, como v\xE1lvulas, a descida da seiva.  "
+  alternativaE:
+  - 'Flor, sistema vascular, semente.  '
+  - "vivem em ambientes \xFAmidos e dependem da \xE1gua para a fecunda\xE7\xE3o.  "
+  - 'vasos condutores de seiva.  '
+  - "os gametas s\xE3o c\xE9lulas haploides e os esporos s\xE3o c\xE9lulas diploides. "
+  - 'Esporos diploides.  '
+  - "fototropismos diferentes, e isso n\xE3o tem qualquer rela\xE7\xE3o quanto a serem
+    da mesma esp\xE9cie ou de esp\xE9cies diferentes.  "
+  - 'no pistilo e no filete do estame.  '
+  - "Nas angiospermas e nas gimnospermas, o gamet\xF3fito \xE9 reduzido e independente
+    nutricionalmente do espor\xF3fito.  "
+  - "do desenvolvimento do endosperma que nutrir\xE1 o embri\xE3o.  "
+  - "aumento do n\xFAmero de estames.  "
+  - "modifica\xE7\xE3o do genoma decorrente da transgenia.  "
+  - "Sucul\xEAncia, raiz epivotante pouco desenvolvida.  "
+  - "Estol\xE3o e Clad\xF3dio.  "
+  - "caules/estol\xF5es  "
+  - "Semente, tronco, bot\xE3o floral, fruto, rizoma.  "
+  - "pequenas com est\xF4matos concentrados na parte superior, muitos tricomas claros,
+    cera sobre a epiderme foliar e par\xEAnquima aer\xEDfero.  "
+  - "absor\xE7\xE3o de compostos org\xE2nicos, transporte de \xE1gua e sais minerais,
+    transporte de subst\xE2ncias org\xE2nicas e trocas gasosas.  "
+  - "\xC0 atividade condutora do xilema e do floema.  "
+  - "os tecidos que atuam no armazenamento de subst\xE2ncias, na fotoss\xEDntese e
+    no transporte de subst\xE2ncias a curta dist\xE2ncia s\xE3o os par\xEAnquimas.
+    \ "
+  - "par\xEAnquima, col\xEAnquima, floema, escler\xEAnquima.  "
+  - "\xE0 estimula\xE7\xE3o das c\xE9lulas parenquim\xE1ticas do lado oposto ao da
+    luz, que passam a se dividir com maior velocidade.  "
+  - 'a semente.  '
+  - "Cultivo de novos lotes de plantas, fornecendo \xE0 metade deles mistura completa
+    de sais minerais, inclusive sais de magn\xE9sio, e \xE0 outra metade, uma mistura
+    com os mesmos sais, menos os de magn\xE9sio.  "
+  - 'compostos nitrogenados.  '
+  - "Determinar uma ascens\xE3o em espiral, da seiva.  "
+  corretas:
+  - 'Sistema vascular, semente, flor.  '
+  - "vivem em ambientes \xFAmidos e dependem da \xE1gua para a fecunda\xE7\xE3o.  "
+  - 'flores.  '
+  - "os gametas s\xE3o formados por mitose e os esporos s\xE3o formados por meiose.
+    \ "
+  - 'Esporos haploides.  '
+  - "fotoperiodismos diferentes e, provavelmente, s\xE3o de esp\xE9cies diferentes.
+    \ "
+  - "no interior do \xF3vulo e no gr\xE3o-de-p\xF3len.  "
+  - "Em angiospermas, o gamet\xF3fito \xE9 extremamente reduzido e dependente nutricionalmente
+    do espor\xF3fito e desenvolve-se no interior da flor no rudimento seminal (\xF3vulo).
+    \ "
+  - "do desenvolvimento do ov\xE1rio, que cont\xE9m a semente com o embri\xE3o.  "
+  - "aumento do n\xFAmero de estames.  "
+  - "manuten\xE7\xE3o do gen\xF3tipo da planta h\xEDbrida.  "
+  - "Sucul\xEAncia, cut\xEDcula espessa.  "
+  - "Estol\xE3o e Clad\xF3dio.  "
+  - 'caules/gavinhas  '
+  - "Fruto, tronco, bot\xE3o floral, semente, rizoma.  "
+  - "pequenas com est\xF4matos concentrados na parte inferior, muitos tricomas claros,
+    cut\xEDcula imperme\xE1vel e par\xEAnquima aqu\xEDfero.  "
+  - "trocas gasosas, transporte de \xE1gua e sais minerais, transporte de subst\xE2ncias
+    org\xE2nicas e trocas gasosas.  "
+  - "\xC0 divis\xE3o celular verificada no c\xE2mbio e no felog\xEAnio.  "
+  - "os tecidos de revestimento dos vegetais s\xE3o hipoderme e endoderme.  "
+  - "epiderme, par\xEAnquima, escler\xEAnquima, floema.  "
+  - "ao deslocamento do fitorm\xF4nio auxina, no lado oposto ao da luz, determinando
+    o alongamento das c\xE9lulas desse lado.  "
+  - 'a semente.  '
+  - "Cultivo de novos lotes de plantas, fornecendo \xE0 metade deles mistura completa
+    de sais minerais, inclusive sais de magn\xE9sio, e \xE0 outra metade, uma mistura
+    com os mesmos sais, menos os de magn\xE9sio.  "
+  - 'compostos nitrogenados.  '
+  - "Impedir o colapso dos vasos, quando a transpira\xE7\xE3o \xE9 intensa.  "
+--- !u!4 &991163399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991163397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.4200745, y: 2.1877277, z: -2.946301}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1266090907
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3862179376726558098, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas  2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558095, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.materialCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377221861615, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377221861615, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211411, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179376480211411, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591045, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377784591045, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876365, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377867876365, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306450, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377535306450, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277869, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377378277869, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bd76ea60220019d428ebca0bada31b32, type: 3}
+--- !u!114 &1266090908 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1266090907}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1266090909 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1266090907}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1266090910 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1266090907}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1266090911 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1266090907}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1266090912 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1266090907}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1266090913 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1266090907}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1266090914 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1266090907}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1526796313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1526796316}
+  - component: {fileID: 1526796315}
+  - component: {fileID: 1526796314}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1526796314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1526796315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1526796316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

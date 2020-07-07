@@ -1,0 +1,924 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
+    m_ExportTrainingData: 0
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &519420028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519420032}
+  - component: {fileID: 519420031}
+  - component: {fileID: 519420029}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &519420029
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+--- !u!20 &519420031
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &519420032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &699659903 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 8662944783876142323}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &841995014 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 8662944783876142323}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &991163397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 991163399}
+  - component: {fileID: 991163398}
+  m_Layer: 0
+  m_Name: _GC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &991163398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991163397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ae26751a0ca3340a667d0eaf72af8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idTema: 1
+  pergunta: {fileID: 1006305452}
+  respostaA: {fileID: 1342367111}
+  respostaB: {fileID: 699659903}
+  respostaC: {fileID: 1546993057}
+  respostaD: {fileID: 841995014}
+  respostaE: {fileID: 995282416}
+  infoResp: {fileID: 1374709300}
+  perguntas:
+  - "[...] \xE9 necess\xE1rio, ainda, introduzir-se um m\xE9todo completamente novo,
+    uma ordem diferente e um novo processo, para continuar e promover a experi\xEAncia.
+    Pois a experi\xEAncia vaga, deixada a si mesma [...] \xE9 um mero tateio, e presta-se
+    mais a confundir os homens que a inform\xE1-los. Mas quando a experi\xEAncia proceder
+    de acordo com leis seguras e de forma gradual e constante, poder-se-\xE1 esperar
+    algo de melhor da ci\xEAncia. [\u2026] A infeliz situa\xE7\xE3o em que se encontra
+    a ci\xEAncia humana transparece at\xE9 nas manifesta\xE7\xF5es do vulgo.\_ Afirma-se
+    corretamente que o verdadeiro saber \xE9 o saber pelas causas. E, n\xE3o indevidamente,
+    estabelecem- se quatro coisas: a mat\xE9ria, a forma, a causa eficiente, a causa
+    final. Destas, a causa final longe est\xE1 de fazer avan\xE7ar as ci\xEAncias,
+    pois na verdade as corrompe; mas pode ser de interesse para as a\xE7\xF5es humanas.
+    (BACON, F.\_Novo Organum ou verdadeiras indica\xE7\xF5es acerca da interpreta\xE7\xE3o
+    da natureza.S\xE3o Paulo: Abril Cultural. 1973.\_p.72; 99-100.) Com base no texto
+    e no pensamento de Francis Bacon acerca da verdadeira indu\xE7\xE3o experimental
+    como interpreta\xE7\xE3o da natureza, \xE9 correto afirmar."
+  - "Um pesquisador percebe que o r\xF3tulo de um dos vidros em que guarda um concentrado
+    de enzimas digestivas est\xE1 ileg\xEDvel. Ele n\xE3o sabe qual enzima o vidro
+    cont\xE9m, mas desconfia de que"
+  - "Na d\xE9cada de 1940, na Regi\xE3o Centro-Oeste, produtores rurais, cujos bois,
+    porcos, aves e cabras estavam morrendo por uma peste desconhecida, fizeram uma
+    promessa, que consistiu em n\xE3o comer carne e derivados at\xE9 que a peste fosse
+    debelada. Assim, durante tr\xEAs meses, arroz, feij\xE3o, verduras e legumes formaram
+    o prato principal desses produtores. O Hoje, 15 out. 2011 (adaptado). Para suprir
+    o d\xE9ficit nutricional a que os produtos rurais se submeteram durante o per\xEDodo
+    da promessa, foi importante eles terem consumido alimentos ricos em vitaminas
+    A e "
+  - "Considere as afirma\xE7\xF5es abaixo relativas aos efeitos da eleva\xE7\xE3o
+    da temperatura no funcionamento das rea\xE7\xF5es enzim\xE1ticas: I. A eleva\xE7\xE3o
+    da temperatura, muito acima de sua temperatura \xF3tima, pode reduzir a atividade
+    de uma enzima. II. A eleva\xE7\xE3o da temperatura pode desnaturar uma enzima.
+    III. Todas as enzimas t\xEAm a mesma temperatura \xF3tima. IV. Algumas enzimas
+    s\xE3o est\xE1veis no ponto de ebuli\xE7\xE3o da \xE1gua. Est\xE3o corretas: "
+  - "Considere um grupo de pessoas com caracter\xEDsticas homog\xEAneas no que se
+    refere \xE0 cor de pele. As pessoas desse grupo que t\xEAm maior chance de apresentar
+    defici\xEAncia de vitamina D e que est\xE3o mais sujeitas a fraturas \xF3sseas
+    s\xE3o indiv\xEDduos que ingerem alimentos  "
+  - "Os carboidratos, os lip\xEDdios e as prote\xEDnas constituem material estrutural
+    e de reserva dos seres vivos. Qual desses componentes org\xE2nicos \xE9 mais abundante
+    no corpo de uma planta e de um animal? "
+  - "As prote\xEDnas s\xE3o compostos:  "
+  - "Na prepara\xE7\xE3o do meio de cultura para c\xE9lulas animais, o t\xE9cnico
+    de um determinado laborat\xF3rio esqueceu-se de adicionar o suprimento de amino\xE1cidos.
+    Que mol\xE9culas ter\xE3o sua forma\xE7\xE3o imediatamente prejudicada?  "
+  - "Para inibir a a\xE7\xE3o de uma enzima, pode-se fornecer \xE0 c\xE9lula uma subst\xE2ncia
+    que ocupe o s\xEDtio ativo dessa enzima. Para isso, essa subst\xE2ncia deve  "
+  - "Um dos riscos de uma dieta exclusivamente vegetariana \xE9 a ocorr\xEAncia de
+    anemia. Assinale a alternativa que apresenta a rela\xE7\xE3o correta entre esse
+    tipo de dieta e a anemia.  "
+  - "O fen\xF4meno da bioluminesc\xEAncia que ocorre em v\xE1rios organismos, como
+    algas e vagalume, \xE9 resultado do processo de:  "
+  - "Os vegetais, na sua grande maioria, podem ser armazenados em cole\xE7\xF5es cient\xEDficas,
+    por muitas d\xE9cadas, na forma de exsicatas, resultantes da prensagem e secagem
+    da planta, o que permite o seu estudo posterior. Esse modo de preserva\xE7\xE3o
+    de vegetais \xE9 poss\xEDvel porque, nos seus tecidos, est\xE1/est\xE3o presente(s)
+    \ "
+  - "Nos casos de hipertens\xE3o \xE9 recomend\xE1vel que o indiv\xEDduo fa\xE7a uma
+    dieta ingerindo alimentos sem sal. Assinale a alternativa que justifica a raz\xE3o
+    fisiol\xF3gica dessa recomenda\xE7\xE3o.  "
+  - "A teoria \u201CUm Gene uma Enzima\u201D propunha que cada gene era respons\xE1vel
+    pela s\xEDntese de uma enzima, que expressava uma determinada caracter\xEDstica
+    biol\xF3gica. Hoje, sabe-se que a partir de um gene \xE9 produzida uma cadeia
+    polipept\xEDdica. Assinale a alternativa cuja sequ\xEAncia de eventos resulta
+    na produ\xE7\xE3o de cadeias polipept\xEDdicas.  "
+  - "Alimentos de origem vegetal e animal fornecem nutrientes utilizados pelo nosso
+    organismo para a obten\xE7\xE3o de energia e para a s\xEDntese de mol\xE9culas.
+    Ap\xF3s determinada refei\xE7\xE3o, completadas a digest\xE3o e a absor\xE7\xE3o,
+    o nutriente majoritariamente absorvido foi a glicose. Considerando as alternativas
+    abaixo, \xE9 correto afirmar que essa refei\xE7\xE3o estava constitu\xEDda de
+    \ "
+  alternativaA:
+  - "Na busca do conhecimento, n\xE3o se podem encontrar verdades indubit\xE1veis,
+    sem submeter as hip\xF3teses ao crivo da experimenta\xE7\xE3o e da observa\xE7\xE3o.
+    \_\_  "
+  - "cubo de batata em solu\xE7\xE3o com pH = 9.  "
+  - 'vitaminas A e E.  '
+  - 'I, II e IV, apenas.  '
+  - "ricos em c\xE1lcio, como ovos e derivados do leite, e que frequentemente tomam
+    sol.  "
+  - "Prote\xEDnas em plantas e animais.  "
+  - "formados por carboidratos e lip\xEDdios unidos por pontes de hidrog\xEAnio.  "
+  - "Lip\xEDdios  "
+  - "estar na mesma concentra\xE7\xE3o da enzima.  "
+  - "O excesso de fibras vegetais provoca uma intoxica\xE7\xE3o alimentar conhecida
+    como anemia.  "
+  - "oxida\xE7\xE3o da subst\xE2ncia luciferina pela enzima luciferase, na aus\xEAncia
+    de ATP e oxig\xEAnio.  "
+  - 'a queratina nas folhas e nos caules.  '
+  - "A redu\xE7\xE3o da concentra\xE7\xE3o de NaCl no plasma sangu\xEDneo provoca
+    um aumento na produ\xE7\xE3o e elimina\xE7\xE3o de urina dilu\xEDda, causando
+    a diminui\xE7\xE3o do volume de sangue circulante e consequente diminui\xE7\xE3o
+    da press\xE3o arterial.  "
+  - "Descondensa\xE7\xE3o dos cromossomos, tradu\xE7\xE3o do RNAm e transcri\xE7\xE3o
+    da cadeia polipept\xEDdica no citoplasma.  "
+  - "contrafil\xE9 na brasa.  "
+  alternativaB:
+  - "A formula\xE7\xE3o do novo m\xE9todo cient\xEDfico exige submeter a experi\xEAncia
+    e a raz\xE3o ao princ\xEDpio de autoridade para a conquista do conhecimento. \_\_ "
+  - "peda\xE7o de carne em solu\xE7\xE3o com pH = 5.  "
+  - 'frutose e sacarose.  '
+  - 'I, II e III, apenas.  '
+  - "pobres em c\xE1lcio, como ovos e derivados do leite, e que frequentemente tomam
+    sol.  "
+  - 'Carboidratos em plantas e animais.  '
+  - "formados por amino\xE1cidos unidos por liga\xE7\xF5es pept\xEDdicas.  "
+  - "Glic\xEDdios  "
+  - 'ter a mesma estrutura espacial do substrato da enzima.  '
+  - "A falta de carne provoca car\xEAncia de vitamina D, acarretando anemia.  "
+  - "redu\xE7\xE3o da subst\xE2ncia luciferina pela enzima luciferase, na presen\xE7a
+    de ATP e oxig\xEAnio.  "
+  - "os cloroplastos nas c\xE9lulas fotossintetizantes da planta.  "
+  - "A redu\xE7\xE3o da concentra\xE7\xE3o de NaCl no plasma sangu\xEDneo provoca
+    um aumento na produ\xE7\xE3o e elimina\xE7\xE3o de urina concentrada, causando
+    o aumento do volume de sangue circulante e consequente diminui\xE7\xE3o da press\xE3o
+    arterial.  "
+  - "Leitura da sequ\xEAncia de DNA no citoplasma, transcri\xE7\xE3o no n\xFAcleo,
+    tradu\xE7\xE3o no n\xFAcleo e s\xEDntese polipept\xEDdica no citoplasma.  "
+  - "camar\xE3o na chapa.  "
+  alternativaC:
+  - "O desacordo entre a experi\xEAncia e a raz\xE3o, prevalecendo esta sobre aquela,
+    constitui o fundamento para o novo m\xE9todo cient\xEDfico. \_\_  "
+  - "clara de ovo cozida em solu\xE7\xE3o com pH = 9.  "
+  - "amino\xE1cidos naturais. "
+  - 'II, III e IV, apenas.  '
+  - "pobres em c\xE1lcio, como ovos e derivados do leite, e que raramente tomam sol.
+    \ "
+  - "Lip\xEDdios em plantas e animais.  "
+  - "de tamanho muito pequeno (micromol\xE9culas) e que ocorrem em baixa concentra\xE7\xE3o
+    dentro da c\xE9lula.  "
+  - "Nucleot\xEDdeos  "
+  - "recobrir toda a mol\xE9cula da enzima.  "
+  - "A carne cont\xE9m grandes quantidades de ferro, cuja falta provoca anemia.  "
+  - "oxida\xE7\xE3o da subst\xE2ncia luciferina pela enzima luciferase, na presen\xE7a
+    de ATP e oxig\xEAnio.  "
+  - "o c\xF3rtex e o felog\xEAnio, que constituem a casca do tronco.  "
+  - "A redu\xE7\xE3o da concentra\xE7\xE3o de NaCl no plasma sangu\xEDneo provoca
+    uma diminui\xE7\xE3o na produ\xE7\xE3o e elimina\xE7\xE3o de urina dilu\xEDda,
+    causando a diminui\xE7\xE3o do volume de sangue circulante e consequente diminui\xE7\xE3o
+    da press\xE3o arterial.  "
+  - "Leitura da sequ\xEAncia de DNA espec\xEDfica, transcri\xE7\xE3o no citoplasma,
+    tradu\xE7\xE3o do RNAm imaturo no n\xFAcleo e s\xEDntese polipept\xEDdica no citoplasma.
+    \ "
+  - 'ovo frito.  '
+  alternativaD:
+  - "Bacon admite o finalismo no processo natural, por considerar necess\xE1rio ao
+    m\xE9todo perguntar para que as coisas s\xE3o e como s\xE3o. \_\_ "
+  - "por\xE7\xE3o de macarr\xE3o em solu\xE7\xE3o com pH = 5.  "
+  - "amino\xE1cidos essenciais.  "
+  - 'II e IV, apenas.  '
+  - "ricos em c\xE1lcio, como frutas c\xEDtricas e arroz, e que raramente tomam sol.
+    \ "
+  - "Carboidratos nas plantas e prote\xEDnas nos animais.  "
+  - "que n\xE3o fazem parte da constitui\xE7\xE3o qu\xEDmica dos cromossomos.  "
+  - "Prote\xEDnas  "
+  - "ter a mesma fun\xE7\xE3o biol\xF3gica do substrato da enzima.  "
+  - "O excesso de vegetais na dieta provoca um aumento nos movimentos perist\xE1lticos,
+    provocando perda de nutrientes.  "
+  - "redu\xE7\xE3o da subst\xE2ncia luciferina pela enzima luciferase, na aus\xEAncia
+    de ATP e oxig\xEAnio. "
+  - "o polissacar\xEDdeo celulose nas paredes celulares das c\xE9lulas.  "
+  - "O aumento da concentra\xE7\xE3o de NaCl no plasma sangu\xEDneo provoca um aumento
+    na produ\xE7\xE3o e elimina\xE7\xE3o de urina dilu\xEDda, causando a diminui\xE7\xE3o
+    do volume de sangue circulante e conseq\xFCente diminui\xE7\xE3o da press\xE3o
+    arterial.  "
+  - "Leitura da sequ\xEAncia de DNA espec\xEDfica, transcri\xE7\xE3o do DNA no citoplasma,
+    processamento do RNAm no n\xFAcleo, s\xEDntese polipept\xEDdica no n\xFAcleo e
+    matura\xE7\xE3o da prote\xEDna no citoplasma.  "
+  - 'frango assado.  '
+  alternativaE:
+  - "O estabelecimento de um m\xE9todo experimental, baseado na observa\xE7\xE3o e
+    na medida, aprimora o m\xE9todo escol\xE1stico.\_  "
+  - "bolinha de manteiga em solu\xE7\xE3o com pH = 9.  "
+  - "\xE1cidos graxos saturados.  "
+  - "todas as afirma\xE7\xF5es.  "
+  - "pobres em c\xE1lcio, como frutas c\xEDtricas e arroz, e que raramente tomam sol.
+    \ "
+  - "Prote\xEDnas nas plantas e lip\xEDdios nos animais.  "
+  - "respons\xE1veis diretamente pela transmiss\xE3o da informa\xE7\xE3o gen\xE9tica.
+    \ "
+  - "\xC1cidos nucleicos  "
+  - "promover a desnatura\xE7\xE3o dessa enzima.  "
+  - "A falta de amino\xE1cidos, encontrados exclusivamente em animais, \xE9 a causa
+    da anemia.  "
+  - "oxida\xE7\xE3o da subst\xE2ncia luciferase pela enzima luciferina, na presen\xE7a
+    de ATP e oxig\xEAnio.  "
+  - "os vac\xFAolos, que mant\xEAm o tamanho original da c\xE9lula vegetal.  "
+  - "O aumento da concentra\xE7\xE3o de NaCl no plasma sangu\xEDneo provoca uma diminui\xE7\xE3o
+    na produ\xE7\xE3o e elimina\xE7\xE3o de urina concentrada, causando o aumento
+    do volume de sangue circulante e consequente diminui\xE7\xE3o da press\xE3o arterial.
+    \ "
+  - "Leitura da sequ\xEAncia de DNA espec\xEDfica, produ\xE7\xE3o de RNAm heterog\xEAneo
+    no n\xFAcleo, sa\xEDda do RNAm do n\xFAcleo e s\xEDntese da cadeia polipept\xEDdica
+    no citoplasma.  "
+  - "arroz e feij\xE3o.  "
+  corretas:
+  - "Na busca do conhecimento, n\xE3o se podem encontrar verdades indubit\xE1veis,
+    sem submeter as hip\xF3teses ao crivo da experimenta\xE7\xE3o e da observa\xE7\xE3o.
+    \_\_  "
+  - "peda\xE7o de carne em solu\xE7\xE3o com pH = 5.  "
+  - "amino\xE1cidos essenciais.  "
+  - 'I, II e IV, apenas.  '
+  - "pobres em c\xE1lcio, como frutas c\xEDtricas e arroz, e que raramente tomam sol.
+    \ "
+  - "Carboidratos nas plantas e prote\xEDnas nos animais.  "
+  - "formados por amino\xE1cidos unidos por liga\xE7\xF5es pept\xEDdicas.  "
+  - "Prote\xEDnas  "
+  - 'ter a mesma estrutura espacial do substrato da enzima.  '
+  - "A carne cont\xE9m grandes quantidades de ferro, cuja falta provoca anemia.  "
+  - "oxida\xE7\xE3o da subst\xE2ncia luciferina pela enzima luciferase, na presen\xE7a
+    de ATP e oxig\xEAnio.  "
+  - "o polissacar\xEDdeo celulose nas paredes celulares das c\xE9lulas.  "
+  - "A redu\xE7\xE3o da concentra\xE7\xE3o de NaCl no plasma sangu\xEDneo provoca
+    um aumento na produ\xE7\xE3o e elimina\xE7\xE3o de urina dilu\xEDda, causando
+    a diminui\xE7\xE3o do volume de sangue circulante e consequente diminui\xE7\xE3o
+    da press\xE3o arterial.  "
+  - "Leitura da sequ\xEAncia de DNA espec\xEDfica, produ\xE7\xE3o de RNAm heterog\xEAneo
+    no n\xFAcleo, sa\xEDda do RNAm do n\xFAcleo e s\xEDntese da cadeia polipept\xEDdica
+    no citoplasma.  "
+  - "arroz e feij\xE3o.  "
+--- !u!4 &991163399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991163397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.4200745, y: 2.1877277, z: -2.946301}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &995282416 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 8662944783876142323}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1006305452 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 8662944783876142323}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1342367111 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 8662944783876142323}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1374709300 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 8662944783876142323}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1526796313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1526796316}
+  - component: {fileID: 1526796315}
+  - component: {fileID: 1526796314}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1526796314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1526796315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1526796316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1546993057 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 8662944783876142323}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &8662944783876142323
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3862179376726558098, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Name
+      value: 'Canvas '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558095, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 8662944783515841581, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783515841581, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377221861615, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377221861615, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211411, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591045, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876365, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306450, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277869, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bd76ea60220019d428ebca0bada31b32, type: 3}

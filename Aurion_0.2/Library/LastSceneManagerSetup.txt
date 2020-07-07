@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/Aurion/Scenes/UserInterface.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0

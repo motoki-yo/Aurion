@@ -1,0 +1,1197 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
+    m_ExportTrainingData: 0
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!114 &42231680 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1844688579}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &238110398 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1844688579}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &265803744 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1844688579}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &519420028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519420032}
+  - component: {fileID: 519420031}
+  - component: {fileID: 519420029}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &519420029
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+--- !u!20 &519420031
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &519420032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &561323185 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1844688579}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &708665191 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1844688579}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &914481126 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1844688579}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &991163397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 991163399}
+  - component: {fileID: 991163398}
+  m_Layer: 0
+  m_Name: _GC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &991163398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991163397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ae26751a0ca3340a667d0eaf72af8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idTema: 2
+  pergunta: {fileID: 238110398}
+  respostaA: {fileID: 42231680}
+  respostaB: {fileID: 265803744}
+  respostaC: {fileID: 561323185}
+  respostaD: {fileID: 914481126}
+  respostaE: {fileID: 708665191}
+  infoResp: {fileID: 1130728665}
+  perguntas:
+  - "Protistas e bact\xE9rias s\xE3o seres vivos que podem ser classificados em diferentes
+    dom\xEDnios, pois:  "
+  - "Considere os seguintes componentes celulares: I. parede celular II. membrana
+    nuclear III. membrana plasm\xE1tica IV. DNA \xC9 correto afirmar que as c\xE9lulas
+    de  "
+  - "Considerando a c\xE9lula do intestino de uma vaca, a c\xE9lula do par\xEAnquima
+    foliar de uma \xE1rvore e uma bact\xE9ria, podemos afirmar que todas possuem  "
+  - "Considere uma dada esp\xE9cie de mam\xEDfero que apresenta 40 cromossomos (2n=40)
+    em suas c\xE9lulas som\xE1ticas. Em um indiv\xEDduo dessa esp\xE9cie, N\xC3O se
+    espera encontrar  "
+  - "Devido \xE0 sua composi\xE7\xE3o qu\xEDmica \u2013a membrana \xE9 formada por
+    lip\xEDdios e prote\xEDnas\u2013 ela \xE9 perme\xE1vel a muitas subst\xE2ncias
+    de natureza semelhante. Alguns \xEDons tamb\xE9m entram e saem da membrana com
+    facilidade, devido ao seu tamanho. ... No entanto, certas mol\xE9culas grandes
+    precisam de uma ajudinha extra para entrar na c\xE9lula. Essa ajudinha envolve
+    uma esp\xE9cie de porteiro, que examina o que est\xE1 fora e o ajuda a entrar.
+    (Solange Soares de Camargo, in Biologia, Ensino M\xE9dio. 2.\xAA s\xE9rie, volume
+    1, SEE/SP, 2009.) No texto, e na ordem em que aparecem, a autora se refere  "
+  - "Numa c\xE9lula animal, a sequ\xEAncia temporal da participa\xE7\xE3o das organelas
+    citoplasm\xE1ticas, desde a tomada do alimento at\xE9 a disponibiliza\xE7\xE3o
+    da energia, \xE9:  "
+  - "Os tr\xEAs componentes qu\xEDmicos encontrados nas membranas plasm\xE1ticas s\xE3o:
+    \ "
+  - "Em certa esp\xE9cie animal a propor\xE7\xE3o de nucleot\xEDdeos Timina na mol\xE9cula
+    de DNA \xE9 igual a t>0. Ent\xE3o, a propor\xE7\xE3o de nucleot\xEDdeos Citosina
+    nesse mesmo DNA \xE9 igual a  "
+  - "Assinale a alternativa correta a respeito da membrana lipoprot\xE9ica.  "
+  - "O movimento de mol\xE9culas de amino\xE1cidos para o interior das c\xE9lulas
+    faz-se, geralmente, por  "
+  - "Uma amostra de 2 \xD7 10\u20132 g de um determinado composto org\xE2nico \xE9
+    dissolvida em 300 mL de \xE1gua a 25\xB0C, resultando numa solu\xE7\xE3o de press\xE3o
+    osm\xF3tica 0,027 atm. O composto org\xE2nico em quest\xE3o \xE9 o(a):  Dados:
+    Massas molares (g/mol): H = 1; C = 12; N = 14; O = 16; F = 19.  "
+  - "O ret\xEDculo endoplasm\xE1tico e o complexo de Golgi s\xE3o organelas celulares
+    cujas fun\xE7\xF5es est\xE3o relacionadas. O complexo de Golgi  "
+  - "Os sapos passam por uma metamorfose completa. Os girinos apresentam cauda e br\xE2nquias
+    externas, mas n\xE3o t\xEAm pernas. Com o crescimento e desenvolvimento do girino,
+    as br\xE2nquias desaparecem, as pernas surgem e a cauda encolhe. Posteriormente,
+    a cauda desaparece por apoptose ou morte celular programada, regulada por genes,
+    resultando num sapo adulto jovem. A organela citoplasm\xE1tica envolvida diretamente
+    no desaparecimento da cauda \xE9 o  "
+  - "Segundo a teoria evolutiva mais aceita hoje, as mitoc\xF4ndrias, organelas celulares
+    respons\xE1veis pela produ\xE7\xE3o de ATP em c\xE9lulas eucariotas, assim como
+    os cloroplastos, teriam sido originados de procariontes ancestrais que foram incorporados
+    por c\xE9lulas mais complexas. Uma caracter\xEDstica da mitoc\xF4ndria que sustenta
+    essa teoria \xE9 a  "
+  - "Uma das altera\xE7\xF5es observadas em certas c\xE9lulas parasitadas por alguns
+    tipos de v\xEDrus \xE9 a desorganiza\xE7\xE3o dos filamentos de actina. Esse fen\xF4meno
+    pode trazer, como preju\xEDzo \xE0 c\xE9lula,  "
+  - "Vinblastina \xE9 um f\xE1rmaco quimioter\xE1pico padr\xE3o usado para tratar
+    c\xE2ncer. Devido ao fato de ela interferir no alinhamento dos microt\xFAbulos,
+    sua efetividade est\xE1 diretamente relacionada \xE0 inibi\xE7\xE3o da  "
+  - "C\xE9lulas de embri\xE3o de dros\xF3fila (2n=8), que estavam em divis\xE3o, foram
+    tratadas com uma subst\xE2ncia que inibe a forma\xE7\xE3o do fuso, impedindo que
+    a divis\xE3o celular prossiga. Ap\xF3s esse tratamento, quantos cromossomos e
+    quantas crom\xE1tides, respectivamente, cada c\xE9lula ter\xE1?  "
+  - "A v\xEDtima fatal, neste outro caso, foi um herb\xEDvoro selvagem, e o agressor,
+    uma planta nativa. Ao se alimentar de suas folhas, o animal envenenou-se com uma
+    toxina hidrossol\xFAvel que n\xE3o afeta a planta, mas mata o herb\xEDvoro. O
+    vegetal se autoprotege armazenando o veneno no interior de um compartimento celular,
+    o _________, o qual impede que o efeito t\xF3xico atinja as demais organelas e
+    os tecidos da planta.  "
+  - "As estruturas presentes em uma c\xE9lula vegetal, por\xE9m ausentes em uma bact\xE9ria,
+    s\xE3o:  "
+  - "Em um laborat\xF3rio, um pesquisador aqueceu um segmento de dupla fita de DNA
+    de modo que obteve duas fitas simples complementares. Ao sequenciar uma dessas
+    fitas, encontrou a rela\xE7\xE3o (A + G)/(T + C) = 0,5, ou seja, o n\xFAmero de
+    adeninas somado ao n\xFAmero de guaninas, quando dividido pelo n\xFAmero de timinas
+    somado ao n\xFAmero de citosinas, resultou em 0,5. Em fun\xE7\xE3o dessas informa\xE7\xF5es,
+    pode-se afirmar que o aquecimento foi necess\xE1rio para romper as __________________
+    e que a rela\xE7\xE3o (A + G)/(T + C) na fita complementar foi de _____. As lacunas
+    s\xE3o preenchidas correta e respectivamente por:  "
+  - "No processo de s\xEDntese de certa prote\xEDna, os RNA transportadores respons\xE1veis
+    pela adi\xE7\xE3o dos amino\xE1cidos serina, asparagina e glutamina a um segmento
+    da cadeia polipept\xEDdica tinham os antic\xF3dons UCA, UUA e GUC, respectivamente.
+    No gene que codifica essa prote\xEDna, a sequ\xEAncia de bases correspondente
+    a esses amino\xE1cidos \xE9  "
+  - "Um estudante relatou que o mapeamento do DNA da cevada foi quase todo conclu\xEDdo
+    e seu c\xF3digo gen\xE9tico desvendado. Chamou aten\xE7\xE3o para o n\xFAmero
+    de genes que comp\xF5em esse c\xF3digo gen\xE9tico e que a semente da cevada,
+    apesar de pequena, possui um genoma mais complexo que o humano, sendo boa parte
+    desse c\xF3digo constitu\xEDda de sequ\xEAncias repetidas. Nesse contexto, o conceito
+    de c\xF3digo gen\xE9tico est\xE1 abordado de forma equivocada. Cientificamente
+    esse conceito \xE9 definido como  "
+  - "Na gametog\xEAnese humana,  "
+  - "Um pesquisador analisou c\xE9lulas em divis\xE3o das g\xF4nadas e do trato digest\xF3rio
+    de um macho de uma nova esp\xE9cie de mosca. A partir de suas observa\xE7\xF5es,
+    fez as seguintes anota\xE7\xF5es: Nas c\xE9lulas do tecido I, em uma das fases
+    da divis\xE3o celular, veem-se 8 cromossomos, cada um deles com uma \xFAnica crom\xE1tide,
+    4 deles migrando para um dos polos da c\xE9lula e os outros 4 migrando para o
+    polo oposto. Nas c\xE9lulas do tecido II, em uma das fases da divis\xE3o celular,
+    veem-se 4 cromossomos, cada um deles com duas crom\xE1tides, 2 deles migrando
+    para um dos polos da c\xE9lula e os outros 2 migrando para o polo oposto. Pode-se
+    afirmar que as c\xE9lulas do tecido I e as c\xE9lulas do tecido II s\xE3o, respectivamente,
+    \ "
+  - "Em uma c\xE9lula em met\xE1fase II, \xE9 poss\xEDvel observar  "
+  alternativaA:
+  - "protistas se alimentam de bact\xE9rias. "
+  - "fungos e protozo\xE1rios possuem II e IV.  "
+  - "DNA e membrana plasm\xE1tica, por\xE9m s\xF3 as c\xE9lulas do intestino e do
+    par\xEAnquima foliar possuem ribossomos.  "
+  - "40 fios de cromatina no n\xFAcleo de c\xE9lulas que estejam no per\xEDodo G1
+    da int\xE9rfase.  "
+  - "ao modelo mosaico-flu\xEDdo da membrana plasm\xE1tica, \xE0 difus\xE3o e ao transporte
+    ativo.  "
+  - "lisossomos - mitoc\xF4ndrias - plastos.  "
+  - "prote\xEDnas, lip\xEDdios e \xE1cidos nucleicos  "
+  - '1-t  '
+  - "Em bact\xE9rias, apresenta uma organiza\xE7\xE3o diferente da encontrada em c\xE9lulas
+    eucariotas.  "
+  - 'osmose.  '
+  - "\xE1cido etanoico (\xE1cido ac\xE9tico).  "
+  - "recebe prote\xEDnas sintetizadas no ret\xEDculo endoplasm\xE1tico.  "
+  - 'ribossomo.  '
+  - "capacidade de produzir mol\xE9culas de ATP.  "
+  - "a incapacidade de locomo\xE7\xE3o por pseud\xF3podes.  "
+  - "forma\xE7\xE3o do fuso mit\xF3tico.  "
+  - '4 e 4.  '
+  - "vac\xFAolo  "
+  - "cloroplastos, lisossomos, n\xFAcleo e membrana plasm\xE1tica.  "
+  - "pontes de hidrog\xEAnio e 0,5.  "
+  - 'U C A U U A G U C.  '
+  - "trincas de nucleot\xEDdeos que codificam os amino\xE1cidos.  "
+  - "espermat\xF3citos e ov\xF3citos secund\xE1rios, formados no final da primeira
+    divis\xE3o mei\xF3tica, t\xEAm quantidade de DNA igual \xE0 de espermatog\xF4nias
+    e ovog\xF4nias, respectivamente.  "
+  - "da g\xF4nada e do trato digest\xF3rio. Essa nova esp\xE9cie de mosca tem 2n =
+    2.  "
+  - "cromossomos hom\xF3logos.  "
+  alternativaB:
+  - "bact\xE9rias n\xE3o s\xE3o constitu\xEDdas de c\xE9lulas.  "
+  - "bact\xE9rias e animais possuem I e II.  "
+  - "DNA, ribossomos e mitoc\xF4ndrias, por\xE9m s\xF3 a c\xE9lula do par\xEAnquima
+    foliar possui parede celular.  "
+  - "40 fios de cromatina duplicados no n\xFAcleo de c\xE9lulas que estejam no per\xEDodo
+    G2 da int\xE9rfase.  "
+  - "ao modelo mosaico-flu\xEDdo da membrana plasm\xE1tica, \xE0 osmose e ao transporte
+    passivo.  "
+  - "plastos - peroxissomos - mitoc\xF4ndrias.  "
+  - "prote\xEDnas, lip\xEDdios e carboidratos.  "
+  - 't/2  '
+  - "Existe apenas como envolt\xF3rio externo das c\xE9lulas.  "
+  - "simples difus\xE3o.  "
+  - '1,2-etanodiol (etileno glicol).  '
+  - "envia prote\xEDnas nele sintetizadas para o ret\xEDculo endoplasm\xE1tico.  "
+  - 'lisossomo.  '
+  - "presen\xE7a de parede celular semelhante \xE0 de procariontes.  "
+  - "a diminui\xE7\xE3o da capacidade de s\xEDntese proteica.  "
+  - "fosforila\xE7\xE3o de prote\xEDnas regulat\xF3rias.  "
+  - '4 e 8.  '
+  - "centr\xEDolo  "
+  - "vac\xFAolos, cromossomos, lisossomos e ribossomos.  "
+  - "pontes de hidrog\xEAnio e 1,0.  "
+  - 'A G T A A T C A G.  '
+  - "localiza\xE7\xE3o de todos os genes encontrados em um genoma.  "
+  - "esperm\xE1tides haploides, formadas ao final da segunda divis\xE3o mei\xF3tica,
+    sofrem divis\xE3o mit\xF3tica no processo de amadurecimento para originar espermatozoides.
+    \ "
+  - "da g\xF4nada e do trato digest\xF3rio. Essa nova esp\xE9cie de mosca tem 2n =
+    4.  "
+  - 'quiasmas.  '
+  alternativaC:
+  - "protistas t\xEAm um n\xFAcleo envolto por membranas, do qual as c\xE9lulas bacterianas
+    carecem.  "
+  - "bact\xE9rias e protozo\xE1rios possuem II e IV.  "
+  - "DNA, membrana plasm\xE1tica e ribossomos, por\xE9m s\xF3 a bact\xE9ria e a c\xE9lula
+    do par\xEAnquima foliar possuem parede celular.  "
+  - "40 cromossomos duplicados e condensados em c\xE9lulas que estejam na met\xE1fase
+    da mitose.  "
+  - "\xE0 permeabilidade seletiva da membrana plasm\xE1tica, ao transporte ativo e
+    ao transporte passivo.  "
+  - "complexo golgiense - lisossomos - mitoc\xF4ndrias.  "
+  - "lip\xEDdios, carboidratos e \xE1cidos nucleicos.  "
+  - '1 - t/2  '
+  - "\xC9 formada por uma camada dupla de glicoprote\xEDnas, com v\xE1rias mol\xE9culas
+    de lip\xEDdios encrustadas.  "
+  - "difus\xE3o facilitada.  "
+  - "etanol (\xE1lcool et\xEDlico).  "
+  - "recebe polissacar\xEDdeos sintetizados no ret\xEDculo endoplasm\xE1tico.  "
+  - 'peroxissomo.  '
+  - "presen\xE7a de membranas envolvendo e separando a matriz mitocondrial do citoplasma.
+    \ "
+  - "o aumento excessivo da taxa de respira\xE7\xE3o celular.  "
+  - "respira\xE7\xE3o celular.  "
+  - '8 e 8.  '
+  - 'lisossomo  '
+  - "complexo golgiense, membrana plasm\xE1tica, mitoc\xF4ndrias e n\xFAcleo.  "
+  - "pontes de hidrog\xEAnio e 2,0. "
+  - 'A G U A A U C A G.  '
+  - "codifica\xE7\xE3o de sequ\xEAncias repetidas presentes em um genoma. "
+  - "espermatog\xF4nias e ovog\xF4nias dividem-se por mitose e originam, respectivamente,
+    espermat\xF3citos e ov\xF3citos prim\xE1rios, que entram em divis\xE3o mei\xF3tica,
+    a partir da puberdade.  "
+  - "do trato digest\xF3rio e da g\xF4nada. Essa nova esp\xE9cie de mosca tem 2n =
+    8.  "
+  - "crom\xE1tides irm\xE3s.  "
+  alternativaD:
+  - "bact\xE9rias decomp\xF5em protistas.  "
+  - 'animais e fungos possuem I e III.  '
+  - "membrana plasm\xE1tica e ribossomos, por\xE9m s\xF3 a bact\xE9ria possui parede
+    celular.  "
+  - "20 fios de cromatina no n\xFAcleo de cada c\xE9lula resultante de uma divis\xE3o
+    mit\xF3tica.  "
+  - "aos poros da membrana plasm\xE1tica, \xE0 osmose e \xE0 difus\xE3o facilitada.
+    \ "
+  - "mitoc\xF4ndrias - lisossomos - complexo golgiense.  "
+  - "prote\xEDnas, carboidratos e \xE1cidos nucleicos.  "
+  - '1/2 - t  '
+  - "\xC9 r\xEDgida, garantindo a estabilidade da c\xE9lula.  "
+  - 'transporte ativo.  '
+  - 'metanodiamida (ureia).  '
+  - "envia polissacar\xEDdeos nele sintetizados para o ret\xEDculo endoplasm\xE1tico.
+    \ "
+  - 'complexo golgiense.  '
+  - "capacidade de autoduplica\xE7\xE3o dada por DNA circular pr\xF3prio semelhante
+    ao bacteriano.  "
+  - "altera\xE7\xF5es na duplica\xE7\xE3o do DNA.  "
+  - "s\xEDntese de DNA.  "
+  - '8 e 16.  '
+  - 'fagossomo  '
+  - "cloroplastos, mitoc\xF4ndrias, n\xFAcleo e ret\xEDculo endoplasm\xE1tico.  "
+  - "liga\xE7\xF5es fosfodi\xE9ster e 1,0.  "
+  - 'T C A T T A G T C  '
+  - 'conjunto de todos os RNAs mensageiros transcritos em um organismo.  '
+  - "ovog\xF4nias dividem-se por mitose e originam ov\xF3citos prim\xE1rios, que entram
+    em meiose, logo ap\xF3s o nascimento.  "
+  - "do trato digest\xF3rio e da g\xF4nada. Essa nova esp\xE9cie de mosca tem 2n =
+    2.  "
+  - 'carioteca.  '
+  alternativaE:
+  - "protistas s\xE3o fotossint\xE9ticos.  "
+  - "bact\xE9rias e fungos possuem II e IV. "
+  - "membrana plasm\xE1tica e ribossomos, por\xE9m s\xF3 a c\xE9lula do intestino
+    possui mitoc\xF4ndrias.  "
+  - "20 cromossomos duplicados e condensados em c\xE9lulas que estejam na met\xE1fase
+    da segunda divis\xE3o da meiose.  "
+  - "aos poros da membrana plasm\xE1tica, \xE0 difus\xE3o e \xE0 permeabilidade seletiva
+    da membrana.  "
+  - "lisossomos - complexo golgiense - mitoc\xF4ndrias.  "
+  - "prote\xEDnas, lip\xEDdios, carboidratos e \xE1cidos nucleicos. "
+  - "t \u2013 1 "
+  - "Est\xE1 envolvida em processos como a fagocitose e a pinocitose.  "
+  - 'fagocitose.  '
+  - 'tri-fluor-carbono.  '
+  - "recebe monossacar\xEDdeos sintetizados no ret\xEDculo endoplasm\xE1tico e para
+    ele envia polissacar\xEDdeos.  "
+  - "ret\xEDculo endoplasm\xE1tico.  "
+  - "presen\xE7a de um sistema enzim\xE1tico eficiente \xE0s rea\xE7\xF5es qu\xEDmicas
+    do metabolismo aer\xF3bio.  "
+  - "a incapacidade de produ\xE7\xE3o de lip\xEDdios.  "
+  - "produ\xE7\xE3o de protease.  "
+  - '16 e 16.  '
+  - 'peroxissomo  '
+  - "cloroplastos, complexo golgiense, mitoc\xF4ndrias e ribossomos. "
+  - "liga\xE7\xF5es fosfodi\xE9ster e 2,0.  "
+  - 'T G T T T T C T G.  '
+  - "todas as sequ\xEAncias de pares de bases presentes em um organismo.  "
+  - "espermat\xF3citos e ov\xF3citos prim\xE1rios originam o mesmo n\xFAmero de gametas,
+    no final da segunda divis\xE3o mei\xF3tica.  "
+  - "do trato digest\xF3rio e da g\xF4nada. Essa nova esp\xE9cie de mosca tem 2n =
+    4.  "
+  - "t\xE9trades.  "
+  corretas:
+  - "protistas t\xEAm um n\xFAcleo envolto por membranas, do qual as c\xE9lulas bacterianas
+    carecem.  "
+  - "fungos e protozo\xE1rios possuem II e IV.  "
+  - "DNA, membrana plasm\xE1tica e ribossomos, por\xE9m s\xF3 a bact\xE9ria e a c\xE9lula
+    do par\xEAnquima foliar possuem parede celular.  "
+  - "20 fios de cromatina no n\xFAcleo de cada c\xE9lula resultante de uma divis\xE3o
+    mit\xF3tica.  "
+  - "ao modelo mosaico-flu\xEDdo da membrana plasm\xE1tica, \xE0 difus\xE3o e ao transporte
+    ativo.  "
+  - "complexo golgiense - lisossomos - mitoc\xF4ndrias.  "
+  - "prote\xEDnas, lip\xEDdios e carboidratos.  "
+  - '1/2 - t  '
+  - "Est\xE1 envolvida em processos como a fagocitose e a pinocitose.  "
+  - "difus\xE3o facilitada.  "
+  - 'tri-fluor-carbono.  '
+  - "recebe prote\xEDnas sintetizadas no ret\xEDculo endoplasm\xE1tico.  "
+  - 'lisossomo.  '
+  - "capacidade de autoduplica\xE7\xE3o dada por DNA circular pr\xF3prio semelhante
+    ao bacteriano.  "
+  - "a incapacidade de locomo\xE7\xE3o por pseud\xF3podes.  "
+  - "forma\xE7\xE3o do fuso mit\xF3tico.  "
+  - '8 e 16.  '
+  - "vac\xFAolo  "
+  - "cloroplastos, mitoc\xF4ndrias, n\xFAcleo e ret\xEDculo endoplasm\xE1tico.  "
+  - "pontes de hidrog\xEAnio e 2,0. "
+  - 'T C A T T A G T C  '
+  - "trincas de nucleot\xEDdeos que codificam os amino\xE1cidos.  "
+  - "espermat\xF3citos e ov\xF3citos secund\xE1rios, formados no final da primeira
+    divis\xE3o mei\xF3tica, t\xEAm quantidade de DNA igual \xE0 de espermatog\xF4nias
+    e ovog\xF4nias, respectivamente.  "
+  - "do trato digest\xF3rio e da g\xF4nada. Essa nova esp\xE9cie de mosca tem 2n =
+    4.  "
+  - "crom\xE1tides irm\xE3s.  "
+--- !u!4 &991163399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991163397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.4200745, y: 2.1877277, z: -2.946301}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1130728665 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1844688579}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1526796313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1526796316}
+  - component: {fileID: 1526796315}
+  - component: {fileID: 1526796314}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1526796314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1526796315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1526796316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1844688579
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3862179376726558098, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas  2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558095, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.materialCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377221861615, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377221861615, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211411, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179376480211411, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591045, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377784591045, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876365, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377867876365, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306450, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377535306450, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277869, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377378277869, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bd76ea60220019d428ebca0bada31b32, type: 3}

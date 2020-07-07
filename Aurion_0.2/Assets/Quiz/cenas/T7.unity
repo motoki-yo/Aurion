@@ -1,0 +1,1214 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
+    m_ExportTrainingData: 0
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1001 &435780926
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3862179376726558098, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas  2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558095, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.materialCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377221861615, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377221861615, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211411, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179376480211411, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591045, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377784591045, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876365, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377867876365, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306450, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377535306450, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277869, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377378277869, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bd76ea60220019d428ebca0bada31b32, type: 3}
+--- !u!114 &435780927 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 435780926}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &435780928 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 435780926}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &435780929 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 435780926}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &435780930 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 435780926}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &435780931 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 435780926}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &435780932 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 435780926}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &435780933 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 435780926}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &519420028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519420032}
+  - component: {fileID: 519420031}
+  - component: {fileID: 519420029}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &519420029
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+--- !u!20 &519420031
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &519420032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &991163397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 991163399}
+  - component: {fileID: 991163398}
+  m_Layer: 0
+  m_Name: _GC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &991163398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991163397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ae26751a0ca3340a667d0eaf72af8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idTema: 7
+  pergunta: {fileID: 435780933}
+  respostaA: {fileID: 435780932}
+  respostaB: {fileID: 435780931}
+  respostaC: {fileID: 435780930}
+  respostaD: {fileID: 435780929}
+  respostaE: {fileID: 435780927}
+  infoResp: {fileID: 435780928}
+  perguntas:
+  - "\"Em uma \xE1rea de transi\xE7\xE3o entre a mata atl\xE2ntica e o cerrado, s\xE3o
+    encontrados o pau-d'arco ('Tabebuia serratifolia'), a caixeta ('Tabebuia cassinoides')
+    e alguns ip\xEAs ('Tabebuia aurea', 'Tabebuia alba', 'Cybistax antisyphillitica').
+    O cip\xF3-de-s\xE3o-jo\xE3o ('Pyrostegia venusta') \xE9 tamb\xE9m frequente naquela
+    regi\xE3o\". Considerando os crit\xE9rios da classifica\xE7\xE3o biol\xF3gica,
+    no texto s\xE3o citados  "
+  - "O palmito-ju\xE7ara e o a\xE7a\xED t\xEAm como nomes cient\xEDficos Euterpe edulis
+    e Euterpe oleracea, respectivamente. Pode-se dizer que ambos apresentam os mesmos
+    n\xEDveis taxon\xF4micos, EXCETO:  "
+  - "A Giardia lamblia \xE9 um parasita do intestino humano e pode causar um tipo
+    de disenteria. Esse parasita \xE9 transmitido pela ingest\xE3o de alimentos mal
+    lavados e de \xE1gua contaminada por cistos. Assinale a alternativa que identifica
+    corretamente o tipo de organismo e o reino ao qual pertence.  "
+  - "Suponha que uma doen\xE7a desconhecida esteja dizimando um rebanho bovino de
+    uma cidade e alguns veterin\xE1rios tenham conseguido isolar o agente causador
+    da doen\xE7a, verificando que se trata de um ser unicelular e procarionte. Para
+    combater a doen\xE7a, os veterin\xE1rios devem administrar, nos bovinos contaminados,
+    \ "
+  - "Um grupo de pessoas deu entrada em um Hospital, ap\xF3s ingerirem um bolo de
+    anivers\xE1rio comprado em estabelecimento comercial. O diagn\xF3stico foi intoxica\xE7\xE3o
+    por uma bact\xE9ria do g\xEAnero 'Salmonella'. Marque a alternativa que indica
+    a descri\xE7\xE3o correta de uma bact\xE9ria.  "
+  - "Considerando os grandes grupos de organismos vivos no planeta \u2013 bact\xE9rias,
+    protoctistas, fungos, animais e plantas \u2013, em quantos deles existem seres
+    clorofilados e fotossintetizantes?  "
+  - "Polvo, mexilh\xE3o, lesma e lula s\xE3o animais pertencentes:  "
+  - "O HPV faz parte do grupo dos caudov\xEDrus. As verrugas genitais causadas pela
+    infec\xE7\xE3o do v\xEDrus foram estudadas desde a Antiguidade, por\xE9m o v\xEDrus
+    s\xF3 foi descoberto 40 anos atr\xE1s. Pode-se afirmar corretamente que:  "
+  - "No ano de 2009, registrou-se um surto global de gripe causada por um variante
+    do v\xEDrus Influenza A, designada H1N1 A Organiza\xE7\xE3o Mundial de Sa\xFAde
+    (OMS) solicitou que os pa\xEDses intensificassem seus programas de preven\xE7\xE3o
+    para que n\xE3o houvesse uma propaga\xE7\xE3o da doen\xE7a. Uma das a\xE7\xF5es
+    mais importantes recomendadas pela OMS era a higieniza\xE7\xE3o adequada das m\xE3os,
+    especialmente ap\xF3s tossir e espirrar. A a\xE7\xE3o recomendada pela OMS tinha
+    como objetivo  "
+  - "Em 2008, a Secretaria Estadual de Sa\xFAde e pesquisadores da Funda\xE7\xE3o
+    Oswaldo Cruz, ambas do Rio de Janeiro, confirmaram um caso de dengue adquirida
+    durante a gesta\xE7\xE3o. A m\xE3e, que havia adquirido dengue tr\xEAs dias antes
+    do parto, deu \xE0 luz uma garotinha com a mesma doen\xE7a. O beb\xEA ficou internado
+    quase um m\xEAs, e depois recebeu alta. Pode-se afirmar corretamente que esse
+    caso  "
+  - "A febre chikungunya \xE9 uma doen\xE7a viral transmitida aos seres humanos por
+    mosquitos, como o Aedes aegypti e A. albopictus, os mesmos que transmitem a dengue.
+    Em raz\xE3o da alta incid\xEAncia desses mosquitos no pa\xEDs, os pesquisadores
+    estimaram o risco de transmiss\xE3o do v\xEDrus chikungunya por outras regi\xF5es
+    do Brasil. Para isso, submeteram dados sobre a presen\xE7a das duas esp\xE9cies
+    de mosquitos transmissores da doen\xE7a a modelos matem\xE1ticos capazes de predizer
+    poss\xEDveis padr\xF5es geogr\xE1ficos de dissemina\xE7\xE3o do v\xEDrus. O v\xEDrus
+    chikungunya (CHIKV) possui genoma de RNA positivo de fita simples, pertencente
+    ao g\xEAnero Alphavirus da fam\xEDlia Togaviridae. As caracter\xEDsticas do agente
+    etiol\xF3gico e da doen\xE7a permitem inferir que:  "
+  - "Os bacteri\xF3fagos s\xE3o constitu\xEDdos por uma mol\xE9cula de DNA envolta
+    em uma c\xE1psula de prote\xEDna. Existem diversas esp\xE9cies que diferem entre
+    si quanto ao DNA e \xE0s prote\xEDnas constituintes da c\xE1psula. Os cientistas
+    conseguem construir part\xEDculas virais ativas com DNA de uma esp\xE9cie e c\xE1psula
+    de outra. Em um experimento, foi produzido um v\xEDrus contendo DNA do bacteri\xF3fago
+    T2 e c\xE1psula do bacteri\xF3fago T4. Pode-se prever que a descend\xEAncia desse
+    v\xEDrus ter\xE1:  "
+  - "Durante as esta\xE7\xF5es chuvosas, aumentam no Brasil as campanhas de preven\xE7\xE3o
+    \xE0 dengue, que t\xEAm como objetivo a redu\xE7\xE3o da prolifera\xE7\xE3o do
+    mosquito Aedes aegypti, transmissor do v\xEDrus da dengue. Que proposta preventiva
+    poderia ser efetivada para diminuir a reprodu\xE7\xE3o desse mosquito?  "
+  - "Existem v\xEDrus que  "
+  - "Nos por\xF5es dos navios vindos do Oriente no s\xE9culo XIV, chegavam milhares
+    de ratos \xE0 Europa, onde encontravam um ambiente favor\xE1vel, dadas as condi\xE7\xF5es
+    prec\xE1rias de higiene. Esses ratos estavam contaminados e suas pulgas transmitiam
+    um agente etiol\xF3gico aos homens atrav\xE9s da picada. Os ratos tamb\xE9m morriam
+    da doen\xE7a e, quando isto acontecia, as pulgas passavam rapidamente para os
+    humanos, para obterem seu alimento, o sangue. Qual \xE9 o agente etiol\xF3gico
+    e qual \xE9 o nome popular dessa doen\xE7a?  "
+  - "Os medicamentos s\xE3o rotieiramente utilizados pelo ser humano com o intuito
+    de diminuir ou, por muitas vezes, curar poss\xEDveis transtornos de sa\xFAde.
+    Os antibi\xF3ticos s\xE3o grupos de f\xE1rmacos inseridos no tratamento de doen\xE7as
+    causadas por bact\xE9rias. Na terap\xEAutica das doen\xE7as mencionadas, alguns
+    desses f\xE1rmacos atuam  "
+  - "Algumas esp\xE9cies do g\xEAnero Penicillium desempenham um papel importante
+    na obten\xE7\xE3o de antibi\xF3ticos, utilizados no preparo de medicamentos importantes
+    para o combate de certas doen\xE7as. O Penicillium \xE9:  "
+  - "Em determinada regi\xE3o do nosso pa\xEDs, o sistema de sa\xFAde verificou um
+    crescente n\xFAmero de mortes por problemas card\xEDacos, sobretudo em pessoas
+    na faixa et\xE1ria de 40 a 50 anos. Tais mortes n\xE3o estavam relacionadas a
+    hist\xF3ricos de sobrepeso ou hipertens\xE3o. Investigado o problema, verificou-se
+    que h\xE1 d\xE9cadas a popula\xE7\xE3o n\xE3o contava com condi\xE7\xF5es adequadas
+    de moradia. Muitas das casas eram de pau a pique e estavam infestadas de insetos.
+    Segundo os sanitaristas, as mortes deviam-se a uma parasitose end\xEAmica na regi\xE3o.
+    Pode-se afirmar que, mais provavelmente, a parasitose em quest\xE3o \xE9 causada
+    por organismos da esp\xE9cie:  "
+  - "A doen\xE7a de Chagas afeta mais de oito milh\xF5es de brasileiros, sendo comum
+    em \xE1reas rurais. \xC9 uma doen\xE7a causada pelo protozo\xE1rio Trypanosoma
+    cruzi e transmitida por insetos conhecidos como barbeiros ou chupan\xE7as. Uma
+    a\xE7\xE3o do homem sobre o meio ambiente que tem contribu\xEDdo para o aumento
+    dessa doen\xE7a \xE9  "
+  - "Frequentemente, os fungos s\xE3o estudados juntamente com as plantas, na \xE1rea
+    da Bot\xE2nica. Em termos biol\xF3gicos, \xE9 correto afirmar que essa aproxima\xE7\xE3o:
+    \ "
+  - "Cientistas conclu\xEDram que houve um aquecimento global nos \xFAltimos 100 anos.
+    Atualmente, eles reconhecem que o homem \xE9 o respons\xE1vel pela altera\xE7\xE3o
+    do clima global (efeito estufa). O relat\xF3rio emitido por eles adverte que o
+    efeito estufa vai provocar secas e enchentes maiores e um aumento de casos de
+    doen\xE7as tropicais transmitidas por insetos. Dentre essas doen\xE7as est\xE3o
+    \ "
+  - "A prolifera\xE7\xE3o de meios adequados \xE0 reprodu\xE7\xE3o de mosquitos vetores
+    aumenta as chances de nossa popula\xE7\xE3o contrair doen\xE7as como:  "
+  - "No grupo dos fungos, s\xE3o conhecidas perto de 100 mil esp\xE9cies. Esse grupo
+    t\xE3o diverso inclui esp\xE9cies que  "
+  - "Os fungos constituem um grupo de organismos com caracter\xEDsticas que lembram
+    um vegetal, mas com outras que lembram um animal. Foram, no passado, considerados
+    como vegetais e, atualmente, s\xE3o colocados em um reino pr\xF3prio, o Reino
+    Fungi. A respeito deles \xE9 correto afirmar que s\xE3o seres  "
+  - "A presen\xE7a de liquens em uma regi\xE3o \xE9 um testemunho da boa qualidade
+    do ar. Sua aus\xEAncia pode indicar que o ar est\xE1 polu\xEDdo. Eles s\xE3o sens\xEDveis
+    aos poluentes, porque n\xE3o s\xE3o capazes de excretar as subst\xE2ncias t\xF3xicas
+    absorvidas. A respeito dos liquens, \xE9 correto afirmar que s\xE3o formados por
+    dois tipos de indiv\xEDduos:  "
+  alternativaA:
+  - "3 g\xEAneros e 3 esp\xE9cies.  "
+  - "G\xEAnero.  "
+  - "Bact\xE9ria \u2013 Monera  "
+  - 'vacinas.  '
+  - "Um organismo macrosc\xF3pico, unicelular, eucarionte.  "
+  - 'um.  '
+  - "\xE0 mesma ordem.  "
+  - "A principal forma de se adquirir o HPV \xE9 atrav\xE9s da ingest\xE3o de alimentos
+    contaminados  "
+  - "reduzir a reprodu\xE7\xE3o viral.  "
+  - "contradiz a hip\xF3tese de que a crian\xE7a em gesta\xE7\xE3o receba, por meio
+    da barreira placent\xE1ria, anticorpos produzidos pelo organismo materno.  "
+  - "o risco de transmiss\xE3o \xE9 maior, uma vez que o agente etiol\xF3gico \xE9
+    espec\xEDfico a um \xFAnico vetor.  "
+  - "c\xE1psula de T4 e DNA de T2.  "
+  - "Coloca\xE7\xE3o de telas nas portas e janelas, pois o mosquito necessita de ambientes
+    cobertos e fechados para a sua reprodu\xE7\xE3o.  "
+  - "se reproduzem independentemente de c\xE9lulas.  "
+  - "V\xEDrus, peste bub\xF4nica.  "
+  - "ativando o sistema imunol\xF3gico do hospedeiro.  "
+  - 'fungo.  '
+  - 'Plasmodium vivax.  '
+  - "o consumo de carnes de animais silvestres que s\xE3o hospedeiros do vetor da
+    doen\xE7a.  "
+  - "n\xE3o se justifica, pois a organiza\xE7\xE3o dos tecidos nos fungos assemelha-se
+    muito mais \xE0 dos animais que \xE0 das plantas.  "
+  - "Chagas, mal\xE1ria e leptospirose.  "
+  - 'febre amarela e esquistossomose.  '
+  - "s\xE3o sapr\xF3bias, fundamentais na ciclagem dos nutrientes, pois sintetizam
+    a\xE7\xFAcares a partir do di\xF3xido de carbono do ar.  "
+  - "procariontes, uni ou pluricelulares, sempre aut\xF3trofos.  "
+  - "aut\xF3trofos.  "
+  alternativaB:
+  - "3 g\xEAneros e 4 esp\xE9cies.  "
+  - "Fam\xEDlia.  "
+  - "Bact\xE9ria \u2013 Protista  "
+  - 'antivirais.  '
+  - "Um organismo microsc\xF3pico, unicelular, procarionte.  "
+  - 'dois.  '
+  - "ao mesmo filo, por\xE9m a classes diferentes.  "
+  - "O c\xE2ncer de colo de \xFAtero n\xE3o pode ser causado pelo v\xEDrus HPV.  "
+  - "impedir a penetra\xE7\xE3o do v\xEDrus pela pele.  "
+  - "contradiz a hip\xF3tese de que a dengue \xE9 uma doen\xE7a viral, uma vez que
+    pode ser transmitida entre gera\xE7\xF5es sem que haja a participa\xE7\xE3o do
+    Aedes aegypti.  "
+  - 'o genoma viral apresenta pareamento de bases nitrogenadas.  '
+  - "c\xE1psula de T2 e DNA de T4.  "
+  - "Substitui\xE7\xE3o das casas de barro por casas de alvenaria, haja vista que
+    o mosquito se reproduz na parede das casas de barro.  "
+  - "t\xEAm genoma constitu\xEDdo de DNA e RNA.  "
+  - "Bact\xE9ria, peste bub\xF4nica.  "
+  - "interferindo na cascata bioqu\xEDmica da inflama\xE7\xE3o.  "
+  - 'alga.  '
+  - 'Trypanosoma cruzi.  '
+  - "a utiliza\xE7\xE3o de adubos qu\xEDmicos na agricultura que aceleram o ciclo
+    reprodutivo do barbeiro.  "
+  - "se justifica, pois as c\xE9lulas dos fungos t\xEAm o mesmo tipo de revestimento
+    que as c\xE9lulas vegetais.  "
+  - "esquistossomose, dengue e var\xEDola.  "
+  - 'febre amarela e mal de Chagas.  '
+  - "s\xE3o parasitas, procariontes heterotr\xF3ficos que absorvem compostos org\xE2nicos
+    produzidos pelos organismos hospedeiros.  "
+  - "procariontes, uni ou pluricelulares, aut\xF3trofos e heter\xF3trofos.  "
+  - "heter\xF3trofos.  "
+  alternativaC:
+  - "3 g\xEAneros e 6 esp\xE9cies.  "
+  - 'Ordem.  '
+  - "Protozo\xE1rio \u2013 Monera  "
+  - 'fungicidas.  '
+  - "Um organismo microsc\xF3pico, unicelular, eucarionte.  "
+  - "tr\xEAs.  "
+  - 'a filos diferentes.  '
+  - "O v\xEDrus HPV pode permanecer latente por v\xE1rios anos.  "
+  - "reduzir o processo de autoinfec\xE7\xE3o viral.  "
+  - "confirma que a dengue \xE9 uma doen\xE7a infectocontagiosa, que s\xF3 pode ser
+    transmitida de pessoa para pessoa atrav\xE9s de um vetor.  "
+  - "o RNA do virion \xE9 de mesmo sentido que o RNA mensageiro e, portanto, funciona
+    como RNA mensageiro, sendo totalmente ou parcialmente traduzido em prote\xEDnas
+    na primeira etapa da replica\xE7\xE3o viral.  "
+  - "c\xE1psula e DNA, ambos de T2.  "
+  - "Remo\xE7\xE3o dos recipientes que possam acumular \xE1gua, porque as larvas do
+    mosquito se desenvolvem nesse meio.  "
+  - 'sintetizam DNA a partir de RNA.  '
+  - "V\xEDrus, leptospirose.  "
+  - "removendo as toxinas sintetizadas pelas bact\xE9rias.  "
+  - "v\xEDrus.  "
+  - 'Triatoma infestans.  '
+  - "a aus\xEAncia de saneamento b\xE1sico que favorece a prolifera\xE7\xE3o do protozo\xE1rio
+    em regi\xF5es habitadas por humanos.  "
+  - "n\xE3o se justifica, pois a forma de obten\xE7\xE3o e armazenamento de energia
+    nos fungos \xE9 diferente da encontrada nas plantas.  "
+  - 'leptospirose, Chagas e dengue.  '
+  - 'dengue e esquistossomose.  '
+  - "s\xE3o comest\xEDveis, pertencentes a um grupo de fungos primitivos que n\xE3o
+    formam corpos de frutifica\xE7\xE3o.  "
+  - "eucariontes, uni ou pluricelulares, sempre heter\xF3trofos.  "
+  - "um aut\xF3trofo e outro heter\xF3trofo.  "
+  alternativaD:
+  - "4 g\xEAneros e 4 esp\xE9cies.  "
+  - "Divis\xE3o.  "
+  - "Protozo\xE1rio \u2013 Protista  "
+  - "verm\xEDfugos.  "
+  - "Um organismo macrosc\xF3pico, pluricelular, procarionte.  "
+  - 'quatro.  '
+  - "ao mesmo g\xEAnero.  "
+  - "N\xE3o h\xE1 tratamento nem vacina para o HPV.  "
+  - "reduzir a transmiss\xE3o do v\xEDrus no ambiente.  "
+  - "demonstra a possibilidade da transmiss\xE3o vertical, de pessoa para pessoa,
+    atrav\xE9s do contato da pessoa sadia com secre\xE7\xF5es da pessoa doente.  "
+  - "a utiliza\xE7\xE3o de modelos matem\xE1ticos capazes de predizer poss\xEDveis
+    padr\xF5es geogr\xE1ficos de dissemina\xE7\xE3o do v\xEDrus ser\xE1 \xFAtil na
+    imuniza\xE7\xE3o passiva de pessoas n\xE3o afetadas pela febre chikungunya.  "
+  - "c\xE1psula e DNA, ambos de T4.  "
+  - "Higieniza\xE7\xE3o adequada de alimentos, visto que as larvas do mosquito se
+    desenvolvem nesse tipo de substrato.  "
+  - "realizam respira\xE7\xE3o aer\xF3bica no interior da c\xE1psula proteica.  "
+  - "Bact\xE9ria, leptospirose.  "
+  - "combatendo as c\xE9lulas hospedeiras das bact\xE9rias.  "
+  - "bact\xE9ria.  "
+  - 'Taenia solium.  '
+  - "a polui\xE7\xE3o dos rios e lagos com pesticidas que exterminam o predador das
+    larvas do inseto transmissor da doen\xE7a.  "
+  - 'se justifica, pois os fungos possuem as mesmas organelas celulares que as plantas.  '
+  - "mal\xE1ria, esquistossomose e leptospirose.  "
+  - 'dengue e mal de Chagas.  '
+  - "formam, com as ra\xEDzes de plantas, associa\xE7\xF5es chamadas micorrizas, mutuamente
+    ben\xE9ficas, pela troca de nutrientes.  "
+  - "eucariontes, pluricelulares, aut\xF3trofos e heter\xF3trofos.  "
+  - 'procariontes.  '
+  alternativaE:
+  - "4 g\xEAneros e 6 esp\xE9cies.  "
+  - "Esp\xE9cie.  "
+  - "V\xEDrus \u2013 Protista  "
+  - "antibi\xF3ticos.  "
+  - "Um organismo microsc\xF3pico, unicelular, heterot\xE9rmico.  "
+  - 'cinco.  '
+  - "\xE0 mesma classe.  "
+  - "A principal forma de se adquirir o HPV \xE9 atrav\xE9s da picada de um inseto
+    espec\xEDfico. "
+  - "impedir a sele\xE7\xE3o natural de v\xEDrus resistentes.  "
+  - "demonstra a possibilidade de o v\xEDrus da dengue atravessar a barreira placent\xE1ria,
+    sem que seja necess\xE1ria a presen\xE7a de um vetor para sua transmiss\xE3o.
+    \ "
+  - "Aedes aegypti e Aedes albopictus s\xE3o esp\xE9cies pertencentes ao mesmo g\xEAnero,
+    mas de fam\xEDlias diferentes.  "
+  - "mistura de c\xE1psulas e DNA de T2 e de T4.  "
+  - "Coloca\xE7\xE3o de filtros de \xE1gua nas casas, visto que a reprodu\xE7\xE3o
+    do mosquito acontece em \xE1guas contaminadas.  "
+  - "possuem citoplasma, que n\xE3o cont\xE9m organelas.  "
+  - "Protozo\xE1rio, leptospirose.  "
+  - "danificando estruturas espec\xEDficas das c\xE9lulas bacterianas.  "
+  - "protozo\xE1rio.  "
+  - 'Schistosoma mansoni.  '
+  - "o desmatamento que provoca a migra\xE7\xE3o ou o desaparecimento dos animais
+    silvestres dos quais o barbeiro se alimenta.  "
+  - "se justifica, pois os fungos e as algas verdes t\xEAm o mesmo mecanismo de reprodu\xE7\xE3o.
+    \ "
+  - "mal\xE1ria, dengue e febre amarela.  "
+  - "dengue e mal\xE1ria.  "
+  - "realizam respira\xE7\xE3o, na presen\xE7a de oxig\xEAnio, e fotoss\xEDntese,
+    na aus\xEAncia desse g\xE1s, sendo, portanto, anaer\xF3bias facultativas.  "
+  - "eucariontes, pluricelulares, sempre aut\xF3trofos.  "
+  - 'decompositores.  '
+  corretas:
+  - "3 g\xEAneros e 6 esp\xE9cies.  "
+  - "Esp\xE9cie.  "
+  - "Protozo\xE1rio \u2013 Protista  "
+  - "antibi\xF3ticos.  "
+  - "Um organismo microsc\xF3pico, unicelular, procarionte.  "
+  - "tr\xEAs.  "
+  - "ao mesmo filo, por\xE9m a classes diferentes.  "
+  - "O v\xEDrus HPV pode permanecer latente por v\xE1rios anos.  "
+  - "reduzir a transmiss\xE3o do v\xEDrus no ambiente.  "
+  - "demonstra a possibilidade de o v\xEDrus da dengue atravessar a barreira placent\xE1ria,
+    sem que seja necess\xE1ria a presen\xE7a de um vetor para sua transmiss\xE3o.
+    \ "
+  - "o RNA do virion \xE9 de mesmo sentido que o RNA mensageiro e, portanto, funciona
+    como RNA mensageiro, sendo totalmente ou parcialmente traduzido em prote\xEDnas
+    na primeira etapa da replica\xE7\xE3o viral.  "
+  - "c\xE1psula e DNA, ambos de T2.  "
+  - "Remo\xE7\xE3o dos recipientes que possam acumular \xE1gua, porque as larvas do
+    mosquito se desenvolvem nesse meio.  "
+  - 'sintetizam DNA a partir de RNA.  '
+  - "Bact\xE9ria, peste bub\xF4nica.  "
+  - "danificando estruturas espec\xEDficas das c\xE9lulas bacterianas.  "
+  - 'fungo.  '
+  - 'Trypanosoma cruzi.  '
+  - "o desmatamento que provoca a migra\xE7\xE3o ou o desaparecimento dos animais
+    silvestres dos quais o barbeiro se alimenta.  "
+  - "n\xE3o se justifica, pois a forma de obten\xE7\xE3o e armazenamento de energia
+    nos fungos \xE9 diferente da encontrada nas plantas.  "
+  - "mal\xE1ria, dengue e febre amarela.  "
+  - "dengue e mal\xE1ria.  "
+  - "formam, com as ra\xEDzes de plantas, associa\xE7\xF5es chamadas micorrizas, mutuamente
+    ben\xE9ficas, pela troca de nutrientes.  "
+  - "eucariontes, uni ou pluricelulares, sempre heter\xF3trofos.  "
+  - "um aut\xF3trofo e outro heter\xF3trofo.  "
+--- !u!4 &991163399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991163397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.4200745, y: 2.1877277, z: -2.946301}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1526796313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1526796316}
+  - component: {fileID: 1526796315}
+  - component: {fileID: 1526796314}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1526796314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1526796315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1526796316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

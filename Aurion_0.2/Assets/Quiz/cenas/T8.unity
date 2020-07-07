@@ -1,0 +1,1331 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
+    m_ExportTrainingData: 0
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &519420028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519420032}
+  - component: {fileID: 519420031}
+  - component: {fileID: 519420029}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &519420029
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+--- !u!20 &519420031
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &519420032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &991163397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 991163399}
+  - component: {fileID: 991163398}
+  m_Layer: 0
+  m_Name: _GC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &991163398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991163397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ae26751a0ca3340a667d0eaf72af8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idTema: 8
+  pergunta: {fileID: 1673385074}
+  respostaA: {fileID: 1673385073}
+  respostaB: {fileID: 1673385072}
+  respostaC: {fileID: 1673385071}
+  respostaD: {fileID: 1673385070}
+  respostaE: {fileID: 1673385068}
+  infoResp: {fileID: 1673385069}
+  perguntas:
+  - "A caracter\xEDstica abaixo que n\xE3o condiz com os por\xEDferos \xE9:  "
+  - "Quanto \xE0s caracter\xEDsticas anat\xF4micas dos espongi\xE1rios, \xE9 correto
+    afirmar que:  "
+  - "Invertebrados s\xE9sseis, sem \xF3rg\xE3os, sem tecidos, e com digest\xE3o exclusivamente
+    intracelular s\xE3o classificados como  "
+  - "Os corais funcionam como term\xF4metros, capazes de indicar, mudando de colora\xE7\xE3o,
+    pequenas altera\xE7\xF5es na temperatura da \xE1gua dos oceanos. Mas, um alerta,
+    eles est\xE3o ficando brancos. O seu clareamento progressivo acontece pela perda
+    de min\xFAsculas algas, chamadas zooxantelas, que vivem dentro de seus tecidos,
+    numa rela\xE7\xE3o de mutualismo. Dispon\xEDvel em: http://super.abril.com.br.
+    Acesso em: 6 dez 2012 (adaptado). O desequil\xEDbrio dessa rela\xE7\xE3o faz com
+    que os p\xF3lipos que formam os corais tenham dificuldade em  "
+  - "Os primeiros animais a apresentar um sistema nervoso, embora do tipo difuso,
+    visto que s\xF3 raramente h\xE1 neles concentra\xE7\xE3o de c\xE9lulas nervosas,
+    foram os:  "
+  - "A Grande Barreira de Recifes se estende por mais de 2 000 km ao longo da costa
+    nordeste da Austr\xE1lia e \xE9 considerada uma das maiores estruturas constru\xEDdas
+    por seres vivos. Quais s\xE3o esses organismos e como eles formam esses recifes?
+    \ "
+  - "A respeito dos platelmintos \xE9 INCORRETO afirmar que:  "
+  - "Uma pessoa vegetariana estrita e que nunca teve contato com \xE1gua onde vivem
+    caramujos foi diagnosticada como portadora de larvas de t\xEAnia encistadas em
+    seu c\xE9rebro. Isso \xE9  "
+  - "Em v\xE1rios c\xF3rregos existentes na periferia de uma cidade, foram encontradas
+    larvas denominadas mirac\xEDdios. Essas larvas dariam segmento ao ciclo de vida
+    do verme ___(1)___ se pudessem se instalar no corpo de um ___(2)___. No trecho
+    acima, as lacunas 1 e 2 devem ser preenchidas corretamente e respectivamente por
+    \ "
+  - "Uma crian\xE7a foi internada em um hospital com convuls\xF5es e problemas neurol\xF3gicos.
+    Ap\xF3s v\xE1rios exames, foi diagnosticada cisticercose cerebral. A m\xE3e da
+    crian\xE7a iniciou, ent\xE3o, um processo contra o a\xE7ougue do qual comprava
+    carne todos os dias, alegando que este lhe forneceu carne contaminada com o verme
+    causador da cisticercose. A acusa\xE7\xE3o contra o a\xE7ougue  "
+  - "O grupo dos platelmintos \xE9 caracterizado pelo aparecimento, pela primeira
+    vez na escala zool\xF3gica, da simetria bilateral. Com base nesse fato, assinale
+    a alternativa que apresenta as caracter\xEDsticas que, durante a evolu\xE7\xE3o
+    destes animais, surgiram associadas ao aparecimento da simetria bilateral.  "
+  - "As verminoses representam um grande problema de sa\xFAde, principalmente nos
+    pa\xEDses subdesenvolvidos. A falta de redes de \xE1gua e de esgoto, de campanhas
+    de esclarecimento p\xFAblico, de higiene pessoal e de programas de combate aos
+    transmissores, leva ao aparecimento de milhares de novos casos na popula\xE7\xE3o
+    brasileira. Dentre as verminoses humanas causadas por nem\xE1todos, citam-se,
+    corretamente:  "
+  - "Uma pessoa que vive na zona rural, foi ao posto m\xE9dico da cidade. O m\xE9dico
+    observou que este paciente se encontrava descal\xE7o e mal vestido, apresentava
+    magreza, palidez e seu intestino estava repleto de vermes. Dado esse contexto,
+    identifique os vermes intestinais respons\xE1veis pelo estado desse rapaz e identifique
+    o que ele deve fazer para n\xE3o adquiri-los:  "
+  - "Um animal que s\xF3 possui musculatura longitudinal e que usa a press\xE3o hidrost\xE1tica
+    do l\xEDquido pseudocelom\xE1tico como antagonista da musculatura pode ser uma
+    \ "
+  - "Na escala evolutiva dos animais, a primeira ocorr\xEAncia de um sistema digestivo
+    completo (com boca e \xE2nus) d\xE1-se nos  "
+  - "Indique a alternativa que lista somente doen\xE7as que t\xEAm artr\xF3podes como
+    transmissores ou hospedeiros intermedi\xE1rios do agente causador:  "
+  - "Uma pessoa tem alergia a moluscos. Em um restaurante onde s\xE3o servidos \"frutos
+    do mar\", ela pode comer, sem problemas, pratos que contenham  "
+  - "A respeito dos moluscos, \xE9 correto afirmar que:  "
+  - "Os invertebrados que possuem olhos estruturalmente semelhantes aos dos vertebrados
+    s\xE3o os  "
+  - "Um bi\xF3logo coletou exemplares de uma esp\xE9cie animal desconhecida, os quais
+    foram criados em laborat\xF3rio e analisados quanto a diversas caracter\xEDsticas.
+    Concluiu que se tratava de representantes do filo Annelida, pois eram animais:
+    \ "
+  - "Os anel\xEDdeos t\xEAm em comum:  "
+  - "Um determinado animal adulto \xE9 desprovido de cr\xE2nio e ap\xEAndices articulares.
+    Apresenta corpo alongado e cil\xEDndrico. Esse animal pode pertencer ao grupo
+    dos  "
+  - "A respeito das minhocas, \xE9 correto afirmar que:  "
+  - "O esqueleto dos equinodermos \xE9 um:  "
+  - "Se o blast\xF3poro de uma g\xE1strula originar o \xE2nus do futuro animal, este
+    poder\xE1 ser  "
+  - "Anel\xEDdeos e artr\xF3podos t\xEAm em comum:  "
+  - "Tatuzinhos-de-jardim, escorpi\xF5es, siris, centopeias e borboletas s\xE3o todos
+    artr\xF3podes. Compartilham, portanto, as seguintes caracter\xEDsticas: "
+  - "Uma produtora de cinema, entusiasmada com o sucesso das hist\xF3rias do \u201CHomem
+    Aranha\u201D, resolveu lan\xE7ar o filme \u201CA Liga dos Arachnida\u201D. Nesta
+    nova trama, o Homem Aranha tem tr\xEAs outros super-her\xF3is da sua mesma classe
+    para ajud\xE1-lo a combater o crime. Seus parceiros s\xE3o os Homens  "
+  - "Atendendo \xE0 demanda da ONU, que prop\xF5e o combate ao vetor da zika, dengue
+    e chikungunya, mosquitos machos ser\xE3o criados em laborat\xF3rio e expostos
+    a raios X e raios gama. Os\_ procedimentos de irradia\xE7\xE3o ser\xE3o realizados
+    em equipamentos de raios X e em irradiadores que t\xEAm como fonte de raios gama
+    o is\xF3topo cobalto-60, tamb\xE9m sob diferentes condi\xE7\xF5es quanto \xE0
+    taxa e dose de radia\xE7\xE3o absorvida. Depois de irradiados, esses mosquitos
+    ser\xE3o soltos no ambiente. A t\xE9cnica proposta pela ONU \xE9 mais uma forma
+    de combater as doen\xE7as transmitidas peloAedes aegypti porque "
+  - "Entre as adapta\xE7\xF5es dos tetr\xE1podes \xE0 vida terrestre, est\xE3o:  "
+  - "Os anf\xEDbios representam o primeiro grupo de vertebrados que, evolutivamente,
+    conquistou o ambiente terrestre. Apesar disso, a sobreviv\xEAncia do grupo ainda
+    permanece restrita a ambientes \xFAmidos ou aqu\xE1ticos, devido \xE0 manuten\xE7\xE3o
+    de algumas caracter\xEDsticas fisiol\xF3gicas relacionadas \xE0 \xE1gua. Uma das
+    caracter\xEDsticas a que o texto se refere \xE9 a  "
+  - "Segundo especialistas, mais da metade das esp\xE9cies de anf\xEDbios do mundo
+    est\xE1 amea\xE7ada de extin\xE7\xE3o. As principais amea\xE7as s\xE3o a destrui\xE7\xE3o
+    dos habitats, a polui\xE7\xE3o e o aquecimento global. Entre as principais caracter\xEDsticas
+    que tornam os anf\xEDbios particularmente sens\xEDveis a altera\xE7\xF5es ambientais
+    provocadas pelo ser humano, podemos citar:  "
+  - "Levantamentos faun\xEDsticos da serapilheira (material rec\xE9m-ca\xEDdo no solo,
+    constitu\xEDdo principalmente de folhas, cascas, galhos, flores, frutos e sementes)
+    de florestas tropicais revelam a presen\xE7a de uma grande variedade de esp\xE9cies
+    nessa camada superficial do solo. Considerando-se os diferentes filos animais,
+    espera-se encontrar na serapilheira representantes de  "
+  - "Ambientes dulc\xEDcolas e marinhos possuem condi\xE7\xF5es f\xEDsico-qu\xEDmicas
+    distintas que influenciaram a sele\xE7\xE3o natural para dar origem, respectivamente,
+    aos peixes de \xE1gua doce e aos peixes de \xE1gua salgada, os quais possuem adapta\xE7\xF5es
+    fisiol\xF3gicas para sobreviverem no ambiente em que surgiram. Considerando a
+    regula\xE7\xE3o da concentra\xE7\xE3o hidrossalina para a manuten\xE7\xE3o do
+    metabolismo desses peixes, pode-se afirmar que os peixes de \xE1gua doce eliminam
+    _________ quantidade de urina ________ em compara\xE7\xE3o com os peixes marinhos,
+    que eliminam _________ quantidade de urina __________. Assinale a alternativa
+    que preenche, correta e respectivamente, as lacunas do enunciado.  "
+  - "No desenvolvimento dos cordados, tr\xEAs caracteres gerais salientam-se, distinguindo-os
+    de outros animais. Assinale a alternativa que inclui estes tr\xEAs caracteres:
+    \ "
+  - "Durante o desenvolvimento embrion\xE1rio dentro do ovo, o embri\xE3o da galinha
+    excreta apenas am\xF4nia nos primeiros dias de incuba\xE7\xE3o. Ele passa a excretar
+    mais ureia por volta do 6\xBA ao 9\xBA dia e, depois do 10\xBA dia, elimina predominantemente
+    \xE1cido \xFArico. Essas modifica\xE7\xF5es bioqu\xEDmicas acontecem porque a
+    disponibilidade de \xE1gua para o embri\xE3o  "
+  - "Na metamorfose dos anf\xEDbios, entre outras transforma\xE7\xF5es, ocorrem modifica\xE7\xF5es
+    no aparelho circulat\xF3rio para permitir a respira\xE7\xE3o pulmonar e cut\xE2nea.
+    Nos girinos, o cora\xE7\xE3o tem um \xE1trio e um ventr\xEDculo e por ele passa
+    somente sangue n\xE3o oxigenado. Nos adultos, o cora\xE7\xE3o apresenta  "
+  - "A embriologia comparada dos diferentes grupos de vertebrados apresenta uma evid\xEAncia
+    evolutiva de que esses grupos possuem um ancestral em comum. Assinale a alternativa
+    que apresenta o fato em que se baseia essa evid\xEAncia.  "
+  - "Em 1861 foi anunciada a exist\xEAncia de um f\xF3ssil denominado Arqueopterix,
+    que revolucionou o debate acerca da evolu\xE7\xE3o dos animais. Tratava-se de
+    um dinossauro que possu\xEDa penas em seu corpo. A partir dessa descoberta, a
+    \xE1rvore filogen\xE9tica dos animais acabou sofrendo transforma\xE7\xF5es quanto
+    ao ancestral direto das aves. Nessa nova \xE1rvore filogen\xE9tica, de qual grupo
+    as aves se originaram?  "
+  - "Considerando os filos da escala evolutiva zool\xF3gica, pode-se afirmar que __________
+    e __________ s\xE3o simultaneamente celomados, protost\xF4mios e segmentados.
+    \ "
+  alternativaA:
+  - "respira\xE7\xE3o e excre\xE7\xE3o por difus\xE3o direta.  "
+  - "as esponjas de estrutura asconoide s\xE3o as mais complexas e n\xE3o apresentam
+    coan\xF3citos na cavidade atrial.  "
+  - 'esponjas.  '
+  - "produzir o pr\xF3prio alimento.  "
+  - "espongi\xE1rios.  "
+  - "Esponjas, \xE0 custa de secre\xE7\xF5es calc\xE1rias.  "
+  - "h\xE1 representantes que possuem tanto reprodu\xE7\xE3o assexuada como sexuada.
+    \ "
+  - "poss\xEDvel, pois se pode adquirir esse parasita pela ingest\xE3o de seus ovos
+    e, nesse caso, as larvas originam cisticercos no c\xE9rebro.  "
+  - '''Ancylostoma duodenale'' e molusco.  '
+  - "n\xE3o tem fundamento, pois a cisticercose \xE9 transmitida pela ingest\xE3o
+    de ovos de t\xEAnia eliminados nas fezes dos hospedeiros.  "
+  - "Aparecimento do \xE2nus e de c\xE9lulas-flama.  "
+  - "ten\xEDase, ascarid\xEDase e anciIostomose.  "
+  - "Lombrigas; e andar sempre cal\xE7ado.  "
+  - 'minhoca.  '
+  - 'platelmintos.  '
+  - "amarel\xE3o, doen\xE7a de Chagas, esquistossomose e ten\xEDase.  "
+  - "lula e camar\xE3o.  "
+  - "s\xE3o de simetria bilateral, celomados e n\xE3o-segmentados.  "
+  - 'insetos.  '
+  - "dibl\xE1sticos, celomados, segmentados e de simetria radial.  "
+  - 'o habitat.  '
+  - "r\xE9pteis ou nematelmintos.  "
+  - "s\xE3o pseudocelomadas.  "
+  - "endoesqueleto ectod\xE9rmico quitinoso.  "
+  - "um ouri\xE7o-do-mar.  "
+  - "excre\xE7\xE3o por t\xFAbulos de Malpighi.  "
+  - "simetria bilateral, respira\xE7\xE3o traqueal e excre\xE7\xE3o por t\xFAbulos
+    de malpighi.  "
+  - "\xC1caro, Carrapato e Opili\xE3o.  "
+  - "a radia\xE7\xE3o nuclear causa muta\xE7\xF5es no genoma dos insetos machos que
+    s\xE3o transmitidas aos descendentes, tornando-os incapazes de transmitirem os
+    v\xEDrus aos humanos.  "
+  - "a presen\xE7a de br\xE2nquias e pernas e a excre\xE7\xE3o de am\xF4nia.  "
+  - "a reprodu\xE7\xE3o por viviparidade.  "
+  - "respira\xE7\xE3o pulmonar, ovo com casca e pequena diversidade de esp\xE9cies.
+    \ "
+  - 'Chordata, Arthropoda, Cnidaria.  '
+  - "grande, dilu\xEDda, pequena, concentrada.  "
+  - "notocorda, tr\xEAs folhetos germinativos, tubo nervoso dorsal;  "
+  - "\xE9 maior no in\xEDcio do per\xEDodo de incuba\xE7\xE3o.  "
+  - "1 \xE1trio e 1 ventr\xEDculo, com circula\xE7\xE3o simples.  "
+  - "Os embri\xF5es pertencentes a um mesmo grupo de vertebrados apresentam grandes
+    diferen\xE7as morfol\xF3gicas nas etapas iniciais do seu desenvolvimento.  "
+  - "Peixes \xF3sseos.  "
+  - "caracol-de-jardim \u2013 lombriga  "
+  alternativaB:
+  - "obten\xE7\xE3o de alimentos a partir das part\xEDculas trazidas pela \xE1gua
+    que penetra atrav\xE9s dos \xF3stios.  "
+  - "o esqueleto dos espongi\xE1rios \xE9 formado por microt\xFAbulos silicosos sempre
+    localizados no \xE1trio.  "
+  - "an\xEAmonas-do-mar.  "
+  - 'obter compostos nitrogenados.  '
+  - "nemat\xF3dios.  "
+  - "Celenterados, \xE0 custa de esp\xEDculas calc\xE1rias e silicosas do seu corpo.
+    \ "
+  - "h\xE1 representantes tanto de vida livre como parasitas.  "
+  - "poss\xEDvel, pois as larvas infectantes desse parasita desenvolvem-se no solo
+    e penetram ativamente atrav\xE9s da pele.  "
+  - "'Taenia saginata' e mam\xEDfero.  "
+  - "n\xE3o tem fundamento, pois a cisticercose n\xE3o \xE9 transmitida pelo consumo
+    de carne, mas, sim, pela picada de mosquitos vetores.  "
+  - "Aparecimento da boca e maior dimens\xE3o do corpo.  "
+  - "filariose, anciIostomose e ascarid\xEDase.  "
+  - "Ancil\xF3stomo; e vestir-se bem.  "
+  - 'lombriga.  '
+  - 'nematelmintos.  '
+  - "dengue, esquistossomose, febre amarela e mal\xE1ria.  "
+  - 'polvo e caranguejo.  '
+  - "s\xE3o encontrados, unicamente, no ambiente marinho.  "
+  - "aracn\xEDdeos.  "
+  - "tribl\xE1sticos, celomados, n\xE3o-segmentados e de simetria bilateral.  "
+  - 'as ventosas.  '
+  - "platelmintos ou anel\xEDdeos.  "
+  - "t\xEAm sistema circulat\xF3rio fechado.  "
+  - "endoesqueleto mesod\xE9rmico calc\xE1reo.  "
+  - 'um gafanhoto.  '
+  - "respira\xE7\xE3o traqueal.  "
+  - "simetria bilateral, esqueleto corporal externo e ap\xEAndices articulados.  "
+  - "\xC1caro, Centopeia e Barbeiro.  "
+  - "os mosquitos irradiados contaminam as f\xEAmeas durante a c\xF3pula com a mesma
+    radia\xE7\xE3o a que foram submetidos, desta forma as f\xEAmeas ocorrem, impedindo
+    a transmiss\xE3o dos v\xEDrus aos humanos.  "
+  - "a presen\xE7a de fendas far\xEDngeas, notocorda e cauda p\xF3s-anal musculosa.
+    \ "
+  - "respira\xE7\xE3o pulmonar nos adultos.  "
+  - "respira\xE7\xE3o cut\xE2nea, pele perme\xE1vel, presen\xE7a de larvas aqu\xE1ticas
+    e adultos terrestres.  "
+  - 'Echinodermata, Anellida, Mollusca.  '
+  - "grande, concentrada, grande, dilu\xEDda.  "
+  - "corpo segmentado, tubo digest\xF3rio completo, tubo nervoso dorsal;  "
+  - "\xE9 menor no in\xEDcio do per\xEDodo de incuba\xE7\xE3o.  "
+  - "1 \xE1trio e 1 ventr\xEDculo, com circula\xE7\xE3o dupla.  "
+  - "Os embri\xF5es pertencentes a um mesmo grupo de vertebrados apresentam grandes
+    diferen\xE7as morfol\xF3gicas nas etapas finais do seu desenvolvimento.  "
+  - "R\xE9pteis.  "
+  - "sanguessuga \u2013 mosca  "
+  alternativaC:
+  - "h\xE1bitat aqu\xE1tico, vivendo presos ao fundo.  "
+  - "abaixo dos pinac\xF3citos se encontra uma matriz prot\xE9ica gelatinosa contendo
+    material esquel\xE9tico e ameb\xF3citos.  "
+  - "l\xEDrios-do-mar.  "
+  - "realizar a reprodu\xE7\xE3o sexuada.  "
+  - "crust\xE1ceos.  "
+  - "P\xF3lipos de cnid\xE1rios, \xE0 custa de secre\xE7\xF5es calc\xE1rias.  "
+  - "s\xE3o todos tribl\xE1sticos acelomados.  "
+  - "poss\xEDvel, pois esse parasita \xE9 transmitido por insetos portadores de larvas
+    infectantes.  "
+  - '''Schistosoma mansoni'' e molusco.  '
+  - "n\xE3o tem fundamento, pois a cisticercose \xE9 contra\xEDda quando a crian\xE7a
+    nada em lagoas onde vivem caramujos hospedeiros do verme.  "
+  - "Aparecimento da cefaliza\xE7\xE3o e movimenta\xE7\xE3o direcional do corpo.  "
+  - "esquistossomose, ascarid\xEDase e anciIostomose.  "
+  - 'Lombrigas; e lavar bem as verduras.  '
+  - "plan\xE1ria.  "
+  - "anel\xEDdeos.  "
+  - "amarel\xE3o, doen\xE7a de Chagas, filariose e mal\xE1ria.  "
+  - "mexilh\xE3o e lagosta.  "
+  - "todos apresentam sistema circulat\xF3rio aberto.  "
+  - "crust\xE1ceos.  "
+  - "tribl\xE1sticos, acelomados, segmentados e de simetria bilateral.  "
+  - "a segmenta\xE7\xE3o.  "
+  - 'moluscos ou platelmintos.  '
+  - "s\xE3o de sexos separados.  "
+  - "exoesqueleto endod\xE9rmico calc\xE1reo.  "
+  - 'uma minhoca.  '
+  - "corpo organizado em met\xE2meros ou segmentos.  "
+  - "presen\xE7a de cefalot\xF3rax, sistema digest\xF3rio incompleto e circula\xE7\xE3o
+    aberta.  "
+  - "Carrapato, Barbeiro e Escorpi\xE3o.  "
+  - "os mosquitos machos tornam-se radioativos e, durante o cruzamento, esta radia\xE7\xE3o
+    inativa os v\xEDrus presentes na f\xEAmea que, mesmo transmitidos aos humanos,
+    n\xE3o causam doen\xE7as.  "
+  - "a presen\xE7a de pulm\xF5es e a excre\xE7\xE3o de \xE1cido \xFArico.  "
+  - "regula\xE7\xE3o t\xE9rmica por endotermia. "
+  - "pele imperme\xE1vel, respira\xE7\xE3o cut\xE2nea, presen\xE7a de larvas aqu\xE1ticas
+    e adultos terrestres.  "
+  - 'Chordata, Arthropoda, Mollusca.  '
+  - "grande, concentrada, pequena, dilu\xEDda. "
+  - 'simetria bilateral, corpo segmentado;  '
+  - "\xE9 a mesma durante todo o per\xEDodo de incuba\xE7\xE3o.  "
+  - "2 \xE1trios e 1 ventr\xEDculo, com circula\xE7\xE3o simples.  "
+  - "Os embri\xF5es pertencentes a diferentes grupos de vertebrados apresentam grandes
+    diferen\xE7as morfol\xF3gicas nas etapas iniciais do seu desenvolvimento.  "
+  - "Mam\xEDferos.  "
+  - "t\xEAnia \u2013 esponja-do-mar  "
+  alternativaD:
+  - "c\xE9lulas organizadas em tecidos bem definidos.  "
+  - "os espongi\xE1rios do tipo leuconoide s\xE3o os \xFAnicos que n\xE3o apresentam
+    poros na superf\xEDcie do corpo.  "
+  - 'cracas.  '
+  - "absorver o oxig\xEAnio dissolvido na \xE1gua.  "
+  - 'insetos.  '
+  - "Por\xEDferos, \xE0 custa de material calc\xE1rio do terreno.  "
+  - "possuem sistema respirat\xF3rio e circulat\xF3rio.  "
+  - "pouco prov\xE1vel, pois s\xF3 se adquire esse parasita pela ingest\xE3o de carne
+    contendo larvas encistadas (cisticercos).  "
+  - "'Necator americanus' e mam\xEDfero.  "
+  - "tem fundamento, pois a cisticercose \xE9 transmitida pelo consumo de carne contaminada
+    por larvas encistadas, os cisticercos.  "
+  - 'Aparecimento da mesoderme e da cavidade gastrovascular.  '
+  - 'esquistossomose, filariose e oxiurose.  '
+  - "T\xEAnias; e comer carne bem cozida.  "
+  - "an\xEAmona.  "
+  - 'moluscos.  '
+  - "dengue, febre amarela, filariose e mal\xE1ria.  "
+  - 'lula e polvo.  '
+  - "a maioria \xE9 hermafrodita (monoicos).  "
+  - "gastr\xF3podos.  "
+  - "dibl\xE1sticos, celomados, segmentados e de simetria bilateral.  "
+  - "os parap\xF3dios.  "
+  - "anel\xEDdeos ou nematelmintos.  "
+  - "t\xEAm digest\xE3o intracelular.  "
+  - "exoesqueleto ectod\xE9rmico quitinoso.  "
+  - 'um coral.  '
+  - "sistema circulat\xF3rio fechado.  "
+  - "corpo n\xE3o segmentado, ap\xEAndices articulados e respira\xE7\xE3o traqueal.
+    \ "
+  - 'Carrapato, Centopeia e Lacraia.  '
+  - "os mosquitos irradiados sofrem uma muta\xE7\xE3o gen\xE9tica que causa m\xE1
+    forma\xE7\xE3o do aparelho bucal usado para picar e sugar o sangue humano, impedindo
+    a transmiss\xE3o dos v\xEDrus aos humanos.  "
+  - "a presen\xE7a de pulm\xF5es e a excre\xE7\xE3o de am\xF4nia.  "
+  - "cobertura corporal delgada e altamente perme\xE1vel.  "
+  - "depend\xEAncia de ambientes \xFAmidos, pele imperme\xE1vel e ovo com casca.  "
+  - 'Echinodermata, Anellida, Cnidaria.  '
+  - "pequena, concentrada, grande, dilu\xEDda.  "
+  - "simetria bilateral, tr\xEAs folhetos germinativos, notocorda;  "
+  - "ocorre s\xF3 no in\xEDcio do per\xEDodo de incuba\xE7\xE3o.  "
+  - "2 \xE1trios e 1 ventr\xEDculo, com circula\xE7\xE3o dupla.  "
+  - "Os embri\xF5es pertencentes a diferentes grupos de vertebrados apresentam grandes
+    semelhan\xE7as morfol\xF3gicas nas etapas finais do seu desenvolvimento.  "
+  - 'Peixes cartilaginosos.  '
+  - "estrela-do-mar \u2013 cavalo  "
+  alternativaE:
+  - "alta capacidade de regenera\xE7\xE3o.  "
+  - "o sistema nervoso dos espongi\xE1rios \xE9 pouco desenvolvido, mas j\xE1 apresenta
+    neur\xF4nios de v\xE1rios tipos.  "
+  - "mexilh\xF5es.  "
+  - "adquirir nutrientes derivados da fotoss\xEDntese.  "
+  - 'celenterados. '
+  - "Cnid\xE1rios, \xE0 custa de material calc\xE1rio do solo, como a gipsita.  "
+  - "h\xE1 representantes hermafroditas e de sexos separados.  "
+  - "pouco prov\xE1vel, pois as larvas infectantes desse parasita desenvolvem-se em
+    caramujos aqu\xE1ticos.  "
+  - '''Ascaris lumbricoides'' e molusco.  '
+  - "tem fundamento, pois a cisticercose \xE9 transmitida pelo consumo dos ovos da
+    t\xEAnia, os cisticercos, que ficam alojados na carne do animal hospedeiro.  "
+  - "Aparecimento de digest\xE3o intracelular e melhor captura de presas.  "
+  - "ten\xEDase, filariose e esquistossomose.  "
+  - "Ancil\xF3stomo; e andar sempre calcado.  "
+  - 'estrela-do-mar.  '
+  - 'equinodermos.  '
+  - "dengue, febre amarela, filariose e ten\xEDase.  "
+  - "camar\xE3o e lagosta.  "
+  - "t\xEAm excre\xE7\xE3o por t\xFAbulos de Malpighi.  "
+  - "cefal\xF3podos.  "
+  - "tribl\xE1sticos, celomados, segmentados e de simetria bilateral.  "
+  - 'as cerdas.  '
+  - "anel\xEDdeos ou artr\xF3podes.  "
+  - "t\xEAm desenvolvimento indireto.  "
+  - "exoesqueleto mesod\xE9rmico quitinoso.  "
+  - 'uma esponja.  '
+  - 'sistema digestivo incompleto.  '
+  - "corpo n\xE3o segmentado, esqueleto corporal externo e excre\xE7\xE3o por t\xFAbulos
+    de malpighi.  "
+  - "Opili\xE3o, Lacraia e Escorpi\xE3o.  "
+  - "os mosquitos irradiados tornam-se est\xE9reis e, ap\xF3s a c\xF3pula com f\xEAmeas
+    no ambiente, os ovos n\xE3o se desenvolvem, reduzindo assim a popula\xE7\xE3o
+    destes insetos e a transmiss\xE3o das doen\xE7as.  "
+  - "a presen\xE7a de v\xE9rtebras, pulm\xF5es e epit\xE9lio imperme\xE1vel.  "
+  - "locomo\xE7\xE3o por membros anteriores e posteriores desenvolvidos.  "
+  - "respira\xE7\xE3o cut\xE2nea, pele perme\xE1vel e ovo com casca.  "
+  - 'Chordata, Anellida, Mollusca.  '
+  - "pequena, dilu\xEDda, grande, concentrada.  "
+  - 'tubo nervoso dorsal, notocorda, fendas branquiais na faringe.  '
+  - "ocorre s\xF3 no final do per\xEDodo de incuba\xE7\xE3o.  "
+  - "2 \xE1trios e 2 ventr\xEDculos, com circula\xE7\xE3o dupla.  "
+  - "Os embri\xF5es pertencentes a diferentes grupos de vertebrados apresentam grandes
+    semelhan\xE7as morfol\xF3gicas nas etapas iniciais do seu desenvolvimento.  "
+  - "Anf\xEDbios.  "
+  - "caracol-de-jardim \u2013 mosca  "
+  corretas:
+  - "c\xE9lulas organizadas em tecidos bem definidos.  "
+  - "abaixo dos pinac\xF3citos se encontra uma matriz prot\xE9ica gelatinosa contendo
+    material esquel\xE9tico e ameb\xF3citos.  "
+  - 'esponjas.  '
+  - "adquirir nutrientes derivados da fotoss\xEDntese.  "
+  - 'celenterados. '
+  - "P\xF3lipos de cnid\xE1rios, \xE0 custa de secre\xE7\xF5es calc\xE1rias.  "
+  - "possuem sistema respirat\xF3rio e circulat\xF3rio.  "
+  - "poss\xEDvel, pois se pode adquirir esse parasita pela ingest\xE3o de seus ovos
+    e, nesse caso, as larvas originam cisticercos no c\xE9rebro.  "
+  - '''Schistosoma mansoni'' e molusco.  '
+  - "n\xE3o tem fundamento, pois a cisticercose \xE9 transmitida pela ingest\xE3o
+    de ovos de t\xEAnia eliminados nas fezes dos hospedeiros.  "
+  - "Aparecimento da cefaliza\xE7\xE3o e movimenta\xE7\xE3o direcional do corpo.  "
+  - "filariose, anciIostomose e ascarid\xEDase.  "
+  - "Ancil\xF3stomo; e andar sempre calcado.  "
+  - 'lombriga.  '
+  - 'nematelmintos.  '
+  - "dengue, febre amarela, filariose e mal\xE1ria.  "
+  - "camar\xE3o e lagosta.  "
+  - "s\xE3o de simetria bilateral, celomados e n\xE3o-segmentados.  "
+  - "cefal\xF3podos.  "
+  - "tribl\xE1sticos, celomados, segmentados e de simetria bilateral.  "
+  - "a segmenta\xE7\xE3o.  "
+  - "anel\xEDdeos ou nematelmintos.  "
+  - "t\xEAm sistema circulat\xF3rio fechado.  "
+  - "endoesqueleto mesod\xE9rmico calc\xE1reo.  "
+  - "um ouri\xE7o-do-mar.  "
+  - "corpo organizado em met\xE2meros ou segmentos.  "
+  - "simetria bilateral, esqueleto corporal externo e ap\xEAndices articulados.  "
+  - "\xC1caro, Carrapato e Opili\xE3o.  "
+  - "os mosquitos irradiados tornam-se est\xE9reis e, ap\xF3s a c\xF3pula com f\xEAmeas
+    no ambiente, os ovos n\xE3o se desenvolvem, reduzindo assim a popula\xE7\xE3o
+    destes insetos e a transmiss\xE3o das doen\xE7as.  "
+  - "a presen\xE7a de pulm\xF5es e a excre\xE7\xE3o de \xE1cido \xFArico.  "
+  - "cobertura corporal delgada e altamente perme\xE1vel.  "
+  - "respira\xE7\xE3o cut\xE2nea, pele perme\xE1vel, presen\xE7a de larvas aqu\xE1ticas
+    e adultos terrestres.  "
+  - 'Chordata, Arthropoda, Mollusca.  '
+  - "grande, dilu\xEDda, pequena, concentrada.  "
+  - 'tubo nervoso dorsal, notocorda, fendas branquiais na faringe.  '
+  - "\xE9 maior no in\xEDcio do per\xEDodo de incuba\xE7\xE3o.  "
+  - "2 \xE1trios e 1 ventr\xEDculo, com circula\xE7\xE3o dupla.  "
+  - "Os embri\xF5es pertencentes a diferentes grupos de vertebrados apresentam grandes
+    semelhan\xE7as morfol\xF3gicas nas etapas iniciais do seu desenvolvimento.  "
+  - "R\xE9pteis.  "
+  - "sanguessuga \u2013 mosca  "
+--- !u!4 &991163399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991163397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.4200745, y: 2.1877277, z: -2.946301}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1526796313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1526796316}
+  - component: {fileID: 1526796315}
+  - component: {fileID: 1526796314}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1526796314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1526796315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1526796316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1673385067
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3862179376726558098, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas  2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558095, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.materialCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377221861615, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377221861615, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211411, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179376480211411, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591045, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377784591045, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876365, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377867876365, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306450, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377535306450, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277869, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377378277869, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bd76ea60220019d428ebca0bada31b32, type: 3}
+--- !u!114 &1673385068 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1673385067}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1673385069 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1673385067}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1673385070 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1673385067}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1673385071 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1673385067}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1673385072 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1673385067}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1673385073 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1673385067}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1673385074 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1673385067}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

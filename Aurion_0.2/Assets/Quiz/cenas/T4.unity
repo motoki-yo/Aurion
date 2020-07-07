@@ -1,0 +1,1139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
+    m_ExportTrainingData: 0
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &519420028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519420032}
+  - component: {fileID: 519420031}
+  - component: {fileID: 519420029}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &519420029
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+--- !u!20 &519420031
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &519420032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &991163397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 991163399}
+  - component: {fileID: 991163398}
+  m_Layer: 0
+  m_Name: _GC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &991163398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991163397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ae26751a0ca3340a667d0eaf72af8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idTema: 4
+  pergunta: {fileID: 1967325359}
+  respostaA: {fileID: 1967325358}
+  respostaB: {fileID: 1967325357}
+  respostaC: {fileID: 1967325356}
+  respostaD: {fileID: 1967325355}
+  respostaE: {fileID: 1967325353}
+  infoResp: {fileID: 1967325354}
+  perguntas:
+  - "O tecido epitelial tem como fun\xE7\xE3o fazer o revestimento de todos os \xF3rg\xE3os
+    do corpo. Neste sentido, pode-se afirmar que:  "
+  - "Nosso organismo \xE9 frequentemente exposto a agentes poluentes liberados na
+    atmosfera. Para evitar a absor\xE7\xE3o de tais agentes contaminantes, nosso sistema
+    respirat\xF3rio apresenta mecanismos de filtra\xE7\xE3o e produ\xE7\xE3o de muco
+    nas vias respirat\xF3rias superiores. Sobre o tema, \xE9 correto afirmar.  "
+  - "As lulas, lombrigas, minhocas e t\xEAnias eram reunidas antigamente em um mesmo
+    grupo denominado Vermes, o que j\xE1 n\xE3o ocorre nas classifica\xE7\xF5es atuais.
+    Sobre as caracter\xEDsticas morfol\xF3gicas e de desenvolvimento desses animais,
+    \xE9 correto afirmar que  "
+  - "A respira\xE7\xE3o cut\xE2nea s\xF3 pode ser realizada por um animal aqu\xE1tico
+    ou de ambiente \xFAmido. Em um animal terrestre, a respira\xE7\xE3o pulmonar \xE9
+    mais eficiente. Essa rela\xE7\xE3o \xE9 verdadeira porque, para haver trocas gasosas,
+    \xE9 necess\xE1rio que a superf\xEDcie corporal:  "
+  - "A radioterapia \xE9 um m\xE9todo capaz de destruir c\xE9lulas tumorais, empregando
+    feixe de radia\xE7\xF5es ionizantes. Uma dose pr\xE9-calculada de radia\xE7\xE3o
+    \xE9 aplicada, buscando destruir as c\xE9lulas tumorais, com o menor dano poss\xEDvel
+    \xE0s c\xE9lulas normais circunvizinhas. A resposta dos tecidos \xE0s radia\xE7\xF5es
+    depende de diversos fatores, entre eles a oxigena\xE7\xE3o. Em termos pr\xE1ticos
+    isto quer dizer que, para um mesmo efeito, em condi\xE7\xF5es de hipoxia (baixa
+    oxigena\xE7\xE3o) \xE9 necess\xE1ria uma dose de irradia\xE7\xE3o 2,5 a 3,5 vezes
+    superior \xE0 que seria indicada em condi\xE7\xF5es de oxigena\xE7\xE3o normais,
+    o que seria letal. Dispon\xEDvel em: www.inca.gov.br. Acesso em: 6 ago. 2012.
+    Considerando essas informa\xE7\xF5es, pode-se deduzir que a aplica\xE7\xE3o desse
+    procedimento est\xE1 contraindicada na situa\xE7\xE3o de  "
+  - "Escolha a sequ\xEAncia de eventos que melhor caracteriza um ato reflexo simples.
+    \ "
+  - "Muitos seres vivos produzem subst\xE2ncias que afetam o funcionamento do sistema
+    nervoso humano. Dessa forma, v\xE1rios medicamentos s\xE3o elaborados a partir
+    de subst\xE2ncias produzidas, por exemplo, por fungos ou plantas. \xC9 correto
+    afirmar que  "
+  - "O tecido conjuntivo possui tr\xEAs tipos de fibras: col\xE1genas, reticulares
+    e el\xE1sticas. Com rela\xE7\xE3o a elas, analise as afirmativas e assinale a
+    alternativa CORRETA:  "
+  - "A osteoporose, principal causa de quedas entre idosos, \xE9 resultado da perda
+    gradual da densidade da matriz \xF3ssea, que \xE9 remodelada por osteoblastos
+    e osteoclastos. Segundo os especialistas, a preven\xE7\xE3o contra a osteoporose
+    deve come\xE7ar na inf\xE2ncia, com alimenta\xE7\xE3o rica em c\xE1lcio e em vitamina
+    D, exposi\xE7\xE3o di\xE1ria ao sol e exerc\xEDcios f\xEDsicos. Sobre os v\xE1rios
+    fatores envolvidos na forma\xE7\xE3o do osso, \xE9 correto afirmar que:  "
+  - "Um grupo de subst\xE2ncias conhecidas como polissacar\xEDdeos sulfatados est\xE3o
+    envolvidos em diversos processos como ades\xE3o, prolifera\xE7\xE3o e diferencia\xE7\xE3o
+    celular. Al\xE9m disso, apresentam propriedades farmacol\xF3gicas, podendo agir
+    como anticoagulantes, anti-inflamat\xF3rios e antitumorais. Essas subst\xE2ncias
+    v\xEAm sendo pesquisadas em animais, como ouri\xE7os-do-mar, pepinos-do-mar e
+    asc\xEDdias. Um dos mecanismos pesquisados est\xE1 relacionado com o fato de que
+    um espermatozoide de ouri\xE7o s\xF3 fecunda um \xF3vulo da mesma esp\xE9cie.
+    Em outro estudo, foi descoberto em asc\xEDdias, uma subst\xE2ncia semelhante \xE0
+    heparina, utilizada no tratamento de trombose. Ag\xEAncia FAPESP, 10/09/2010 Assinale
+    a alternativa correta:  "
+  - "O osso, apesar da aparente dureza, \xE9 considerado um tecido pl\xE1stico, em
+    vista da constante renova\xE7\xE3o de sua matriz. Utilizando-se dessa propriedade,
+    ortodontistas corrigem as posi\xE7\xF5es dos dentes, ortopedistas orientam as
+    consolida\xE7\xF5es de fraturas e fisioterapeutas corrigem defeitos \xF3sseos
+    decorrentes de posturas inadequadas. A matriz dos ossos tem uma parte org\xE2nica
+    proteica constitu\xEDda principalmente por col\xE1geno, e uma parte inorg\xE2nica
+    constitu\xEDda por cristais de fosfato de c\xE1lcio, na forma de hidroxiapatita.
+    Com base no texto e nos conhecimentos sobre tecido \xF3sseo, \xE9 correto afirmar
+    \ "
+  - "O tecido muscular card\xEDaco apresenta fibras:  "
+  - "Dentre os tecidos animais, h\xE1 um tecido cuja evolu\xE7\xE3o foi fundamental
+    para o sucesso evolutivo dos seres heterotr\xF3ficos. Aponte a op\xE7\xE3o que
+    indica corretamente tanto o tipo de tecido em quest\xE3o como a justificativa
+    de sua import\xE2ncia.  "
+  - "Os neur\xF4nios s\xE3o c\xE9lulas extremamente especializadas do sistema nervoso.
+    Cada neur\xF4nio \xE9 formado essencialmente por:  "
+  - "Muitos seres vivos produzem subst\xE2ncias que afetam o funcionamento do sistema
+    nervoso humano. Dessa forma, v\xE1rios medicamentos s\xE3o elaborados a partir
+    de subst\xE2ncias produzidas, por exemplo, por fungos ou plantas. \xC9 correto
+    afirmar que  "
+  alternativaA:
+  - "\xE9 ricamente vascularizado.  "
+  - "O muco resulta do ac\xFAmulo de l\xEDquidos e de part\xEDculas inaladas da atmosfera
+    e sua produ\xE7\xE3o depende da umidade relativa do ar.  "
+  - "as lulas, minhocas e t\xEAnias possuem celoma, mas as lombrigas s\xE3o acelomadas.
+    \ "
+  - "tenha rela\xE7\xE3o com o sistema circulat\xF3rio.  "
+  - 'anemia.  '
+  - "Est\xEDmulo \u2013 neur\xF4nio sensorial \u2013 integra\xE7\xE3o medular \u2013
+    neur\xF4nio motor  "
+  - "essas subst\xE2ncias s\xE3o inofensivas aos seres humanos, uma vez que s\xE3o
+    produzidas por outros seres vivos.  "
+  - "As fibras col\xE1genas, assim como as el\xE1sticas, s\xE3o constitu\xEDdas de
+    microfibrilas de col\xE1geno, que se unem formando as fibrilas de col\xE1geno,
+    que, por sua vez, se unem, formando as fibras de col\xE1geno.  "
+  - "A fixa\xE7\xE3o do c\xE1lcio no tecido \xF3sseo depende da presen\xE7a de vitamina
+    D, cuja s\xEDntese \xE9 diminu\xEDda em indiv\xEDduos que t\xEAm o h\xE1bito de
+    tomar sol.  "
+  - "Ouri\xE7os apresentam fecunda\xE7\xE3o interna, exigindo um mecanismo de identifica\xE7\xE3o
+    dos gametas.  "
+  - "A matriz \xF3ssea tem um car\xE1ter de plasticidade em raz\xE3o da presen\xE7a
+    de grande quantidade de \xE1gua associada aos cristais de hidroxiapatita.  "
+  - "lisas, de contra\xE7\xE3o volunt\xE1ria e aer\xF3bia.  "
+  - "Tecido epitelial queratinizado - permitiu facilitar a desidrata\xE7\xE3o ao impermeabilizar
+    a pele dos animais.  "
+  - "Dendritos, corpo celular e ax\xF4nio.  "
+  - "essas subst\xE2ncias s\xE3o inofensivas aos seres humanos, uma vez que s\xE3o
+    produzidas por outros seres vivos.  "
+  alternativaB:
+  - "suas c\xE9lulas s\xE3o anucleadas.  "
+  - "A efic\xE1cia na remo\xE7\xE3o das part\xEDculas depositadas na parede das vias
+    a\xE9reas depende da atividade do sistema mucociliar.  "
+  - "as minhocas e lulas apresentam metameria, que n\xE3o \xE9 encontrada nas t\xEAnias
+    e lombrigas.  "
+  - "seja \xFAmida.  "
+  - 'basofilia.  '
+  - "Est\xEDmulo \u2013 neur\xF4nio de associa\xE7\xE3o \u2013 integra\xE7\xE3o medular
+    \u2013 neur\xF4nio motor  "
+  - "essas subst\xE2ncias podem agir durante um tempo, mas s\xE3o sempre metabolizadas
+    e n\xE3o afetam permanentemente o funcionamento do sistema nervoso humano.  "
+  - "As c\xE9lulas de certos \xF3rg\xE3os, como o ba\xE7o e os rins, s\xE3o envolvidas
+    por uma trama de sustenta\xE7\xE3o constitu\xEDda de fibras reticulares, cujo
+    principal componente \xE9 a elastina, uma escleroprote\xEDna.  "
+  - "O excesso de vitamina C pode levar \xE0 diminui\xE7\xE3o da densidade \xF3ssea,
+    pois essa vitamina causa degrada\xE7\xE3o das mol\xE9culas de col\xE1geno.  "
+  - "Mecanismos de identifica\xE7\xE3o dos gametas tem como objetivo garantir a variabilidade
+    gen\xE9tica.  "
+  - "A plasticidade do tecido \xF3sseo \xE9 resultante da capacidade de reabsor\xE7\xE3o
+    e de s\xEDntese de nova matriz org\xE2nica pelas c\xE9lulas \xF3sseas.  "
+  - "lisas, de contra\xE7\xE3o involunt\xE1ria e anaer\xF3bia.  "
+  - "Tecido conjuntivo \xF3sseo - permitiu a forma\xE7\xE3o de carapa\xE7as externas
+    protetoras para todos os animais, por ser um tecido r\xEDgido.  "
+  - "Dendritos, sinapses e ax\xF4nio.  "
+  - "essas subst\xE2ncias podem agir durante um tempo, mas s\xE3o sempre metabolizadas
+    e n\xE3o afetam permanentemente o funcionamento do sistema nervoso humano.  "
+  alternativaC:
+  - "suas c\xE9lulas encontram-se justapostas.  "
+  - "A respira\xE7\xE3o r\xE1pida e superficial estimula o ac\xFAmulo de part\xEDculas
+    estranhas na regi\xE3o alveolar.  "
+  - "as lulas, minhocas e lombrigas possuem mesoderme, mas as t\xEAnias n\xE3o t\xEAm
+    esse folheto embrion\xE1rio.  "
+  - 'seja protegida.  '
+  - 'eosinofilia.  '
+  - "Est\xEDmulo \u2013 c\xF3rtex cerebral sensorial \u2013 integra\xE7\xE3o medular
+    \u2013 neur\xF4nio motor  "
+  - "essas subst\xE2ncias podem agir na gera\xE7\xE3o, condu\xE7\xE3o ou transmiss\xE3o
+    do impulso nervoso.  "
+  - "Os pulm\xF5es s\xE3o \xF3rg\xE3os facilmente sujeitos \xE0 expans\xE3o de volume,
+    pois s\xE3o ricos em fibras el\xE1sticas, constitu\xEDdas de elastina, prote\xEDna
+    cuja principal fun\xE7\xE3o \xE9 dar elasticidade aos locais onde se encontram.
+    \ "
+  - "Os osteoblastos e os osteoclastos s\xE3o c\xE9lulas respons\xE1veis, respectivamente,
+    pela captura de c\xE1lcio e pela absor\xE7\xE3o de vitamina D.  "
+  - "A utiliza\xE7\xE3o de heparina no tratamento da trombose se deve ao fato de que
+    essa subst\xE2ncia impede a forma\xE7\xE3o de fibrina.  "
+  - "O tecido \xF3sseo \xE9 considerado pl\xE1stico em decorr\xEAncia da consist\xEAncia
+    gelatinosa da prote\xEDna col\xE1geno que lhe confere alta compressibilidade.
+    \ "
+  - "estriadas, de contra\xE7\xE3o volunt\xE1ria e anaer\xF3bia.  "
+  - "Tecido muscular - permitiu a locomo\xE7\xE3o eficiente para a preda\xE7\xE3o
+    e fuga, por ser um tecido contr\xE1til.  "
+  - 'Sinapses, dendritos e corpo celular.  '
+  - "essas subst\xE2ncias podem agir na gera\xE7\xE3o, condu\xE7\xE3o ou transmiss\xE3o
+    do impulso nervoso.  "
+  alternativaD:
+  - "apresenta jun\xE7\xF5es celulares como as sinapses.  "
+  - "O muco que recobre o epit\xE9lio pulmonar tem como fun\xE7\xE3o a hidrata\xE7\xE3o
+    das vias a\xE9reas e pouco contribui para a sua limpeza.  "
+  - "as minhocas e lombrigas apresentam simetria bilateral e as t\xEAnias e lulas
+    t\xEAm simetria radial.  "
+  - "tenha contato direto com todos os \xF3rg\xE3os do corpo.  "
+  - 'linfocitose.  '
+  - "Est\xEDmulo \u2013 neur\xF4nio sensorial \u2013 c\xF3rtex cerebral motor \u2013
+    neur\xF4nio motor  "
+  - "a intensidade da resposta nervosa a essas subst\xE2ncias depende exclusivamente
+    da dose utilizada.  "
+  - "Quanto maior a quantidade de col\xE1geno nos tecidos, maior a elasticidade, como,
+    por exemplo, nos tend\xF5es, onde o col\xE1geno se distribui em uma s\xF3 dire\xE7\xE3o,
+    enquanto que o cord\xE3o umbilical forma uma malha difusa entre as c\xE9lulas
+    dos tecidos.  "
+  - "Os osteoblastos e os osteoclastos s\xE3o c\xE9lulas respons\xE1veis, respectivamente,
+    pela produ\xE7\xE3o e pela degrada\xE7\xE3o de componentes da matriz \xF3ssea.
+    \ "
+  - "Ouri\xE7os-do-mar, pepinos-do-mar e asc\xEDdias pertencem ao mesmo filo.  "
+  - "A plasticidade do tecido \xF3sseo, por decorrer da substitui\xE7\xE3o do col\xE1geno,
+    aumenta progressivamente, ao longo da vida de um indiv\xEDduo.  "
+  - "estriadas, de contra\xE7\xE3o involunt\xE1ria e aer\xF3bia.  "
+  - "Tecido nervoso - permitiu coordenar as diferentes partes do corpo dos animais,
+    por ser um tecido de a\xE7\xE3o lenta.  "
+  - "Ax\xF4nio e sinapses.  "
+  - "a intensidade da resposta nervosa a essas subst\xE2ncias depende exclusivamente
+    da dose utilizada.  "
+  alternativaE:
+  - "possui grande quantidade de subst\xE2ncia intercelular.  "
+  - "A viscosidade do muco depende da quantidade de part\xEDculas inaladas e independe
+    do estado de hidrata\xE7\xE3o do indiv\xEDduo.  "
+  - "as lulas e minhocas possuem sistema digest\xF3rio completo, mas, nas t\xEAnias
+    e lombrigas, ele \xE9 incompleto.  "
+  - 'seja pouco espessa.  '
+  - 'leucopenia.  '
+  - "Est\xEDmulo \u2013 neur\xF4nio de associa\xE7\xE3o \u2013 c\xF3rtex cerebral
+    motor \u2013 neur\xF4nio motor  "
+  - "cada subst\xE2ncia provoca apenas um tipo de resposta, sendo, assim, espec\xEDfica
+    para cada regi\xE3o do sistema nervoso.  "
+  - "As fibras col\xE1genas s\xE3o constitu\xEDdas da prote\xEDna col\xE1geno, polimerizadas
+    fora das c\xE9lulas, a partir do tropocol\xE1geno sintetizado pelos macr\xF3fagos.
+    \ "
+  - 'Nenhuma das anteriores. '
+  - "Os animais citados no texto s\xE3o celomados e protost\xF4mios, como os demais
+    invertebrados.  "
+  - "A matriz \xF3ssea e denominada pl\xE1stica, porque os ossos s\xE3o os vest\xEDgios
+    mais duradouros que permanecem ap\xF3s a morte do indiv\xEDduo.  "
+  - "lisas, de contra\xE7\xE3o involunt\xE1ria e aer\xF3bia.  "
+  - "Tecido conjuntivo sangu\xEDneo - permitiu o transporte de subst\xE2ncias dentro
+    do corpo do animal, por ser um tecido rico em fibras col\xE1genas e el\xE1sticas.
+    \ "
+  - "Dendritos e ax\xF4nios.  "
+  - "cada subst\xE2ncia provoca apenas um tipo de resposta, sendo, assim, espec\xEDfica
+    para cada regi\xE3o do sistema nervoso.  "
+  corretas:
+  - "suas c\xE9lulas encontram-se justapostas.  "
+  - "A efic\xE1cia na remo\xE7\xE3o das part\xEDculas depositadas na parede das vias
+    a\xE9reas depende da atividade do sistema mucociliar.  "
+  - "as minhocas e lulas apresentam metameria, que n\xE3o \xE9 encontrada nas t\xEAnias
+    e lombrigas.  "
+  - "seja \xFAmida.  "
+  - 'anemia.  '
+  - "Est\xEDmulo \u2013 neur\xF4nio sensorial \u2013 integra\xE7\xE3o medular \u2013
+    neur\xF4nio motor  "
+  - "essas subst\xE2ncias podem agir na gera\xE7\xE3o, condu\xE7\xE3o ou transmiss\xE3o
+    do impulso nervoso.  "
+  - "Os pulm\xF5es s\xE3o \xF3rg\xE3os facilmente sujeitos \xE0 expans\xE3o de volume,
+    pois s\xE3o ricos em fibras el\xE1sticas, constitu\xEDdas de elastina, prote\xEDna
+    cuja principal fun\xE7\xE3o \xE9 dar elasticidade aos locais onde se encontram.
+    \ "
+  - "Os osteoblastos e os osteoclastos s\xE3o c\xE9lulas respons\xE1veis, respectivamente,
+    pela produ\xE7\xE3o e pela degrada\xE7\xE3o de componentes da matriz \xF3ssea.
+    \ "
+  - "A utiliza\xE7\xE3o de heparina no tratamento da trombose se deve ao fato de que
+    essa subst\xE2ncia impede a forma\xE7\xE3o de fibrina.  "
+  - "A plasticidade do tecido \xF3sseo \xE9 resultante da capacidade de reabsor\xE7\xE3o
+    e de s\xEDntese de nova matriz org\xE2nica pelas c\xE9lulas \xF3sseas.  "
+  - "estriadas, de contra\xE7\xE3o involunt\xE1ria e aer\xF3bia.  "
+  - "Tecido muscular - permitiu a locomo\xE7\xE3o eficiente para a preda\xE7\xE3o
+    e fuga, por ser um tecido contr\xE1til.  "
+  - "Dendritos, corpo celular e ax\xF4nio.  "
+  - "essas subst\xE2ncias podem agir na gera\xE7\xE3o, condu\xE7\xE3o ou transmiss\xE3o
+    do impulso nervoso.  "
+--- !u!4 &991163399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991163397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.4200745, y: 2.1877277, z: -2.946301}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1526796313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1526796316}
+  - component: {fileID: 1526796315}
+  - component: {fileID: 1526796314}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1526796314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1526796315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1526796316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1967325352
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3862179376726558098, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas  2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558095, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.materialCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377221861615, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377221861615, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211411, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179376480211411, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591045, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377784591045, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876365, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377867876365, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306450, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377535306450, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277869, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377378277869, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bd76ea60220019d428ebca0bada31b32, type: 3}
+--- !u!114 &1967325353 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1967325352}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1967325354 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1967325352}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1967325355 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1967325352}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1967325356 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1967325352}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1967325357 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1967325352}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1967325358 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1967325352}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1967325359 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1967325352}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

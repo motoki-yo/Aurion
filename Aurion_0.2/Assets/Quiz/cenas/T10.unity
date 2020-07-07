@@ -1,0 +1,1223 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
+    m_ExportTrainingData: 0
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &519420028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519420032}
+  - component: {fileID: 519420031}
+  - component: {fileID: 519420029}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &519420029
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+--- !u!20 &519420031
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &519420032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &991163397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 991163399}
+  - component: {fileID: 991163398}
+  m_Layer: 0
+  m_Name: _GC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &991163398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991163397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ae26751a0ca3340a667d0eaf72af8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idTema: 10
+  pergunta: {fileID: 1756320062}
+  respostaA: {fileID: 1756320061}
+  respostaB: {fileID: 1756320060}
+  respostaC: {fileID: 1756320059}
+  respostaD: {fileID: 1756320058}
+  respostaE: {fileID: 1756320056}
+  infoResp: {fileID: 1756320057}
+  perguntas:
+  - "Um homem dalt\xF4nico e destro, filho de pai canhoto, casa-se com uma mulher
+    de vis\xE3o normal e canhota. O casal tem uma crian\xE7a do sexo masculino, dalt\xF4nica
+    e destra. Considerando que o daltonismo \xE9 condicionado por um gene recessivo
+    ligado ao X e o uso da m\xE3o esquerda \xE9 determinado por um gene autoss\xF4mico
+    recessivo, \xE9 correto afirmar que  "
+  - "Quando duas popula\xE7\xF5es da esp\xE9cie vegetal 'Zea mays' (milho), uma homozigota
+    para o alelo dominante (AA) e uma homozigota para um alelo recessivo (aa), s\xE3o
+    cruzadas, toda a descend\xEAncia da primeira gera\xE7\xE3o (F1) assemelha-se ao
+    tipo parental dominante (Aa), embora seja heterozigota. Por\xE9m, quando a gera\xE7\xE3o
+    F1 se intercruza, a propor\xE7\xE3o fenot\xEDpica mendeliana 3:1 aparecer\xE1
+    na gera\xE7\xE3o F2, pois os gen\xF3tipos ser\xE3o:  "
+  - "Em algumas modalidades esportivas, as equipes devem ser formadas apenas por atletas
+    do mesmo sexo. Sobre as caracter\xEDsticas que determinam ou diferenciam o sexo,
+    \xE9 correto afirmar  "
+  - "Para que a c\xE9lula possa transportar, para seu interior, o colesterol da circula\xE7\xE3o
+    sangu\xEDnea, \xE9 necess\xE1ria a presen\xE7a de uma determinada prote\xEDna
+    em sua membrana. Existem muta\xE7\xF5es no gene respons\xE1vel pela s\xEDntese
+    dessa prote\xEDna que impedem a sua produ\xE7\xE3o. Quando um homem ou uma mulher
+    possui uma dessas muta\xE7\xF5es, mesmo tendo tamb\xE9m um alelo normal, apresenta
+    hipercolesterolemia, ou seja, aumento do n\xEDvel de colesterol no sangue. A hipercolesterolemia
+    devida a essa muta\xE7\xE3o tem, portanto, heran\xE7a  "
+  - "A fenilceton\xFAria \xE9 uma doen\xE7a heredit\xE1ria autoss\xF4mica recessiva,
+    associada \xE0 muta\xE7\xE3o do gene PAH, que limita a metaboliza\xE7\xE3o do
+    amino\xE1cido fenilalanina. Por isso, \xE9 obrigat\xF3rio, por lei, que as embalagens
+    de alimentos, como refrigerantes diet\xE9ticos, informem a presen\xE7a de fenilalanina
+    em sua composi\xE7\xE3o. Uma mulher portadora de muta\xE7\xE3o para o gene PAH
+    tem tr\xEAs filhos normais, com um homem normal, cujo pai sofria de fenilceton\xFAria,
+    devido \xE0 mesma muta\xE7\xE3o no gene PAH encontrada em um dos alelos da mulher.
+    Qual a probabilidade de a quarta crian\xE7a gerada por esses pais apresentar fenilceton\xFAria?
+    \ "
+  - "O primeiro filho de um casal \xE9 diagnosticado como portador da forma grave
+    da anemia falciforme que, sem tratamento, \xE9 letal. Essa doen\xE7a \xE9 causada
+    por um gene HbS que apresenta uma rela\xE7\xE3o de codomin\xE2ncia com o gene
+    HbA , respons\xE1vel pela produ\xE7\xE3o de hemoglobina normal. Sabendo que os
+    indiv\xEDduos heterozigotos apresentam a forma branda da doen\xE7a, pode-se inferir
+    que:  "
+  - "A doen\xE7a de Gaucher, autoss\xF4mica recessiva, afeta o metabolismo dos lip\xEDdios.
+    O afetado, se n\xE3o tratado, tem aumento do f\xEDgado e do ba\xE7o, anemia, diminui\xE7\xE3o
+    de plaquetas e de gl\xF3bulos brancos, desgaste \xF3sseo, fadiga, cansa\xE7o e
+    atraso de crescimento. \xC9 correto afirmar que um paciente com esta doen\xE7a
+    transmite o gene defeituoso para  "
+  - "Um jovem suspeita que n\xE3o \xE9 filho biol\xF3gico de seus pais, pois descobriu
+    que o seu tipo sangu\xEDneo \xE9 O Rh negativo, o de sua m\xE3e \xE9 B Rh positivo
+    e de seu pai \xE9 A Rh positivo. A condi\xE7\xE3o genot\xEDpica que possibilita
+    que ele seja realmente filho biol\xF3gico de seus pais \xE9 que  "
+  - "S\xEDlvio e F\xE1tima t\xEAm tr\xEAs filhos, um deles fruto do primeiro casamento
+    de um dos c\xF4njuges. S\xEDlvio \xE9 de tipo sangu\xEDneo AB Rh- e F\xE1tima
+    de tipo O RH+ . Dentre os filhos, Paulo \xE9 de tipo sangu\xEDneo A Rh+ , M\xE1rio
+    \xE9 de tipo B Rh- e Lucas \xE9 de tipo AB Rh+. Sobre o parentesco gen\xE9tico
+    nessa fam\xEDlia, \xE9 correto afirmar que "
+  - "Uma professora de Biologia explicava a seus alunos que o daltonismo para a cor
+    verde \xE9 determinado por um gene recessivo ligado ao sexo. Paulo e Lu\xEDsa,
+    um casal de g\xEAmeos que estudava na mesma sala, disseram que eram dalt\xF4nicos
+    para a cor verde. A professora perguntou se outras pessoas da fam\xEDlia tamb\xE9m
+    eram dalt\xF4nicas e os g\xEAmeos responderam que outras duas pessoas tinham o
+    mesmo tipo de daltonismo. Para descobrir quais eram essas pessoas, a professora
+    fez mais algumas perguntas aos g\xEAmeos e descobriu que eles n\xE3o tinham outros
+    irm\xE3os, que seus pais eram filhos \xFAnicos e que seus av\xF3s ainda eram vivos.
+    As outras duas pessoas dalt\xF4nicas da fam\xEDlia eram  "
+  - "Uma mulher deu \xE0 luz o seu primeiro filho e, ap\xF3s o parto, os m\xE9dicos
+    testaram o sangue da crian\xE7a para a determina\xE7\xE3o de seu grupo sangu\xEDneo.
+    O sangue da crian\xE7a era do tipo O+. Imediatamente, a equipe m\xE9dica aplicou
+    na m\xE3e uma solu\xE7\xE3o contendo anticorpos anti-Rh, uma vez que ela tinha
+    o tipo sangu\xEDneo O-. Qual \xE9 a fun\xE7\xE3o dessa solu\xE7\xE3o de anticorpos?
+    \ "
+  - "No l\xF3co referente ao sistema sangu\xEDneo ABO, h\xE1 tr\xEAs formas, normalmente
+    representadas por IA e IB e i. Da combina\xE7\xE3o dessas formas h\xE1 seis gen\xF3tipos
+    poss\xEDveis na popula\xE7\xE3o humana. Com rela\xE7\xE3o a esse sistema sangu\xEDneo
+    foram feitas cinco afirma\xE7\xF5es. Assinale a \xFAnica INCORRETA.  "
+  - "Amostras de manchas de sangue humano encontradas em um local de crime foram levadas
+    ao laborat\xF3rio para an\xE1lise. Ao testar o sangue coletado com os anticorpos
+    Anti-A, Anti-B e Anti-Rh, o resultado foi, respectivamente, aglutinou, aglutinou,
+    n\xE3o-aglutinou. O perito concluiu que o sangue era do tipo  "
+  - "(Adaptado) Ana possui olhos amendoados e c\xEDlios compridos e um charmoso \"furinho\"
+    no queixo, que deixam o seu rosto bastante atraente. Estas caracter\xEDsticas
+    fenot\xEDpicas s\xE3o as mesmas da sua m\xE3e. J\xE1 o seu pai tem olhos arredondados,
+    c\xEDlios curtos e n\xE3o tem \"furinho\" no queixo. Ana est\xE1 gr\xE1vida e
+    o pai da crian\xE7a possui olhos arredondados, c\xEDlios curtos e com um \"furinho\"
+    no queixo. Estas caracter\xEDsticas s\xE3o controladas por genes com segrega\xE7\xE3o
+    independente. Os alelos dominantes: A controla o formato de olhos amendoados,
+    C os c\xEDlios compridos e F a aus\xEAncia do \"furinho\". Qual \xE9 o gen\xF3tipo
+    da Ana e a probabilidade de que eIa tenha uma filha com olhos arredondados, c\xEDlios
+    compridos e \"furinho\" no queixo?  "
+  - "A Primeira e a Segunda Lei de Mendel est\xE3o relacionadas, respectivamente,
+    com os seguintes eventos ocorridos na meiose:  "
+  - "Suponha que, em uma planta, os genes que determinam bordas lisas das folhas e
+    flores com p\xE9talas lisas sejam dominantes em rela\xE7\xE3o a seus alelos que
+    condicionam, respectivamente, bordas serrilhadas e p\xE9talas manchadas. Uma planta
+    di\xEDbrida foi cruzada com uma de folhas serrilhadas e de p\xE9talas lisas, heterozigota
+    para esta caracter\xEDstica. Foram obtidas 320 sementes. Supondo que todas germinem,
+    o n\xFAmero de plantas, com ambos os caracteres dominantes, ser\xE1 de  "
+  - "Supondo-se que a dist\xE2ncia entre locos g\xEAnicos seja de 16 morgan\xEDdios,
+    a taxa de recombina\xE7\xE3o entre eles \xE9 de  "
+  - "Em galinhas, a cor da plumagem \xE9 determinada por 2 pares de genes. O gene
+    C condiciona plumagem colorida enquanto seu alelo c determina plumagem branca.
+    O gene I impede a express\xE3o do gene C, enquanto seu alelo i n\xE3o interfere
+    nessa express\xE3o. Com esses dados, conclui-se que se trata de um caso de:  "
+  - "Em c\xE3es labradores, dois genes, cada um com dois alelos (B/b e E/e), condicionam
+    as tr\xEAs pelagens t\xEDpicas da ra\xE7a: preta, marrom e dourada. A pelagem
+    dourada \xE9 condicionada pela presen\xE7a do alelo recessivo e em homozigose
+    no gen\xF3tipo. Os c\xE3es portadores de pelo menos um alelo dominante E ser\xE3o
+    pretos, se tiverem pelo menos um alelo dominante B; ou marrons, se forem homozig\xF3ticos
+    bb. O cruzamento de um macho dourado com uma f\xEAmea marrom produziu descendentes
+    pretos, marrons e dourados. O gen\xF3tipo do macho \xE9  "
+  - "A afirma\xE7\xE3o de que a heran\xE7a mitocondrial humana \xE9 sempre materna:
+    \ "
+  - "Para a identifica\xE7\xE3o de um rapaz v\xEDtima de acidente, fragmentos de tecidos
+    foram retirados e submetidos \xE0 extra\xE7\xE3o de DNA nuclear, para compara\xE7\xE3o
+    com o DNA dispon\xEDvel dos poss\xEDveis familiares (pai, av\xF4 materno, av\xF3
+    materna, filho e filha). Como o teste com o DNA nuclear n\xE3o foi conclusivo,
+    os peritos optaram por usar tamb\xE9m DNA mitocondrial, para dirimir d\xFAvidas.
+    Para identificar o corpo, os peritos devem verificar se h\xE1 homologia entre
+    o DNA mitocondrial do rapaz e o DNA mitocondrial do(a)  "
+  - "O formato das c\xE9lulas de organismos pluricelulares \xE9 extremamente variado.
+    Existem c\xE9lulas discoides, como \xE9 o caso das hem\xE1cias, as que lembram
+    uma estrela, como os neur\xF4nios, e ainda algumas alongadas, como as musculares.
+    Em um mesmo organismo, a diferencia\xE7\xE3o dessas c\xE9lulas ocorre por  "
+  - "Uma popula\xE7\xE3o de besouros est\xE1 em equil\xEDbrio para um determinado
+    l\xF3cus g\xEAnico A, apresentando, para o alelo A frequ\xEAncia igual a 0,7;
+    e, para o alelo a frequ\xEAncia igual a 0,3. As frequ\xEAncias para os gen\xF3tipos
+    AA, Aa e aa s\xE3o, respectivamente, as seguintes:  "
+  - "A afirma\xE7\xE3o de que a heran\xE7a mitocondrial humana \xE9 sempre materna:
+    \ "
+  - "Numa popula\xE7\xE3o, a frequ\xEAncia de um gene autoss\xF4mico dominante A \xE9
+    o triplo da frequ\xEAncia do seu alelo recessivo a. Essa popula\xE7\xE3o estar\xE1
+    em equil\xEDbrio gen\xE9tico, se as propor\xE7\xF5es genot\xEDpicas forem:  "
+  alternativaA:
+  - "a crian\xE7a herdou o gene para o daltonismo do pai.  "
+  - '1/2 AA e 1/2 aa  '
+  - 'O sexo masculino depende de um gene determinador do sexo localizado no cromossomo
+    Y.  '
+  - "autoss\xF4mica dominante.  "
+  - '0,00% '
+  - "Um dos pais dessa crian\xE7a pode ser normal para a anemia falciforme.  "
+  - 'seus filhos homens, apenas.  '
+  - "o pai e a m\xE3e sejam heterozigotos para o sistema sangu\xEDneo e para o fator
+    \ "
+  - "Paulo e M\xE1rio s\xE3o irm\xE3os por parte de pai e por parte de m\xE3e, e Lucas
+    \xE9 filho de S\xEDlvio e n\xE3o de F\xE1tima.  "
+  - "o pai e o av\xF4 materno dos g\xEAmeos.  "
+  - "Modificar o fator Rh do pr\xF3ximo filho.  "
+  - "Trata-se de um caso de alelos m\xFAltiplos e cada pessoa normal s\xF3 poder\xE1
+    apresentar, no m\xE1ximo, duas dessas formas.  "
+  - 'AB positivo.  '
+  - "Gen\xF3tipo da Ana \xE9 AA CC ff e a probabilidade do filho desejado \xE9 3/4.
+    \ "
+  - "condensa\xE7\xE3o dos cromossomos na pr\xF3fase I e crossing over na pr\xF3fase
+    I.  "
+  - '120.  '
+  - '8,00% '
+  - 'epistasia recessiva.  '
+  - 'Ee BB.  '
+  - "procede porque as mitoc\xF4ndrias do embri\xE3o s\xE3o provenientes do espermatozoide.
+    \ "
+  - 'pai  '
+  - "produzirem muta\xE7\xF5es espec\xEDficas.  "
+  - '0,42; 0,09 e 0,49.  '
+  - "procede porque as mitoc\xF4ndrias do embri\xE3o s\xE3o provenientes do espermatozoide.
+    \ "
+  - 'AA - 6/16; Aa - 9/16; aa - 1/16;  '
+  alternativaB:
+  - "a mulher \xE9 heterozigota para ambas as caracter\xEDsticas.  "
+  - '1/4 AA, 1/2 Aa e 1/4 aa  '
+  - "A progesterona atua no desenvolvimento de \xF3rg\xE3os genitais t\xEDpicos do
+    sexo masculino.  "
+  - "autoss\xF4mica recessiva.  "
+  - '12,50% '
+  - "N\xE3o h\xE1 probabilidade de esse casal vir a ter filhos normais.  "
+  - 'suas filhas mulheres, apenas.  '
+  - "o pai e a m\xE3e sejam heterozigotos para o sistema sangu\xEDneo e homozigotos
+    para o fator  "
+  - "Lucas e M\xE1rio s\xE3o meios-irm\xE3os, mas n\xE3o se pode afirmar qual deles
+    \xE9 fruto do primeiro casamento.  "
+  - "a m\xE3e e a av\xF3 materna dos g\xEAmeos.  "
+  - "Destruir as c\xE9lulas sangu\xEDneas do beb\xEA.  "
+  - "Pessoas que apresentam simultaneamente as formas IA e IB t\xEAm aglutinog\xEAnios
+    ou ant\xEDgenos A e B em suas hem\xE1cias.  "
+  - 'AB negativo.  '
+  - "Gen\xF3tipo da Ana \xE9 Aa Cc ff e a probabilidade do filho desejado \xE9 1/8.
+    \ "
+  - "segrega\xE7\xE3o dos cromossomos hom\xF3logos na an\xE1fase I e distribui\xE7\xE3o
+    independente dos cromossomos na met\xE1fase I.  "
+  - '160.  '
+  - '16,00% '
+  - "heran\xE7a quantitativa.  "
+  - 'Ee Bb.  '
+  - "procede porque somente o n\xFAcleo do espermatozoide penetra no \xF3vulo.  "
+  - 'filho  '
+  - "possu\xEDrem DNA mitocondrial diferentes.  "
+  - '0,49; 0,09 e 0,42.  '
+  - "procede porque somente o n\xFAcleo do espermatozoide penetra no \xF3vulo.  "
+  - 'AA - 9/16; Aa - 1/16; aa - 6/16;  '
+  alternativaC:
+  - "todos os filhos do sexo masculino desse casal ser\xE3o dalt\xF4nicos.  "
+  - '1/3 AA e 1/4 aa  '
+  - "Os n\xFAcleos das c\xE9lulas feminina e masculina apresentam um mesmo conjunto
+    cromoss\xF4mico.  "
+  - 'ligada ao X dominante.  '
+  - '25,00% '
+  - "Todo portador da forma branda da doen\xE7a possui hemoglobina normal em seu sangue.
+    \ "
+  - "25% de sua descend\xEAncia, apenas.  "
+  - "o pai seja homozigoto para as duas caracter\xEDsticas e a m\xE3e heterozigota
+    para as duas caracter\xEDsticas.  "
+  - "Paulo e Lucas s\xE3o meios-irm\xE3os, mas n\xE3o se pode afirmar qual deles \xE9
+    fruto do primeiro casamento.  "
+  - "a m\xE3e e a av\xF3 paterna dos g\xEAmeos.  "
+  - "Formar uma mem\xF3ria imunol\xF3gica na m\xE3e.  "
+  - "Uma mulher do grupo A heterozigota poder\xE1 ter com um homem do grupo B tamb\xE9m
+    heterozigoto filhos dos grupos A,B, AB e O.  "
+  - 'A ou B positivo.  '
+  - "Gen\xF3tipo da Ana e Aa CC ff e a probabilidade do filho desejado \xE9 1/4.  "
+  - "segrega\xE7\xE3o dos cromossomos hom\xF3logos na an\xE1fase I e separa\xE7\xE3o
+    das crom\xE1tides irm\xE3s na an\xE1fase II.  "
+  - '320.  '
+  - '32,00% '
+  - 'pleiotropia.  '
+  - 'ee bb.  '
+  - "n\xE3o procede porque todo o corpo do espermatozoide penetra no \xF3vulo.  "
+  - 'filha  '
+  - 'apresentarem conjunto de genes distintos.  '
+  - '0,49; 0,42 e 0,09.  '
+  - "n\xE3o procede porque todo o corpo do espermatozoide penetra no \xF3vulo.  "
+  - 'AA - 9/16; Aa - 6/16; aa - 1/16;  '
+  alternativaD:
+  - "esse casal pode ter filhas dalt\xF4nicas.  "
+  - '1/4 Aa, 1/2 AA e 1/4 aa  '
+  - "A testosterona \xE9 o principal horm\xF4nio sexual feminino produzido nas trompas.
+    \ "
+  - 'ligada ao X recessiva.  '
+  - '50,00% '
+  - "Todos os av\xF3s dessa crian\xE7a s\xE3o obrigatoriamente portadores da forma
+    branda da doen\xE7a.  "
+  - "50% de sua descend\xEAncia, apenas.  "
+  - "o pai seja homozigoto para as duas caracter\xEDsticas e a m\xE3e heterozigota
+    para o sistema e homozigota para o fator  "
+  - "Paulo e M\xE1rio s\xE3o meios-irm\xE3os, mas n\xE3o se pode afirmar qual deles
+    \xE9 fruto do primeiro casamento.  "
+  - "o pai e a m\xE3e dos g\xEAmeos.  "
+  - "Neutralizar os anticorpos produzidos pela m\xE3e.  "
+  - "Pessoas com gen\xF3tipo ii poder\xE3o receber, sem problemas de aglutina\xE7\xE3o,
+    hem\xE1cias de pessoas pertencentes aos grupos A e B.  "
+  - 'A ou B negativo.  '
+  - "Gen\xF3tipo da Ana \xE9 AA Cc ff e a probabilidade do filho desejado \xE9 3/4.
+    \ "
+  - "alinhamento dos cromossomos hom\xF3logos na met\xE1fase I e crossing over na
+    pr\xF3fase I.  "
+  - '80.  '
+  - '42,00% '
+  - "co-domin\xE2ncia.  "
+  - 'ee BB.  '
+  - "n\xE3o procede porque a c\xE9lula ovo n\xE3o cont\xE9m mitoc\xF4ndrias.  "
+  - "av\xF3 materna  "
+  - "expressarem por\xE7\xF5es distintas do genoma.  "
+  - '0,42; 0,49 e 0,09.  '
+  - "n\xE3o procede porque a c\xE9lula ovo n\xE3o cont\xE9m mitoc\xF4ndrias.  "
+  - 'AA - 6/16; Aa - 6/16; aa - 4/16;  '
+  alternativaE:
+  - "todas as crian\xE7as desse casal ser\xE3o destras.  "
+  - "\xC9 imposs\xEDvel determinar os gen\xF3tipos utilizando os dados acima.  "
+  - "As c\xE9lulas masculinas apresentam cromatina sexual.  "
+  - "autoss\xF4mica codominante.  "
+  - '75,00% '
+  - "Um dos pais dessa crian\xE7a \xE9 obrigatoriamente homozigoto.  "
+  - "100% de sua descend\xEAncia.  "
+  - "o pai seja homozigoto para o sistema e heterozigoto para o fator e a m\xE3e homozigota
+    para as duas caracter\xEDsticas  "
+  - "Lucas e M\xE1rio s\xE3o irm\xE3os por parte de pai e por parte de m\xE3e, e Paulo
+    \xE9 filho de S\xEDlvio e n\xE3o de F\xE1tima.  "
+  - "o av\xF4 materno e a av\xF3 paterna dos g\xEAmeos.  "
+  - "Promover a altera\xE7\xE3o do tipo sangu\xEDneo materno.  "
+  - "Um casal que pertence ao grupo AB n\xE3o poder\xE1 ter filhos do grupo O.  "
+  - 'O positivo ou negativo.  '
+  - "Gen\xF3tipo da Ana e Aa Cc ff e a probabilidade do filho desejado \xE9 1/16.
+    \ "
+  - "alinhamento dos cromossomos hom\xF3logos na met\xE1fase I e alinhamento dos cromossomos
+    na met\xE1fase II.  "
+  - '200.  '
+  - '84,00% '
+  - 'epistasia dominante.  '
+  - 'ee Bb.  '
+  - "n\xE3o procede porque o zigoto \xE9 formado somente pelos n\xFAcleos dos gametas.
+    \ "
+  - "av\xF4 materno "
+  - "terem um n\xFAmero distinto de cromossomos.  "
+  - '0,09; 0,49 e 0,42.  '
+  - "n\xE3o procede porque o zigoto \xE9 formado somente pelos n\xFAcleos dos gametas.
+    \ "
+  - 'AA - 4/16; Aa - 8/16; aa - 4/16;  '
+  corretas:
+  - "esse casal pode ter filhas dalt\xF4nicas.  "
+  - '1/4 AA, 1/2 Aa e 1/4 aa  '
+  - 'O sexo masculino depende de um gene determinador do sexo localizado no cromossomo
+    Y.  '
+  - "autoss\xF4mica dominante.  "
+  - '25,00% '
+  - "Todo portador da forma branda da doen\xE7a possui hemoglobina normal em seu sangue.
+    \ "
+  - "100% de sua descend\xEAncia.  "
+  - "o pai e a m\xE3e sejam heterozigotos para o sistema sangu\xEDneo e para o fator
+    \ "
+  - "Paulo e M\xE1rio s\xE3o irm\xE3os por parte de pai e por parte de m\xE3e, e Lucas
+    \xE9 filho de S\xEDlvio e n\xE3o de F\xE1tima.  "
+  - "o pai e o av\xF4 materno dos g\xEAmeos.  "
+  - "Destruir as c\xE9lulas sangu\xEDneas do beb\xEA.  "
+  - "Pessoas com gen\xF3tipo ii poder\xE3o receber, sem problemas de aglutina\xE7\xE3o,
+    hem\xE1cias de pessoas pertencentes aos grupos A e B.  "
+  - 'AB negativo.  '
+  - "Gen\xF3tipo da Ana \xE9 Aa Cc ff e a probabilidade do filho desejado \xE9 1/8.
+    \ "
+  - "segrega\xE7\xE3o dos cromossomos hom\xF3logos na an\xE1fase I e distribui\xE7\xE3o
+    independente dos cromossomos na met\xE1fase I.  "
+  - '120.  '
+  - '16,00% '
+  - 'epistasia dominante.  '
+  - 'ee Bb.  '
+  - "procede porque somente o n\xFAcleo do espermatozoide penetra no \xF3vulo.  "
+  - "av\xF3 materna  "
+  - "expressarem por\xE7\xF5es distintas do genoma.  "
+  - '0,49; 0,42 e 0,09.  '
+  - "procede porque somente o n\xFAcleo do espermatozoide penetra no \xF3vulo.  "
+  - 'AA - 9/16; Aa - 6/16; aa - 1/16;  '
+--- !u!4 &991163399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991163397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.4200745, y: 2.1877277, z: -2.946301}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1526796313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1526796316}
+  - component: {fileID: 1526796315}
+  - component: {fileID: 1526796314}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1526796314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1526796315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1526796316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1756320055
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3862179376726558098, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas  2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558095, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.materialCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377221861615, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377221861615, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211411, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179376480211411, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591045, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377784591045, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876365, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377867876365, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306450, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377535306450, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277869, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377378277869, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bd76ea60220019d428ebca0bada31b32, type: 3}
+--- !u!114 &1756320056 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1756320055}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1756320057 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1756320055}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1756320058 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1756320055}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1756320059 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1756320055}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1756320060 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1756320055}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1756320061 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1756320055}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1756320062 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1756320055}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

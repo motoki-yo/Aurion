@@ -1,0 +1,1532 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
+    m_ExportTrainingData: 0
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &519420028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519420032}
+  - component: {fileID: 519420031}
+  - component: {fileID: 519420029}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &519420029
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+--- !u!20 &519420031
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &519420032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &886553027
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3862179376726558098, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas  2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558094, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376726558095, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.materialCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377221861615, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377221861615, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743448, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211412, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179376480211411, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179376480211411, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591046, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377784591045, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377784591045, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876366, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377867876365, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377867876365, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306451, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377535306450, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377535306450, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277870, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377378277869, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991163398}
+    - target: {fileID: 3862179377378277869, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862179377668550698, guid: bd76ea60220019d428ebca0bada31b32,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bd76ea60220019d428ebca0bada31b32, type: 3}
+--- !u!114 &886553028 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783151429891, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 886553027}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &886553029 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782507758279, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 886553027}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &886553030 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783040079861, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 886553027}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &886553031 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782604536146, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 886553027}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &886553032 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783451374220, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 886553027}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &886553033 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944782533808500, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 886553027}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &886553034 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8662944783145743455, guid: bd76ea60220019d428ebca0bada31b32,
+    type: 3}
+  m_PrefabInstance: {fileID: 886553027}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &991163397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 991163399}
+  - component: {fileID: 991163398}
+  m_Layer: 0
+  m_Name: _GC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &991163398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991163397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ae26751a0ca3340a667d0eaf72af8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idTema: 5
+  pergunta: {fileID: 886553034}
+  respostaA: {fileID: 886553033}
+  respostaB: {fileID: 886553032}
+  respostaC: {fileID: 886553031}
+  respostaD: {fileID: 886553030}
+  respostaE: {fileID: 886553028}
+  infoResp: {fileID: 886553029}
+  perguntas:
+  - "Portadores de diabetes insipidus reclamam da confus\xE3o feita pelos profissionais
+    da sa\xFAde quanto aos dois tipos de diabetes: mellitus e insipidus. Enquanto
+    o primeiro tipo est\xE1 associado aos n\xEDveis ou \xE0 a\xE7\xE3o da insulina,
+    o segundo n\xE3o est\xE1 ligado \xE0 defici\xEAncia desse horm\xF4nio. O diabetes
+    insipidus \xE9 caracterizado por um dist\xFArbio na produ\xE7\xE3o ou no funcionamento
+    do horm\xF4nio antidiur\xE9tico (na sigla em ingl\xEAs, ADH), secretado pela neuro-hip\xF3fise
+    para controlar a reabsor\xE7\xE3o de \xE1gua pelos t\xFAbulos renais. Tendo em
+    vista o papel funcional do ADH, qual \xE9 um sintoma cl\xE1ssico de um paciente
+    acometido por diabetes insipidus?  "
+  - "A \xE1gua, por ter um alto calor espec\xEDfico, \xE9 um elemento importante para
+    a regula\xE7\xE3o da temperatura corporal em todos os chamados animais de sangue
+    quente. A quantidade de \xE1gua necess\xE1ria para a manuten\xE7\xE3o da estabilidade
+    da temperatura corporal varia, basicamente, em fun\xE7\xE3o de dois processos:
+    a sudorese e a produ\xE7\xE3o de urina. Assinale a op\xE7\xE3o que aponta corretamente
+    como funciona esse controle.  "
+  - "Os salm\xF5es s\xE3o peixes migrat\xF3rios, que vivem em \xE1gua salgada, mas
+    migram para as \xE1guas doces de rios na \xE9poca da reprodu\xE7\xE3o. Para assegurar
+    o equil\xEDbrio osm\xF3tico de seu corpo, esses peixes que migram temporariamente
+    da \xE1gua salgada para \xE1gua doce e vice-versa, apresentam o seguinte mecanismo:
+    \ "
+  - "Um pesquisador percebe que o r\xF3tulo de um dos vidros em que guarda um concentrado
+    de enzimas digestivas est\xE1 iIeg\xEDveI. Ele n\xE3o sabe qual enzima o vidro
+    cont\xE9m, mas desconfia de que seja uma protease g\xE1strica, que age no est\xF4mago
+    digerindo prote\xEDnas. Sabendo que a digest\xE3o no est\xF4mago e \xE1cida e
+    no intestino \xE9 b\xE1sica. ele monta cinco tubos de ensaio com alimentos diferentes,
+    adiciona o concentrado de enzimas em solu\xE7\xF5es com pH determinado e aguarda
+    para ver se a enzima age em algum deles. O tubo de ensaio em que a enzima deve
+    agir para indicar que a hip\xF3tese do pesquisador est\xE1 correta e aquele que
+    cont\xE9m:  "
+  - "A inclus\xE3o da carne bovina na dieta de uma pessoa \xE9 muito importante, pois
+    \xE9 uma fonte significativa de amino\xE1cidos, por\xE9m, muitas pessoas reclamam
+    da falta de maciez desse alimento. Pensando neste problema, os frigor\xEDficos
+    fazem a carne passar pelo que \xE9 chamado de matura\xE7\xE3o, que implica custo
+    e tempo. Para acelerar o processo, \xE9 poss\xEDvel a aplica\xE7\xE3o de uma enzima.
+    Assinale a enzima respons\xE1vel pela condi\xE7\xE3o macia da carne, bem como
+    por sua digest\xE3o.  "
+  - "Na hist\xF3ria evolutiva dos metazo\xE1rios, o processo digestivo:  "
+  - "Para serem absorvidos pelas c\xE9lulas do intestino humano, os lip\xEDdios ingeridos
+    precisam ser primeiramente emulsificados. Nessa etapa da digest\xE3o, torna-se
+    necess\xE1ria a a\xE7\xE3o dos \xE1cidos biliares, visto que os lip\xEDdios apresentam
+    uma natureza apolar e s\xE3o insol\xFAveis em \xE1gua. Esses \xE1cidos atuam no
+    processo de modo a  "
+  - "A ingest\xE3o de alimentos gordurosos estimula a contra\xE7\xE3o da ves\xEDcula
+    biliar. A bile, liberada no  "
+  - "Ao ingerir um lanche composto de p\xE3o e carne,  "
+  - "A vacina\xE7\xE3o \xE9 um dos meios mais eficientes de preven\xE7\xE3o de v\xE1rias
+    doen\xE7as. Existem v\xE1rios tipos de vacinas, sendo que algumas devem ser tomadas
+    em dose \xFAnica e outras necessitam de refor\xE7o. Assinale a alternativa correta
+    a respeito da vacina\xE7\xE3o.  "
+  - "Uma pessoa que apresenta grande quantidade de \xE1cido \xFArico no sangue dever\xE1
+    restringir, na sua alimenta\xE7\xE3o, o consumo de  "
+  - "O botulismo provocou a morte de 1,1 mil cabe\xE7as de gado, no \xFAltimo m\xEAs
+    de agosto, numa fazenda em Mato Grosso do Sul. A suspeita cl\xEDnica inicial foi
+    confirmada pelo exame das amostras de gr\xE3os \xFAmidos de milho fornecidos aos
+    animais, demonstrando a presen\xE7a da toxina botul\xEDnica, que \xE9 produzida
+    pela bact\xE9ria Clostridium botulinum. Considerando que a toxina botul\xEDnica
+    bloqueia a transmiss\xE3o neuromuscular, a morte dos animais deve ter sido decorrente
+    de  "
+  - "Ao longo da evolu\xE7\xE3o dos vertebrados, a  "
+  - "Sabe-se que um indiv\xEDduo da esp\xE9cie humana n\xE3o pode ficar sem realizar
+    respira\xE7\xE3o sist\xEAmica por muito tempo, sob pena de sofrer les\xF5es cerebrais.
+    Assinale a alternativa que descreve corretamente o processo metab\xF3lico celular
+    que ocorre neste caso.  "
+  - "Uma hem\xE1cia que esteja no ventr\xEDculo direito tem ___ I ___ e seguir\xE1
+    para ___ II ___ . Nesse local ocorrer\xE1 ___ III ___ tornando o sangue ___ IV
+    ___ . Assinale a alternativa que preenche, correta e respectivamente, os espa\xE7os
+    I, II, III e IV.  "
+  - "Milhares de pessoas estavam morrendo de var\xEDola humana no final do s\xE9culo
+    XVIII. Em 1796, o m\xE9dico Edward Jenner (1749-1823) inoculou em um menino de
+    8 anos o pus extra\xEDdo de feridas de vacas contaminadas com o v\xEDrus da var\xEDola
+    bovina, que causa uma doen\xE7a branda em humanos. O garoto contraiu uma infec\xE7\xE3o
+    benigna e, dez dias depois, estava recuperado. Meses depois, Jenner inoculou,
+    no mesmo menino, o pus varioloso humano, que causava muitas mortes. O menino n\xE3o
+    adoeceu. Dispon\xEDvel em: www.bbc.co.uk. Acesso em: 5 dez. 2012 (adaptado). Considerando
+    o resultado do experimento, qual a contribui\xE7\xE3o desse m\xE9dico para a sa\xFAde
+    humana?  "
+  - "O volume total de ar que cabe no sistema respirat\xF3rio de um homem adulto,
+    ao n\xEDvel do mar, \xE9 cerca de 6 litros. Nessas condi\xE7\xF5es, os pulm\xF5es
+    de um indiv\xEDduo em repouso, a cada movimento respirat\xF3rio, trocam com o
+    meio exterior, em m\xE9dia, apenas 0,5 litro de ar. Essa quantidade de ar inspirado
+    mistura-se ao ar retido nas vias a\xE9reas e apenas parte dessa mistura chega
+    aos alv\xE9olos. Desse modo, considerando a fisiologia e a anatomia do aparelho
+    respirat\xF3rio humano, \xE9 correto afirmar que, durante a inspira\xE7\xE3o,
+    o ar que chega aos alv\xE9olos possui  "
+  - "No sistema circulat\xF3rio humano,  "
+  - "A respeito do cora\xE7\xE3o, assinale a alternativa correta.  "
+  - "Sabe-se que a hemodi\xE1lise \xE9 um procedimento utilizado para o tratamento
+    de problemas renais e press\xE3o arterial elevada. Analise a alternativa que indica
+    corretamente os fen\xF4menos desencadeantes da press\xE3o arterial elevada. "
+  - "Os sintomas mais s\xE9rios da Gripe A, causada pelo v\xEDrus H1N1, foram apresentados
+    por pessoas mais idosas e por gestantes. O motivo aparente \xE9 a menor imunidade
+    desses grupos contra o v\xEDrus. Para aumentar a imunidade populacional relativa
+    ao v\xEDrus da gripe A, o governo brasileiro distribuiu vacinas para os grupos
+    mais suscet\xEDveis. A vacina contra o H1N1, assim como qualquer outra vacina
+    contra agentes causadores de doen\xE7as infecto- contagiosas, aumenta a imunidade
+    das pessoas porque  "
+  - "Durante uma expedi\xE7\xE3o, um grupo de estudantes perdeu-se de seu guia. Ao
+    longo do dia em que esse grupo estava perdido, sem \xE1gua e debaixo de sol, os
+    estudantes passaram a sentir cada vez mais sede. Consequentemente, o sistema excretor
+    desses indiv\xEDduos teve um acr\xE9scimo em um dos seus processos funcionais.
+    Nessa situa\xE7\xE3o o sistema excretor dos estudantes  "
+  - "A presen\xE7a de ureia na urina de humanos \xE9 consequ\xEAncia direta da:  "
+  - "Borboleta, lula e avestruz t\xEAm como principal excreta nitrogenado, respectivamente,
+    \ "
+  - "Terminado o percurso pelo n\xE9fron, o filtrado glomerular \xE9 agora denominado
+    urina, que, em uma pessoa saud\xE1vel, dever\xE1 conter, entre outros componentes,
+    \ "
+  - "A respeito do funcionamento dos n\xE9frons, \xE9 correto afirmar que  "
+  - "Alguns tipos de drogas, utilizadas no tratamento da esquizofrenia, agem bloqueando
+    os receptores de dopamina, um tipo de neurotransmissor, nas sinapses. A respeito
+    desse bloqueio, \xE9 correto afirmar que  "
+  - "Para que todos os \xF3rg\xE3os do corpo humano funcionem em boas condi\xE7\xF5es,
+    \xE9 necess\xE1rio que a temperatura do corpo fique sempre entre 36 \xBAC e 37
+    \xBAC. Para manter-se dentro dessa faixa, em dias de muito calor ou durante intensos
+    exerc\xEDcios f\xEDsicos, uma s\xE9rie de mecanismos fisiol\xF3gicos \xE9 acionada.
+    Pode-se citar como o principal respons\xE1vel pela manuten\xE7\xE3o da temperatura
+    corporal humana o sistema  "
+  - "Alguns chefs de cozinha sugerem que o peru n\xE3o deve ser preparado inteiro,
+    pois a carne do peito e a da coxa t\xEAm caracter\xEDsticas diferentes, que exigem
+    preparos diferentes. A carne do peito \xE9 branca e macia, e pode ressecar dependendo
+    do modo como \xE9 preparada. A carne da coxa, mais escura, \xE9 mais densa e suculenta
+    e deve ser preparada separadamente. Embora os perus comercializados em supermercados
+    venham de cria\xE7\xF5es em confinamento, o que pode alterar o desenvolvimento
+    da musculatura, eles ainda mant\xEAm as caracter\xEDsticas das popula\xE7\xF5es
+    selvagens, nas quais a textura e a colora\xE7\xE3o da carne do peito e da coxa
+    decorrem da composi\xE7\xE3o de suas fibras musculares e da adequa\xE7\xE3o dessas
+    musculaturas \xE0s fun\xE7\xF5es que exercem. Considerando as fun\xE7\xF5es desses
+    m\xFAsculos nessas aves, \xE9 correto afirmar que a carne  "
+  - "Uma professora explicava a seus alunos que a transpira\xE7\xE3o contribui para
+    o controle da temperatura corporal e que os desodorantes antitranspirantes apresentam
+    em sua composi\xE7\xE3o sal de alum\xEDnio, o qual obstrui os ductos sudor\xEDparos,
+    impedindo a sa\xEDda do suor. Um dos alunos perguntou \xE0 professora o que aconteceria
+    se uma generosa dose de desodorante antitranspirante fosse borrifada no corpo
+    de uma barata e no corpo de uma lagartixa. A professora desaconselhou o experimento
+    em raz\xE3o dos maus tratos aos animais e explicou que, caso fosse realizado,
+    considerando os sistemas respirat\xF3rios desses animais, provavelmente  "
+  - "Animais de \"sangue frio\" n\xE3o necessitam ser alimentados na mesma frequ\xEAncia
+    que animais de \"sangue quente\", pelas suas pr\xF3prias diferen\xE7as metab\xF3licas.
+    Al\xE9m disso, animais homeot\xE9rmicos apresentam algumas adapta\xE7\xF5es na
+    sua fisiologia que facilitam a manuten\xE7\xE3o de sua temperatura corporal. S\xE3o
+    elas:  "
+  - 'Ao liberar acetilcolina, a fibra nervosa  '
+  - "A vis\xE3o \xE9 um dos sentidos mais importantes para a esp\xE9cie humana, e
+    o olho \xE9 um dos \xF3rg\xE3os mais complexos do nosso corpo. Quando uma pessoa
+    idosa perde a capacidade de enxergar devido \xE0 catarata, a estrutura que perdeu
+    a sua fun\xE7\xE3o \xE9:  "
+  - "Para o desempenho das pr\xE1ticas desportivas, o equil\xEDbrio \xE9 fundamental.
+    Os \xF3rg\xE3os de equilibrio detectam a posi\xE7\xE3o do corpo e permitem perceber
+    se estamos de cabe\xE7a para cima ou para baixo e a velocidade em que estamos
+    nos deslocando. A orelha humana \xE9 o \xF3rg\xE3o respons\xE1vel pela audi\xE7\xE3o
+    e pelo equilibrio e uma de suas regi\xF5es, a orelha interna, \xE9 um complexo
+    labirinto membranoso conhecido como aparelho vestibular. Qual das estruturas citadas
+    a seguir \xE9 um dos componentes do aparelho vestibular respons\xE1vel pelo equilibrio?
+    \ "
+  - "Num ambiente iluminado, ao focalizar um objeto distante, o olho humano se ajusta
+    a essa situa\xE7\xE3o. Se a pessoa passa, em seguida, para um ambiente de penumbra,
+    ao focalizar um objeto pr\xF3ximo, a \xEDris  "
+  - "Os dist\xFArbios por defici\xEAncia de iodo (DDI) s\xE3o fen\xF4menos naturais
+    e permanentes amplamente distribu\xEDdos em v\xE1rias regi\xF5es do mundo. Popula\xE7\xF5es
+    que vivem em \xE1reas deficientes em iodo t\xEAm o risco de apresentar os dist\xFArbios
+    causados por essa defici\xEAncia, cujos impactos sobre os n\xEDveis de desenvolvimento
+    humano, social e econ\xF4mico s\xE3o muito graves. No Brasil, vigora uma lei que
+    obriga os produtores de sal de cozinha a inclu\xEDrem em seu produto certa quantidade
+    de iodeto de pot\xE1ssio. Essa inclus\xE3o visa prevenir problemas em qual gl\xE2ndula
+    humana?  "
+  - "Com rela\xE7\xE3o a diabetes melito, \xE9 correto afirmar que:  "
+  - "O controle da taxa de glicose no sangue \xE9 feito por dois horm\xF4nios: a insulina
+    e o glucagon. Sobre esses dois horm\xF4nios, \xE9 correto afirmar que:  "
+  - "Anabolismo e catabolismo s\xE3o processos celulares antag\xF4nicos, que s\xE3o
+    controlados principalmente pela a\xE7\xE3o hormonal. Por exemplo, no f\xEDgado
+    a insulina atua como um horm\xF4nio com a\xE7\xE3o anab\xF3lica, enquanto o glucagon
+    tem a\xE7\xE3o catab\xF3lica e ambos s\xE3o secretados em resposta ao n\xEDvel
+    de glicose sangu\xEDnea. Em caso de um indiv\xEDduo com hipoglicemia, o horm\xF4nio
+    citado que atua no catabolismo induzir\xE1 o organismo a  "
+  - "Mitoc\xF4ndrias s\xE3o organelas citoplasm\xE1ticas em que ocorrem etapas do
+    processo de respira\xE7\xE3o celular. Nesse processo, mol\xE9culas org\xE2nicas
+    s\xE3o transformadas e, juntamente com o O2 , s\xE3o produzidos CO2 e H2 O, liberando
+    energia, que \xE9 armazenada na c\xE9lula na forma de ATP. Na esp\xE9cie humana,
+    o gameta masculino (espermatozoide) apresenta, em sua pe\xE7a intermedi\xE1ria,
+    um conjunto de mitoc\xF3ndrias, cuja fun\xE7\xE3o:  "
+  - "Um casal procurou ajuda m\xE9dica, pois h\xE1 anos desejava gerar filhos e n\xE3o
+    obtinha sucesso. Os exames apontaram que a mulher era reprodutivamente normal.
+    Com rela\xE7\xE3o ao homem, o exame revelou que a espermatog\xEAnese era comprometida
+    por uma altera\xE7\xE3o cromoss\xF4mica, embora seu fen\xF3tipo e desempenho sexual
+    fossem normais. Por causa dessa altera\xE7\xE3o, n\xE3o ocorria o pareamento dos
+    cromossomos hom\xF3logos, a meiose n\xE3o avan\xE7ava al\xE9m do zig\xF3teno e
+    os espermat\xF3citos I degeneravam. Desse modo, \xE9 correto afirmar que a an\xE1lise
+    do esperma desse homem revelar\xE1  "
+  - '(Adaptado) Considerando a anatomia e a fisiologia dos aparelhos reprodutores
+    masculino e feminino, assinale a alternativa correta:  '
+  - "Em rela\xE7\xE3o \xE0 reprodu\xE7\xE3o humana, \xE9 correto afirmar que:  "
+  - "Durante a aula, um professor apresentou uma pesquisa nacional que mostrava que
+    o consumo de s\xF3dio pelos adolescentes brasileiros \xE9 superior ao determinado
+    pela Organiza\xE7\xE3o Mundial da Sa\xFAde. O professor, ent\xE3o, destacou que
+    esse h\xE1bito deve ser evitado. A doen\xE7a associada a esse h\xE1bito \xE9 a
+    \ "
+  - "Macronutrientes podem ser definidos como a classe de compostos qu\xEDmicos que
+    devem ser consumidos diariamente e em grande quantidade, pois fornecem energia
+    e s\xE3o componentes fundamentais para o crescimento e manuten\xE7\xE3o do corpo.
+    Qual deles se obt\xE9m em maior abund\xE2ncia em dietas baseadas em vegetais e
+    em produtos de origem animal, respectivamente?  "
+  alternativaA:
+  - 'Alta taxa de glicose no sangue.  '
+  - "Quando h\xE1 aumento da temperatura ambiente o indiv\xEDduo produz menor quantidade
+    de suor e menor quantidade de urina.  "
+  - "quando em \xE1gua doce, urinam pouco e eliminam sais por transporte ativo.  "
+  - "cubo de batata em solu\xE7\xE3o com pH=9  "
+  - 'Peroxidase.  '
+  - "\xE9 intraceluIar, com hidr\xF3lise enzim\xE1tica de mol\xE9culas de grande tamanho,
+    a partir dos equinodermas.  "
+  - "hidrolisar os lip\xEDdios.  "
+  - "est\xF4mago, cont\xE9m enzimas que digerem lip\xEDdios.  "
+  - "a digest\xE3o qu\xEDmica do p\xE3o inicia-se na boca, com a a\xE7\xE3o da tripsina,
+    e a da carne inicia-se no duodeno, onde as prote\xEDnas s\xE3o quebradas, com
+    a a\xE7\xE3o da bile.  "
+  - "As vacinas aplicadas em dose \xFAnica s\xE3o aquelas que previnem doen\xE7as
+    que s\xF3 acometem a pessoa uma vez na vida, como caxumba e rub\xE9ola.  "
+  - "amido, cujo metabolismo fornece grandes quantidades de nitrog\xEAnio, que ser\xE1
+    convertido em \xE1cido \xFArico.  "
+  - "infec\xE7\xE3o generalizada.  "
+  - "digest\xE3o tornou-se cada vez mais complexa. A tomada do alimento pela boca
+    e sua passagem pelo est\xF4mago e intestino s\xE3o caracter\xEDsticas apenas do
+    grupo mais recente.  "
+  - "Na aus\xEAncia de oxig\xEAnio molecular, as c\xE9lulas iniciam um processo n\xE3o
+    fermentativo de respira\xE7\xE3o aer\xF3bica.  "
+  - 'muito CO2 ; o corpo; hematose; venoso  '
+  - "A preven\xE7\xE3o de diversas doen\xE7as infectocontagiosas em todo o mundo.
+    \ "
+  - "maior concentra\xE7\xE3o de CO2 que aquela do sangue venoso.  "
+  - "a veia cava superior transporta sangue pobre em oxig\xEAnio, coletado da cabe\xE7a,
+    dos bra\xE7os e da parte superior do tronco, e chega ao \xE1trio esquerdo do cora\xE7\xE3o.
+    \ "
+  - "Os n\xF3dulos atrioventricular e sinoatrial s\xE3o respons\xE1veis pelo controle
+    do ritmo card\xEDaco.  "
+  - "Aumento da concentra\xE7\xE3o de s\xF3dio e reten\xE7\xE3o de \xE1gua.  "
+  - "possui anticorpos contra o agente causador da doen\xE7a.  "
+  - "aumentou a filtra\xE7\xE3o glomerular.  "
+  - "degrada\xE7\xE3o de lip\xEDdeos.  "
+  - "\xE1cido \xFArico, am\xF4nia e \xE1cido \xFArico.  "
+  - "\xE1gua, ureia, prote\xEDnas e sais.  "
+  - "o horm\xF4nio antidiur\xE9tico (ADH) diminui a produ\xE7\xE3o de urina porque
+    diminui a press\xE3o do sangue nos capilares dos glom\xE9rulos.  "
+  - "ocorre no ax\xF4nio de um neur\xF4nio.  "
+  - "digest\xF3rio, pois produz enzimas que atuam na quebra de alimentos cal\xF3ricos.
+    \ "
+  - "do peito \xE9 formada por fibras musculares de contra\xE7\xE3o lenta, pobres
+    em mitoc\xF4ndrias e em mioglobina, e eficientes na realiza\xE7\xE3o de esfor\xE7o
+    moderado e prolongado.  "
+  - 'a lagartixa e a barata morreriam por aumento da temperatura corporal.  '
+  - "alto metabolismo e circula\xE7\xE3o fechada dupla.  "
+  - "simp\xE1tica promove aumento do ritmo card\xEDaco.  "
+  - "A p\xE1lpebra.  "
+  - "C\xF3clea  "
+  - "aumenta, diminuindo a abertura da pupila, e os m\xFAsculos ciliares se contraem,
+    aumentando o poder refrativo do cristalino.  "
+  - "Hip\xF3fise.  "
+  - "essa condi\xE7\xE3o ocorre devido a produ\xE7\xE3o excessiva de horm\xF4nio na
+    medula da supra renal.  "
+  - "ambos s\xE3o produzidos no f\xEDgado e agem para diminuir o n\xEDvel de glicose
+    no sangue.  "
+  - "realizar a fermenta\xE7\xE3o l\xE1tica.  "
+  - "facilitar a ruptura da membrana do ov\xF3cito.  "
+  - "secre\xE7\xF5es da pr\xF3stata e das gl\xE2ndulas seminais, mas n\xE3o haver\xE1
+    espermatozoides, em raz\xE3o de n\xE3o se completar a pr\xF3fase I.  "
+  - "A vasectomia impede a forma\xE7\xE3o e elimina\xE7\xE3o de espermatozoides  "
+  - "FSH e LH s\xE3o horm\xF4nios ovarianos respons\xE1veis pelo amadurecimento e
+    pela libera\xE7\xE3o dos fol\xEDculos.  "
+  - 'obesidade.  '
+  - "Carboidratos e prote\xEDnas.  "
+  alternativaB:
+  - "Aumento da press\xE3o arterial.  "
+  - "Quando h\xE1 aumento da temperatura ambiente, o indiv\xEDduo produz maior quantidade
+    de suor e maior quantidade de urina.  "
+  - "quando em \xE1gua doce, urinam pouco e eliminam sais por transporte passivo.
+    \ "
+  - "peda\xE7o de carne em solu\xE7\xE3o com pH=5  "
+  - 'Lipase.  '
+  - "\xE9 extracelular, j\xE1 nos por\xEDferos, passando a completamente intraceluIar,
+    a partir dos artr\xF3podes.  "
+  - 'agir como detergentes.  '
+  - "est\xF4mago, cont\xE9m \xE1cidos que facilitam a digest\xE3o dos lip\xEDdios.
+    \ "
+  - "a digest\xE3o qu\xEDmica do p\xE3o inicia-se no est\xF4mago, onde o amido \xE9
+    quebrado pela a\xE7\xE3o do suco g\xE1strico, e a da carne inicia-se na boca,
+    com a a\xE7\xE3o da pepsina.  "
+  - "Como os adultos t\xEAm o sistema imunol\xF3gico mais eficiente, n\xE3o necessitam
+    tomar vacinas.  "
+  - "vitamina D, cujo excesso \xE9 depositado no organismo na forma de \xE1cido \xFArico.
+    \ "
+  - 'hemorragia interna.  '
+  - "circula\xE7\xE3o apresentou poucas mudan\xE7as. O n\xFAmero de c\xE2maras card\xEDacas
+    aumentou, o que n\xE3o influenciou a circula\xE7\xE3o pulmonar e a sist\xEAmica,
+    que s\xE3o completamente separadas em todos os grupos.  "
+  - "O g\xE1s carb\xF4nico produzido na respira\xE7\xE3o se acumula provocando diminui\xE7\xE3o
+    do pH celular.  "
+  - "pouco O2 ; os pulm\xF5es; hematose; arterial  "
+  - "A compreens\xE3o de que v\xEDrus podem se multiplicar em mat\xE9ria org\xE2nica.
+    \ "
+  - "menor concentra\xE7\xE3o de CO2 que o ar atmosf\xE9rico.  "
+  - "a veia cava inferior transporta sangue pobre em oxig\xEAnio, coletado da parte
+    inferior do tronco e dos membros inferiores, e chega ao \xE1trio direito do cora\xE7\xE3o.
+    \ "
+  - "As valvas s\xE3o respons\xE1veis por estimular a contra\xE7\xE3o do mioc\xE1rdio.
+    \ "
+  - "Alta elimina\xE7\xE3o de cloreto de s\xF3dio e de am\xF4nia.  "
+  - "possui prote\xEDnas que eliminam o agente causador da doen\xE7a.  "
+  - 'produziu maior volume de urina.  '
+  - "degrada\xE7\xE3o de prote\xEDnas.  "
+  - "\xE1cido \xFArico, ureia e am\xF4nia.  "
+  - "\xE1gua, \xE1cido \xFArico, prote\xEDnas e sais.  "
+  - "a filtra\xE7\xE3o ocorrida nos glom\xE9rulos transforma sangue venoso em sangue
+    arterial.  "
+  - "provoca a destrui\xE7\xE3o dos neurotransmissores.  "
+  - "imunol\xF3gico, pois suas c\xE9lulas agem no sangue, diminuindo a condu\xE7\xE3o
+    do calor.  "
+  - "do peito \xE9 rica em fibras musculares de contra\xE7\xE3o r\xE1pida, ricas em
+    mitoc\xF4ndrias e em mioglobina, e eficientes na realiza\xE7\xE3o de esfor\xE7o
+    intenso de curta dura\xE7\xE3o.  "
+  - "a lagartixa e a barata morreriam por falta de oxig\xEAnio em suas c\xE9lulas.
+    \ "
+  - "alto metabolismo e circula\xE7\xE3o fechada simples.  "
+  - "parassimp\xE1tica promove diminui\xE7\xE3o do ritmo card\xEDaco.  "
+  - "A c\xF3rnea.  "
+  - "Membrana timp\xE2nica.  "
+  - "diminui, aumentando a abertura da pupila, e os m\xFAsculos ciliares se contraem,
+    aumentando o poder refrativo do cristalino.  "
+  - 'Tireoide.  '
+  - "a glicose permanece no sangue e n\xE3o \xE9 encaminhada para dentro das c\xE9lulas.
+    \ "
+  - "a insulina \xE9 produzida no p\xE2ncreas, e sua a\xE7\xE3o diminui o n\xEDvel
+    de glicose no sangue; o glucagon \xE9 produzido no f\xEDgado e age transformando
+    o glicog\xEAnio em glicose.  "
+  - 'metabolizar aerobicamente a glicose.  '
+  - "acelerar sua matura\xE7\xE3o durante a espermatog\xEAnese.  "
+  - "s\xEAmen composto por esperm\xE1tides, mas n\xE3o por espermatozoides, em raz\xE3o
+    de n\xE3o se completar a espermatog\xEAnese pela falta de segrega\xE7\xE3o cromoss\xF4mica.
+    \ "
+  - "A laqueadura corresponde a um m\xE9todo natural e pouco seguro na preven\xE7\xE3o
+    de DSTs  "
+  - "estr\xF3geno e progesterona, produzidos nas g\xF4nadas, s\xE3o respons\xE1veis,
+    dentre outras fun\xE7\xF5es, pela determina\xE7\xE3o de caracter\xEDsticas sexuais
+    secund\xE1rias.  "
+  - 'osteoporose.  '
+  - "Prote\xEDnas para ambas as dietas.  "
+  alternativaC:
+  - 'Ganho de massa corporal.  '
+  - "Quando h\xE1 diminui\xE7\xE3o da temperatura ambiente, o indiv\xEDduo produz
+    menor quantidade de suor e maior quantidade de urina.  "
+  - "quando em \xE1gua doce, urinam muito e absorvem sais por transporte ativo.  "
+  - "clara de ovo cozida em solu\xE7\xE3o com pH=9  "
+  - 'Amilase.  '
+  - "\xE9 completamente extracelular nos vertebrados, o que os distingue dos demais
+    grupos de animais.  "
+  - "tornar os lip\xEDdios anfif\xEDlicos.  "
+  - "f\xEDgado, cont\xE9m enzimas que facilitam a digest\xE3o dos lip\xEDdios.  "
+  - "a digest\xE3o qu\xEDmica do p\xE3o inicia-se na boca, com a a\xE7\xE3o da pepsina,
+    e a da carne inicia-se no intestino delgado, com a a\xE7\xE3o da bile, que \xE9
+    produzida no f\xEDgado.  "
+  - "As vacinas s\xE3o elaboradas com fragmentos do agente causador, ou com o agente
+    inativado ou atenuado. Em todos os casos n\xE3o h\xE1, em decorr\xEAncia da vacina\xE7\xE3o,
+    possibilidade de contamina\xE7\xE3o da pessoa com o agente causador.  "
+  - "prote\xEDnas, formadas por amino\xE1cidos, cujo metabolismo libera am\xF4nia,
+    que ser\xE1 convertida em \xE1cido \xFArico.  "
+  - "desidrata\xE7\xE3o provocada por diarreia.  "
+  - "respira\xE7\xE3o, no n\xEDvel celular, manteve-se semelhante em todos os grupos.
+    Houve mudan\xE7a, por\xE9m, nos \xF3rg\xE3os respons\xE1veis pelas trocas gasosas,
+    que diferem entre grupos.  "
+  - "O oxig\xEAnio molecular \xE9 consumido, e sua diminui\xE7\xE3o causa aumento
+    do pH celular.  "
+  - "muito O2 ; o corpo; filtra\xE7\xE3o; venoso  "
+  - "O tratamento para muitas enfermidades que acometem milh\xF5es de pessoas.  "
+  - "maior concentra\xE7\xE3o de O2 que aquela do sangue arterial.  "
+  - "a art\xE9ria pulmonar transporta sangue rico em oxig\xEAnio, do cora\xE7\xE3o
+    at\xE9 os pulm\xF5es.  "
+  - "A contra\xE7\xE3o do mioc\xE1rdio \xE9 completamente independente da a\xE7\xE3o
+    do sistema nervoso.  "
+  - "Poli\xFAria e elimina\xE7\xE3o de subst\xE2ncias t\xF3xicas.  "
+  - "estimula a produ\xE7\xE3o de gl\xF3bulos vermelhos pela medula \xF3ssea.  "
+  - 'produziu urina com menos ureia.  '
+  - "degrada\xE7\xE3o de a\xE7\xFAcares.  "
+  - "am\xF4nia, \xE1cido \xFArico e am\xF4nia.  "
+  - "\xE1gua, ureia, am\xF4nia e sais.  "
+  - "no t\xFAbulo contorcido distal ocorre a maior parte da reabsor\xE7\xE3o de \xE1gua.
+    \ "
+  - "como consequ\xEAncia, n\xE3o h\xE1 impulso nervoso no neur\xF4nio p\xF3s-sin\xE1ptico.
+    \ "
+  - "nervoso, pois promove a sudorese, que permite perda de calor por meio da evapora\xE7\xE3o
+    da \xE1gua.  "
+  - "da coxa \xE9 formada por fibras musculares de contra\xE7\xE3o lenta, ricas em
+    mitoc\xF4ndrias e em mioglobina, e eficientes na realiza\xE7\xE3o de esfor\xE7o
+    moderado e prolongado.  "
+  - 'a barata sobreviveria e a lagartixa morreria por aumento da temperatura corporal.  '
+  - "baixo metabolismo e circula\xE7\xE3o aberta.  "
+  - "simp\xE1tica promove diminui\xE7\xE3o do ritmo card\xEDaco.  "
+  - 'A retina.  '
+  - 'Canais semicirculares.  '
+  - "diminui, aumentando a abertura da pupila, e os m\xFAsculos ciliares se relaxam,
+    aumentando o poder refrativo do cristalino.  "
+  - "P\xE2ncreas.  "
+  - "devido aos altos n\xEDveis de glicose no sangue, as pessoas afetadas podem fazer
+    grandes intervalos entre as refei\xE7\xF5es.  "
+  - "ambos s\xE3o produzidos no p\xE2ncreas, mas provocam efeitos opostos: a insulina
+    provoca a diminui\xE7\xE3o do n\xEDvel de glicose, e o glucagon, o aumento.  "
+  - "produzir amino\xE1cidos a partir de \xE1cidos graxos.  "
+  - "localizar a tuba uterina para fecunda\xE7\xE3o do gameta femi"
+  - "espermatozoides sem cromossomos, em fun\xE7\xE3o da n\xE3o segrega\xE7\xE3o cromoss\xF4mica,
+    e sem mobilidade, em raz\xE3o do s\xEAmen n\xE3o ter secre\xE7\xF5es da pr\xF3stata
+    e das gl\xE2ndulas seminais.  "
+  - "O diafragma \xE9 tanto contraceptivo quanto preventivo na concep\xE7\xE3o de
+    s\xEDfilis  "
+  - "a libera\xE7\xE3o de estr\xF3geno e de progesterona provoca a descama\xE7\xE3o
+    do endom\xE9trio e, conseq\xFCentemente, a menstrua\xE7\xE3o.  "
+  - 'diabetes tipo II.  '
+  - "Prote\xEDnas e lip\xEDdios.  "
+  alternativaD:
+  - "Anemia Cr\xF4nica.  "
+  - "Quando h\xE1 diminui\xE7\xE3o da temperatura ambiente, o indiv\xEDduo produz
+    maior quantidade de suor e menor quantidade de urina.  "
+  - "quando em \xE1gua salgada, urinam muito e n\xE3o eliminam os sais em excesso.
+    \ "
+  - "por\xE7\xE3o de macarr\xE3o em solu\xE7\xE3o com pH =5  "
+  - 'Lactoperidoxidase.  '
+  - 'passa de completamente Intracelular a completamente extracelular, a partir dos
+    nematelmintos.  '
+  - "promover a secre\xE7\xE3o de lipases.  "
+  - "duodeno, cont\xE9m enzimas que digerem lip\xEDdios.  "
+  - "a digest\xE3o qu\xEDmica do p\xE3o e da carne inicia-se no est\xF4mago pela a\xE7\xE3o
+    da bile e da ptialina, respectivamente; a enzima pepsina, no duodeno, completa
+    a digest\xE3o.  "
+  - "A inocula\xE7\xE3o de um agente causador de uma doen\xE7a estimula a produ\xE7\xE3o
+    de c\xE9lulas de defesa e anticorpos. Quando a pessoa for exposta ao agente ativo,
+    a resposta ser\xE1 mais eficiente.  "
+  - "lip\xEDdios, cujo metabolismo fornece \xE1cidos graxos, que ser\xE3o convertidos
+    em \xE1cido \xFArico.  "
+  - 'acidente vascular cerebral.  '
+  - "excre\xE7\xE3o sofreu muitas altera\xE7\xF5es, devido a mudan\xE7as no sistema
+    excretor. Por\xE9m, independentemente do ambiente em que vivem, os animais excretam
+    ureia, am\xF4nia e \xE1cido \xFArico.  "
+  - "O oxig\xEAnio molecular come\xE7a a se transformar em \xE1cido carb\xF4nico,
+    diminuindo o pH celular.  "
+  - "pouco CO2 ; os pulm\xF5es; reabsor\xE7\xE3o; arterial  "
+  - "O estabelecimento da \xE9tica na utiliza\xE7\xE3o de crian\xE7as em modelos experimentais.
+    \ "
+  - "maior concentra\xE7\xE3o de CO2 que aquele que havia sido expirado.  "
+  - "as veias pulmonares transportam sangue rico em oxig\xEAnio, dos pulm\xF5es at\xE9
+    o \xE1trio direito do cora\xE7\xE3o.  "
+  - "A oxigena\xE7\xE3o desse \xF3rg\xE3o \xE9 feita pelo sangue que circula em seu
+    interior.  "
+  - "Incapacidade de reabsor\xE7\xE3o renal de glicose e poli\xFAria.  "
+  - "possui linf\xF3citos B e T que neutralizam o agente causador da doen\xE7a.  "
+  - "produziu urina com maior concentra\xE7\xE3o de sais.  "
+  - "incorpora\xE7\xE3o de vitaminas.  "
+  - "am\xF4nia, ureia e \xE1cido \xFArico.  "
+  - "ureia, glicose, \xE1cido \xFArico e am\xF4nia.  "
+  - "a aus\xEAncia de prote\xEDnas na urina de uma pessoa normal se deve \xE0 reabsor\xE7\xE3o
+    dessa mol\xE9cula no t\xFAbulo contorcido proximal.  "
+  - "atrasa a condu\xE7\xE3o de um impulso ao longo de um neur\xF4nio.  "
+  - "reprodutor, pois secreta horm\xF4nios que alteram a temperatura, principalmente
+    durante a menopausa.  "
+  - "da coxa \xE9 formada por fibras musculares de contra\xE7\xE3o r\xE1pida, pobres
+    em mitoc\xF4ndrias e em mioglobina, e eficientes na realiza\xE7\xE3o de esfor\xE7o
+    intenso de curta dura\xE7\xE3o.  "
+  - "a lagartixa sobreviveria e a barata morreria por falta de oxig\xEAnio em suas
+    c\xE9lulas.  "
+  - "baixo metabolismo e circula\xE7\xE3o fechada.  "
+  - "parassimp\xE1tica promove aumento do ritmo card\xEDaco.  "
+  - 'O cristalino.  '
+  - 'Bigorna.  '
+  - "aumenta, diminuindo a abertura da pupila, e os m\xFAsculos ciliares se relaxam,
+    diminuindo o poder refrativo do cristalino.  "
+  - 'Suprarrenal.  '
+  - "\xE9 causada pelo excesso de insulina.  "
+  - "a insulina transforma o glicog\xEAnio em glicose, e o glucagon facilita a entrada
+    de glicose nas c\xE9lulas.  "
+  - "transformar \xE1cidos graxos em glicog\xEAnio.  "
+  - "aumentar a produ\xE7\xE3o de horm\xF4nios sexuais masculinos.  "
+  - "uma secre\xE7\xE3o mucosa lubrificante, eliminada pelas gl\xE2ndulas bulbouretrais,
+    al\xE9m de espermatog\xF4nias anucleadas, em raz\xE3o da n\xE3o forma\xE7\xE3o
+    da tel\xF3fase I.  "
+  - "A p\xEDlula anticoncepcional cont\xE9m horm\xF4nios ovarianos que inibem a fun\xE7\xE3o
+    hipofis\xE1ria e portanto, inibe a reprodu\xE7\xE3o do v\xEDrus da imunodefici\xEAncia
+    humana  "
+  - "as p\xEDlulas anticoncepcionais agem, principalmente, impedindo a menstrua\xE7\xE3o
+    e, conseq\xFCentemente, a fecunda\xE7\xE3o.  "
+  - "hipertens\xE3o arterial.  "
+  - "Prote\xEDnas e carboidratos.  "
+  alternativaE:
+  - "Desidrata\xE7\xE3o.  "
+  - "Quando h\xE1 diminui\xE7\xE3o da temperatura ambiente, o indiv\xEDduo produz
+    maior quantidade de suor e maior quantidade de urina.  "
+  - "quando em \xE1gua salgada, urinam muito e absorvem sais por transporte ativo
+    \ "
+  - "bolinha de manteiga em solu\xE7\xE3o com pH = 9  "
+  - 'Protease.  '
+  - "passa de completamente extracelular a completamente intraceluIar, a partir dos
+    anel\xEDdeos.  "
+  - "estimular o tr\xE2nsito intestinal dos lip\xEDdios.  "
+  - "duodeno, cont\xE9m \xE1cidos que facilitam a digest\xE3o dos lip\xEDdios.  "
+  - "a digest\xE3o qu\xEDmica do p\xE3o inicia-se na boca, com a a\xE7\xE3o da ptialina,
+    e a da carne inicia-se no est\xF4mago, onde as prote\xEDnas s\xE3o quebradas pela
+    a\xE7\xE3o do suco g\xE1strico.  "
+  - "A produ\xE7\xE3o de vacinas envolve tamb\xE9m a retirada de anticorpos produzidos
+    em outros animais, para melhorar a resposta imunol\xF3gica em seres humanos.  "
+  - "fibras vegetais, cuja digest\xE3o libera glicose, que ser\xE1 convertida em \xE1cido
+    \xFArico.  "
+  - "parada respirat\xF3ria.  "
+  - "reprodu\xE7\xE3o sofreu algumas mudan\xE7as relacionadas com a conquista do ambiente
+    terrestre. Assim, todos os vertebrados, com exce\xE7\xE3o dos peixes, independem
+    da \xE1gua para se reproduzir.  "
+  - "Na aus\xEAncia de oxig\xEAnio molecular, a c\xE9lula passa a fazer digest\xE3o
+    aer\xF3bica para gerar energia.  "
+  - "pouco O2 ; o corpo; filtra\xE7\xE3o; venoso  "
+  - "A explica\xE7\xE3o de que alguns v\xEDrus de animais podem ser transmitidos para
+    os humanos.  "
+  - "menor concentra\xE7\xE3o de O2 que aquele que havia sido expirado.  "
+  - "a art\xE9ria aorta transporta sangue rico em oxig\xEAnio para o corpo, por meio
+    da circula\xE7\xE3o sist\xEAmica, e sai do ventr\xEDculo direito do cora\xE7\xE3o.
+    \ "
+  - "Todo sangue que sai do cora\xE7\xE3o \xE9 arterial.  "
+  - "Reabsor\xE7\xE3o renal de amino\xE1cidos e de glicose.  "
+  - "estimula a produ\xE7\xE3o de anticorpos contra o agente causador da doen\xE7a.
+    \ "
+  - "reduziu a reabsor\xE7\xE3o de glicose e amino\xE1cidos.  "
+  - "transforma\xE7\xE3o de O2 em CO2.  "
+  - "ureia, am\xF4nia e \xE1cido \xFArico.  "
+  - "ureia, glicose, prote\xEDnas e am\xF4nia.  "
+  - "tanto no t\xFAbulo contorcido proximal quanto no t\xFAbulo contorcido distal
+    ocorre transporte ativo.  "
+  - "provoca a diminui\xE7\xE3o permanente da produ\xE7\xE3o de ATP no neur\xF4nio
+    p\xF3s-sin\xE1ptico  "
+  - "end\xF3crino, pois fabrica anticorpos que, por sua vez, atuam na varia\xE7\xE3o
+    do di\xE2metro dos vasos perif\xE9ricos.  "
+  - "do peito \xE9 rica em fibras musculares de contra\xE7\xE3o lenta, ricas em mitoc\xF4ndrias
+    e em mioglobina, e eficientes na realiza\xE7\xE3o de esfor\xE7o moderado e prolongado.
+    \ "
+  - 'a barata e a lagartixa sobreviveriam.  '
+  - "alto metabolismo e circula\xE7\xE3o aberta.  "
+  - "simp\xE1tica e a parassimp\xE1tica n\xE3o alteram o ritmo card\xEDaco.  "
+  - 'O ponto cego.  '
+  - "Org\xE3o de Corti.  "
+  - "diminui, aumentando a abertura da pupila, e os m\xFAsculos ciliares se relaxam,
+    diminuindo o poder refrativo do cristalino.  "
+  - 'Paratireoide.  '
+  - "os indiv\xEDduos diab\xE9ticos, frequentemente, apresentam valores de press\xE3o
+    arterial menores que os normais.  "
+  - "ambos s\xE3o produzidos no f\xEDgado, mas provocam efeitos opostos: a insulina
+    provoca a diminui\xE7\xE3o do n\xEDvel de glicose, e o glucagon, o aumento.  "
+  - "estimular a utiliza\xE7\xE3o do glicog\xEAnio.  "
+  - "fornecer energia para sua locomo\xE7\xE3o.  "
+  - "secre\xE7\xF5es das gl\xE2ndulas do sistema genital masculino, assim como espermatozoides
+    com 2n cromossomos, em raz\xE3o da n\xE3o segrega\xE7\xE3o das crom\xE1tides na
+    an\xE1fase II.  "
+  - "Somente os m\xE9todos cir\xFArgicos podem prevenir seguramente uma DST  "
+  - "o corpo amarelo \xE9 uma estrutura formada no \xFAtero e a sua presen\xE7a \xE9
+    indicativa de fecunda\xE7\xE3o.  "
+  - 'hipercolesterolemia.  '
+  - 'Carboidratos para ambas as dietas.  '
+  corretas:
+  - "Desidrata\xE7\xE3o.  "
+  - "Quando h\xE1 diminui\xE7\xE3o da temperatura ambiente, o indiv\xEDduo produz
+    menor quantidade de suor e maior quantidade de urina.  "
+  - "quando em \xE1gua doce, urinam muito e absorvem sais por transporte ativo.  "
+  - "peda\xE7o de carne em solu\xE7\xE3o com pH=5  "
+  - 'Protease.  '
+  - 'passa de completamente Intracelular a completamente extracelular, a partir dos
+    nematelmintos.  '
+  - 'agir como detergentes.  '
+  - "duodeno, cont\xE9m \xE1cidos que facilitam a digest\xE3o dos lip\xEDdios.  "
+  - "a digest\xE3o qu\xEDmica do p\xE3o inicia-se na boca, com a a\xE7\xE3o da ptialina,
+    e a da carne inicia-se no est\xF4mago, onde as prote\xEDnas s\xE3o quebradas pela
+    a\xE7\xE3o do suco g\xE1strico.  "
+  - "A inocula\xE7\xE3o de um agente causador de uma doen\xE7a estimula a produ\xE7\xE3o
+    de c\xE9lulas de defesa e anticorpos. Quando a pessoa for exposta ao agente ativo,
+    a resposta ser\xE1 mais eficiente.  "
+  - "prote\xEDnas, formadas por amino\xE1cidos, cujo metabolismo libera am\xF4nia,
+    que ser\xE1 convertida em \xE1cido \xFArico.  "
+  - "parada respirat\xF3ria.  "
+  - "respira\xE7\xE3o, no n\xEDvel celular, manteve-se semelhante em todos os grupos.
+    Houve mudan\xE7a, por\xE9m, nos \xF3rg\xE3os respons\xE1veis pelas trocas gasosas,
+    que diferem entre grupos.  "
+  - "O g\xE1s carb\xF4nico produzido na respira\xE7\xE3o se acumula provocando diminui\xE7\xE3o
+    do pH celular.  "
+  - "pouco O2 ; os pulm\xF5es; hematose; arterial  "
+  - "A preven\xE7\xE3o de diversas doen\xE7as infectocontagiosas em todo o mundo.
+    \ "
+  - "maior concentra\xE7\xE3o de O2 que aquela do sangue arterial.  "
+  - "a veia cava inferior transporta sangue pobre em oxig\xEAnio, coletado da parte
+    inferior do tronco e dos membros inferiores, e chega ao \xE1trio direito do cora\xE7\xE3o.
+    \ "
+  - "Os n\xF3dulos atrioventricular e sinoatrial s\xE3o respons\xE1veis pelo controle
+    do ritmo card\xEDaco.  "
+  - "Aumento da concentra\xE7\xE3o de s\xF3dio e reten\xE7\xE3o de \xE1gua.  "
+  - "estimula a produ\xE7\xE3o de anticorpos contra o agente causador da doen\xE7a.
+    \ "
+  - "produziu urina com maior concentra\xE7\xE3o de sais.  "
+  - "degrada\xE7\xE3o de prote\xEDnas.  "
+  - "\xE1cido \xFArico, am\xF4nia e \xE1cido \xFArico.  "
+  - "\xE1gua, ureia, am\xF4nia e sais.  "
+  - "tanto no t\xFAbulo contorcido proximal quanto no t\xFAbulo contorcido distal
+    ocorre transporte ativo.  "
+  - "como consequ\xEAncia, n\xE3o h\xE1 impulso nervoso no neur\xF4nio p\xF3s-sin\xE1ptico.
+    \ "
+  - "nervoso, pois promove a sudorese, que permite perda de calor por meio da evapora\xE7\xE3o
+    da \xE1gua.  "
+  - "da coxa \xE9 formada por fibras musculares de contra\xE7\xE3o lenta, ricas em
+    mitoc\xF4ndrias e em mioglobina, e eficientes na realiza\xE7\xE3o de esfor\xE7o
+    moderado e prolongado.  "
+  - "a lagartixa sobreviveria e a barata morreria por falta de oxig\xEAnio em suas
+    c\xE9lulas.  "
+  - "alto metabolismo e circula\xE7\xE3o fechada dupla.  "
+  - "parassimp\xE1tica promove diminui\xE7\xE3o do ritmo card\xEDaco.  "
+  - 'O cristalino.  '
+  - 'Canais semicirculares.  '
+  - "diminui, aumentando a abertura da pupila, e os m\xFAsculos ciliares se contraem,
+    aumentando o poder refrativo do cristalino.  "
+  - 'Tireoide.  '
+  - "a glicose permanece no sangue e n\xE3o \xE9 encaminhada para dentro das c\xE9lulas.
+    \ "
+  - "ambos s\xE3o produzidos no p\xE2ncreas, mas provocam efeitos opostos: a insulina
+    provoca a diminui\xE7\xE3o do n\xEDvel de glicose, e o glucagon, o aumento.  "
+  - "estimular a utiliza\xE7\xE3o do glicog\xEAnio.  "
+  - "fornecer energia para sua locomo\xE7\xE3o.  "
+  - "secre\xE7\xF5es da pr\xF3stata e das gl\xE2ndulas seminais, mas n\xE3o haver\xE1
+    espermatozoides, em raz\xE3o de n\xE3o se completar a pr\xF3fase I.  "
+  - "O diafragma \xE9 tanto contraceptivo quanto preventivo na concep\xE7\xE3o de
+    s\xEDfilis  "
+  - "estr\xF3geno e progesterona, produzidos nas g\xF4nadas, s\xE3o respons\xE1veis,
+    dentre outras fun\xE7\xF5es, pela determina\xE7\xE3o de caracter\xEDsticas sexuais
+    secund\xE1rias.  "
+  - "hipertens\xE3o arterial.  "
+  - "Carboidratos e prote\xEDnas.  "
+--- !u!4 &991163399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991163397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.4200745, y: 2.1877277, z: -2.946301}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1526796313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1526796316}
+  - component: {fileID: 1526796315}
+  - component: {fileID: 1526796314}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1526796314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1526796315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1526796316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526796313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
